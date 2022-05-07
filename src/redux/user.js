@@ -28,7 +28,7 @@ export const loginUserAsync = createAsyncThunk(
   async (credentials) => {
     const { data } = await login(credentials);
     localStorage.setItem(tokenKey, data.accessToken);
-    return data;
+    return data.user;
   }
 );
 
@@ -37,7 +37,7 @@ export const registerUserAsync = createAsyncThunk(
   async (credentials) => {
     const { data } = await register(credentials);
     localStorage.setItem(tokenKey, data.accessToken);
-    return data;
+    return data.user;
   }
 );
 

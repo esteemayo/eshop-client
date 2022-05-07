@@ -59,7 +59,7 @@ const Navbar = () => {
                 to='/'
                 className={({ isActive }) => (isActive ? 'active' : '')}
               >
-                {user.username}
+                {user?.username || user?.user?.username}
               </NavLink>
             )}
           </MenuItem>

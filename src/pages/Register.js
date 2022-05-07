@@ -58,7 +58,7 @@ const Register = () => {
         }
       },
       (error) => {
-        // Handle unsuccessful uploads
+        console.log(error);
       },
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {

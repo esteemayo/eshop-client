@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import { Badge } from '@material-ui/core';
+import { Link, NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 
@@ -14,6 +14,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     dispatch(logout());
+    window.location.replace('/login');
   };
 
   return (
@@ -34,28 +35,44 @@ const Navbar = () => {
         <Right>
           {!user && (
             <MenuItem>
-              <Link to='/register'>Register</Link>
+              <NavLink
+                to='/register'
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Register
+              </NavLink>
             </MenuItem>
           )}
           {!user && (
             <MenuItem>
-              <Link to='/login'>Login</Link>
-            </MenuItem>
-          )}
-          <MenuItem>{user && <Link to='#'>{user.username}</Link>}</MenuItem>
-          {user && (
-            <MenuItem>
-              <Link to='#' onClick={handleLogout}>
-                Logout
-              </Link>
+              <NavLink
+                to='/login'
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Login
+              </NavLink>
             </MenuItem>
           )}
           <MenuItem>
-            <Link to='/cart'>
+            {user && (
+              <NavLink
+                to='/'
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                {user.username}
+              </NavLink>
+            )}
+          </MenuItem>
+          {user && <MenuItem onClick={handleLogout}>Logout</MenuItem>}
+          <MenuItem>
+            <NavLink
+              to='/cart'
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
               <Badge badgeContent={quantity} color='primary'>
                 <ShoppingCartOutlined style={{ fontSize: 16 }} />
               </Badge>
-            </Link>
+            </NavLink>
           </MenuItem>
         </Right>
       </Wrapper>

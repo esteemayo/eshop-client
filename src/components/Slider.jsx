@@ -92,7 +92,7 @@ const Slide = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
-  align-ietms: center;
+  align-items: center;
   background-color: #${(props) => props.bg};
   z-index: 2000;
 `;
@@ -125,9 +125,9 @@ const Description = styled.p`
   letter-spacing: 3px;
 
   ${tabLand({
-    fontSize: '1.5rem',
-    margin: '2.5rem 0',
-  })}
+  fontSize: '1.5rem',
+  margin: '2.5rem 0',
+})}
 `;
 
 const Button = styled.button`

@@ -10,8 +10,8 @@ import {
 } from 'firebase/storage';
 
 import app from '../firebase';
-import { registerUserAsync } from 'redux/user';
 import { mobile, smallest, tabLand } from 'responsive';
+import { registerUserAsync } from 'redux/user/userSlice';
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -204,14 +204,14 @@ const Wrapper = styled.div`
   box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
 
   ${tabLand({
-    width: '65%',
-    padding: '3rem',
-  })}
+  width: '65%',
+  padding: '3rem',
+})}
 
   ${mobile({
-    width: '85%',
-    padding: '2rem',
-  })}
+  width: '85%',
+  padding: '2rem',
+})}
 
   ${smallest({ width: '100%' })}
 `;
@@ -228,13 +228,13 @@ const Title = styled.h1`
   }
 
   ${mobile({
-    fontSize: '2rem',
-    fontWeight: 400,
-    marginBottom: '0.5rem',
-    backgroundImage: 'linear-gradient(to right, #06dddd, #008080)',
-    WebkitBackgroundClip: 'text !important',
-    backgroundClip: 'text !important',
-  })}
+  fontSize: '2rem',
+  fontWeight: 400,
+  marginBottom: '0.5rem',
+  backgroundImage: 'linear-gradient(to right, #06dddd, #008080)',
+  WebkitBackgroundClip: 'text !important',
+  backgroundClip: 'text !important',
+})}
 
   ${smallest({ fontSize: '1.3rem' })}
 
@@ -305,14 +305,14 @@ const FormInput = styled.input`
   }
 
   ${mobile({
-    fontSize: '1.3rem',
-    padding: '1.2rem 2rem',
-  })}
+  fontSize: '1.3rem',
+  padding: '1.2rem 2rem',
+})}
 
   ${smallest({
-    fontSize: '1rem',
-    padding: '1rem',
-  })}
+  fontSize: '1rem',
+  padding: '1rem',
+})}
 
   &:focus {
     outline: none;
@@ -341,15 +341,15 @@ const Agreement = styled.span`
   font-size: 1.4rem;
 
   ${mobile({
-    fontSize: '1.25rem',
-    letterSpacing: '1px',
-    textAlign: 'left',
-  })}
+  fontSize: '1.25rem',
+  letterSpacing: '1px',
+  textAlign: 'left',
+})}
 
   ${smallest({
-    fontSize: '1rem',
-    letterSpacing: 0,
-  })}
+  fontSize: '1rem',
+  letterSpacing: 0,
+})}
 `;
 
 const Button = styled.button`
@@ -371,16 +371,16 @@ const Button = styled.button`
   }
 
   ${mobile({
-    width: '100%',
-    fontSize: '1.3rem',
-    padding: '1rem 2rem',
-    marginTop: '1.5rem',
-  })}
+  width: '100%',
+  fontSize: '1.3rem',
+  padding: '1rem 2rem',
+  marginTop: '1.5rem',
+})}
 
   ${smallest({
-    width: '100%',
-    fontSize: '1rem',
-  })}
+  width: '100%',
+  fontSize: '1rem',
+})}
 
   &:hover {
     -webkit-box-shadow: 0 1rem 2rem rgba($color-black, 0.25);

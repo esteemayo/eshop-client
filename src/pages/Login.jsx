@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { toast } from 'react-toastify';
 import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -24,13 +25,13 @@ const Login = () => {
     const username = usernameRef.current.value;
     const password = passwordRef.current.value;
 
-    const userData = {
+    const credentials = {
       username,
       password,
     };
 
     if (username && password) {
-      dispatch(loginUserAsync({ ...userData }));
+      dispatch(loginUserAsync({ credentials, toast }));
 
       const origin = location.state?.from?.pathname || '/';
       navigate(origin);

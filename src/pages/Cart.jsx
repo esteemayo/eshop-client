@@ -5,6 +5,7 @@ import StripeCheckout from 'react-stripe-checkout';
 import { useDispatch, useSelector } from 'react-redux';
 import { useCallback, useEffect, useState } from 'react';
 
+import { reset } from 'redux/cart/cartSlice';
 import { stripePayment } from 'services/stripeService';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
@@ -27,11 +28,12 @@ const Cart = () => {
         amount: total * 100,
       });
 
+      dispatch(reset());
       navigate('/success', { state: data });
     } catch (err) {
       console.log(err);
     }
-  }, [total, navigate, stripeToken]);
+  }, [total, navigate, stripeToken, dispatch]);
 
   useEffect(() => {
     stripeToken && total >= 1 && makePayment();

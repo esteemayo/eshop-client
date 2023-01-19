@@ -21,9 +21,9 @@ const Container = styled.div`
   padding: 2rem;
 
   ${mobile({
-    flexDirection: 'column',
-    padding: 0,
-  })}
+  flexDirection: 'column',
+  padding: 0,
+})}
 `;
 
 export default Categories;

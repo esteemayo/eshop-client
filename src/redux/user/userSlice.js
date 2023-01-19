@@ -11,9 +11,10 @@ import {
 
 export const loginUserAsync = createAsyncThunk(
   'user/login',
-  async ({ credentials }, { rejectWithValue }) => {
+  async ({ credentials, toast }, { rejectWithValue }) => {
     try {
       const { data } = await authAPI.login({ ...credentials });
+      toast.success('Login successful');
       return data.details;
     } catch (err) {
       return rejectWithValue(err.response.data);
@@ -23,9 +24,10 @@ export const loginUserAsync = createAsyncThunk(
 
 export const registerUserAsync = createAsyncThunk(
   'user/register',
-  async ({ credentials }, { rejectWithValue }) => {
+  async ({ credentials, toast }, { rejectWithValue }) => {
     try {
       const { data } = await authAPI.register({ ...credentials });
+      toast.success('User registered successfully');
       return data.details;
     } catch (err) {
       return rejectWithValue(err.response.data);

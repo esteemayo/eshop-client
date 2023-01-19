@@ -6,6 +6,7 @@ import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 
 import { logout } from 'redux/user/userSlice';
 import { mobile, small } from '../responsive';
+import { setLogout } from 'redux/user/userSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();

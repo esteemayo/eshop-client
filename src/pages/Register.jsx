@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import styled from 'styled-components';
 import { toast } from 'react-toastify';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -35,9 +35,7 @@ const Register = () => {
     setValues({ ...values, [name]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
+  const uploadFile = (file) => {
     const fileName = new Date().getTime() + file.name;
 
     const storage = getStorage(app);
@@ -66,21 +64,29 @@ const Register = () => {
       },
       () => {
         getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-          const { username, email, password, passwordConfirm } = values;
-
-          if (username && email && password && passwordConfirm) {
-            const credentials = {
-              ...values,
-              img: downloadURL,
-            };
-
-            dispatch(registerUserAsync({ credentials, toast }));
-            navigate('/', { replace: true });
-          }
+          setValues((prev) => ({ ...prev, img: downloadURL }));
         });
       }
     );
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { username, email, password, passwordConfirm } = values;
+    if (username && email && password && passwordConfirm) {
+      const credentials = {
+        ...values,
+      };
+
+      dispatch(registerUserAsync({ credentials, toast }));
+      navigate('/', { replace: true });
+    }
+  };
+
+  useEffect(() => {
+    file && uploadFile(file);
+  }, [file]);
 
   return (
     <Container>

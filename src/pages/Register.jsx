@@ -171,7 +171,9 @@ const Register = () => {
             By creating an account, I consent to the processing of my personal
             data in accordance with the <b>PRIVACY POLICY</b>
           </Agreement>
-          <Button disabled={isFetching || (perc >= 0 && perc < 100)}>Create</Button>
+          <Button disabled={isFetching || (perc > 0 && perc < 100)}>
+            Create
+          </Button>
           {error && <Error>Something went wrong...</Error>}
         </Form>
       </Wrapper>

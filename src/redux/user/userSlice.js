@@ -35,10 +35,6 @@ export const registerUserAsync = createAsyncThunk(
   }
 );
 
-export const logout = createAsyncThunk('user/logout', () => {
-  return localStorage.removeItem(tokenKey);
-});
-
 const token = authAPI.getJWT();
 const user = getFromStorage(tokenKey);
 
@@ -93,9 +89,6 @@ export const userSlice = createSlice({
       state.isFetching = false;
       state.user = null;
       state.error = true;
-    },
-    [logout.fulfilled]: (state) => {
-      state.user = null;
     },
   },
 });

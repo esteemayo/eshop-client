@@ -59,6 +59,12 @@ if (token) {
 export const userSlice = createSlice({
   name: 'user',
   initialState,
+  reducers: {
+    setLogout: (state) => {
+      removeFromStorage(tokenKey);
+      state.user = null;
+    },
+  },
   extraReducers: {
     [loginUserAsync.pending]: (state) => {
       state.isFetching = true;
@@ -91,5 +97,7 @@ export const userSlice = createSlice({
     },
   },
 });
+
+export const { setLogout } = userSlice.actions;
 
 export default userSlice.reducer;

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Badge } from '@material-ui/core';
 import { Link, NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 
 import { logout } from 'redux/user/userSlice';

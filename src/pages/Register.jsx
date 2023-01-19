@@ -49,7 +49,7 @@ const Register = () => {
       (snapshot) => {
         const progress =
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        console.log('Upload is ' + progress + '% done');
+        setPerc(Math.round(progress));
         switch (snapshot.state) {
           case 'paused':
             console.log('Upload is paused');
@@ -156,18 +156,22 @@ const Register = () => {
             <FormLabel htmlFor='passwordConfirm'>Confirm password</FormLabel>
           </FormContainer>
           <FormContainer>
-            <FormInput
-              type='file'
-              id='file'
-              onChange={(e) => setFile(e.target.files[0])}
-            />
+            {perc > 0 ? (
+              `Uploading: ${perc}%`
+            ) : (
+              <FormInput
+                type='file'
+                id='file'
+                onChange={(e) => setFile(e.target.files[0])}
+              />
+            )}
             <FormLabel htmlFor='file'>Image</FormLabel>
           </FormContainer>
           <Agreement>
             By creating an account, I consent to the processing of my personal
             data in accordance with the <b>PRIVACY POLICY</b>
           </Agreement>
-          <Button disabled={isFetching}>Create</Button>
+          <Button disabled={isFetching || (perc >= 0 && perc < 100)}>Create</Button>
           {error && <Error>Something went wrong...</Error>}
         </Form>
       </Wrapper>

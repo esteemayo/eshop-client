@@ -83,10 +83,10 @@ const Filter = styled.div`
   ${tabLand({ margin: '0 1rem' })}
 
   ${mobile({
-    margin: '0 2rem',
-    display: 'flex',
-    flexDirection: 'column',
-  })}
+  margin: '0 2rem',
+  display: 'flex',
+  flexDirection: 'column',
+})}
 `;
 
 const FilterText = styled.span`

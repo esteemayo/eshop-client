@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { Add, Remove } from '@material-ui/icons';
 import StripeCheckout from 'react-stripe-checkout';
 import { useDispatch, useSelector } from 'react-redux';
-import { useCallback, useEffect, useState } from 'react';
+import { Fragment, useCallback, useEffect, useState } from 'react';
 
 import { reset } from 'redux/cart/cartSlice';
 import { stripePayment } from 'services/stripeService';
@@ -66,8 +66,8 @@ const Cart = () => {
             {cart.map((item) => {
               const { _id: id, img, size, price, color, title, quantity } = item;
               return (
-                <>
-                  <Product key={id}>
+                <Fragment key={id}>
+                  <Product>
                     <ProductDetail>
                       <Image src={img} alt='' />
                       <Details>
@@ -93,7 +93,7 @@ const Cart = () => {
                     </PriceDetail>
                   </Product>
                   <Hr />
-                </>
+                </Fragment>
               );
             })}
           </Info>

@@ -64,10 +64,10 @@ const Cart = () => {
         <Bottom>
           <Info>
             {cart.map((item) => {
-              const { _id, img, size, price, color, title, quantity } = item;
+              const { _id: id, img, size, price, color, title, quantity } = item;
               return (
                 <>
-                  <Product key={_id}>
+                  <Product key={id}>
                     <ProductDetail>
                       <Image src={img} alt='' />
                       <Details>
@@ -75,7 +75,7 @@ const Cart = () => {
                           <strong>Product:</strong> {title}
                         </ProductName>
                         <ProductId>
-                          <strong>Id:</strong> {_id}
+                          <strong>Id:</strong> {id}
                         </ProductId>
                         <ProductColor color={color} />
                         <ProductSize>

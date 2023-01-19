@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -13,18 +14,21 @@ import app from '../firebase';
 import { mobile, smallest, tabLand } from 'responsive';
 import { registerUserAsync } from 'redux/user/userSlice';
 
+const initialState = {
+  name: '',
+  username: '',
+  email: '',
+  password: '',
+  passwordConfirm: '',
+};
+
 const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const [file, setFile] = useState(null);
-  const [values, setValues] = useState({
-    name: '',
-    username: '',
-    email: '',
-    password: '',
-    passwordConfirm: '',
-  });
   const { error, isFetching } = useSelector((state) => state.user);
+
+  const [file, setFile] = useState(null);
+  const [values, setValues] = useState(initialState);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
@@ -65,12 +69,12 @@ const Register = () => {
           const { username, email, password, passwordConfirm } = values;
 
           if (username && email && password && passwordConfirm) {
-            const newUser = {
+            const credentials = {
               ...values,
               img: downloadURL,
             };
 
-            dispatch(registerUserAsync({ ...newUser }));
+            dispatch(registerUserAsync({ credentials, toast }));
             navigate('/', { replace: true });
           }
         });

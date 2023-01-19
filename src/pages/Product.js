@@ -4,8 +4,8 @@ import { useLocation } from 'react-router-dom';
 import { Add, Remove } from '@material-ui/icons';
 import { useEffect, useState, useCallback } from 'react';
 
-import { addProduct } from 'redux/cart';
 import { mobile, tabLand } from 'responsive';
+import { addProduct } from 'redux/cart/cartSlice';
 import { getProductBySlug } from 'services/productService';
 
 const Product = () => {
@@ -110,10 +110,10 @@ const Wrapper = styled.div`
   display: flex;
 
   ${tabLand({
-    padding: '1rem',
-    flexDirection: 'column',
-    marginBottom: '4rem',
-  })}
+  padding: '1rem',
+  flexDirection: 'column',
+  marginBottom: '4rem',
+})}
 `;
 
 const ImgContainer = styled.div`
@@ -144,9 +144,9 @@ const Title = styled.h1`
   text-transform: capitalize;
 
   ${mobile({
-    fontSize: '3rem',
-    fontWeight: 100,
-  })}
+  fontSize: '3rem',
+  fontWeight: 100,
+})}
 `;
 
 const Description = styled.p`
@@ -154,9 +154,9 @@ const Description = styled.p`
   margin: 2rem 0;
 
   ${mobile({
-    fontSize: '1.7rem',
-    margin: '1rem 0',
-  })}
+  fontSize: '1.7rem',
+  margin: '1rem 0',
+})}
 `;
 
 const Price = styled.span`
@@ -204,10 +204,10 @@ const FilterColor = styled.div`
   cursor: pointer;
 
   ${mobile({
-    width: '1.7rem',
-    height: '1.7rem',
-    margin: '0 0.3rem',
-  })}
+  width: '1.7rem',
+  height: '1.7rem',
+  margin: '0 0.3rem',
+})}
 `;
 
 const FilterSize = styled.select`
@@ -260,9 +260,9 @@ const Amount = styled.span`
   margin: 0 0.5rem;
 
   ${mobile({
-    width: '2.7rem',
-    height: '2.7rem',
-  })}
+  width: '2.7rem',
+  height: '2.7rem',
+})}
 `;
 
 const Button = styled.button`
@@ -279,10 +279,10 @@ const Button = styled.button`
   transition: all 0.5s ease;
 
   ${mobile({
-    fontWeight: 300,
-    padding: '1.3rem',
-    border: '1px solid currentColor',
-  })}
+  fontWeight: 300,
+  padding: '1.3rem',
+  border: '1px solid currentColor',
+})}
 
   &:hover {
     background-color: #f8f4f4;

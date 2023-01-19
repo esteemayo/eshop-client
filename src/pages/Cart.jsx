@@ -1,14 +1,15 @@
-import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import { Add, Remove } from '@material-ui/icons';
 import StripeCheckout from 'react-stripe-checkout';
+import { useDispatch, useSelector } from 'react-redux';
 import { useCallback, useEffect, useState } from 'react';
 
 import { stripePayment } from 'services/stripeService';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Cart = () => {
+  const dispatch = useDispatch();
   const { cart, total } = useSelector((state) => state.cart);
   const KEY = process.env.REACT_APP_STRIPE_KEY;
 

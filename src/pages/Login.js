@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-import { loginUserAsync } from 'redux/user';
+import { loginUserAsync } from 'redux/user/userSlice';
 import { mobile, smallest, tabLand } from 'responsive';
 
 const Login = () => {
@@ -112,9 +112,9 @@ const Wrapper = styled.div`
   }
 
   ${tabLand({
-    width: '65%',
-    padding: '3rem',
-  })}
+  width: '65%',
+  padding: '3rem',
+})}
 
   ${mobile({ width: '75%' })}
 
@@ -129,13 +129,13 @@ const Title = styled.h1`
   margin-bottom: 1rem;
 
   ${mobile({
-    fontSize: '2rem',
-    fontWeight: 400,
-    marginBottom: '0.5rem',
-    backgroundImage: 'linear-gradient(to right, #06dddd, #008080)',
-    WebkitBackgroundClip: 'text !important',
-    backgroundClip: 'text !important',
-  })}
+  fontSize: '2rem',
+  fontWeight: 400,
+  marginBottom: '0.5rem',
+  backgroundImage: 'linear-gradient(to right, #06dddd, #008080)',
+  WebkitBackgroundClip: 'text !important',
+  backgroundClip: 'text !important',
+})}
 
   &::after {
     display: block;
@@ -192,14 +192,14 @@ const FormInput = styled.input`
   transition: all 0.5s ease;
 
   ${mobile({
-    fontSize: '1.3rem',
-    padding: '1.2rem 2rem',
-  })}
+  fontSize: '1.3rem',
+  padding: '1.2rem 2rem',
+})}
 
   ${smallest({
-    fontSize: '1rem',
-    padding: '1rem',
-  })}
+  fontSize: '1rem',
+  padding: '1rem',
+})}
 
   &:focus {
     outline: none;
@@ -239,9 +239,9 @@ const Button = styled.button`
   transition: all 0.5s ease;
 
   ${mobile({
-    fontSize: '1.3rem',
-    padding: '1rem 2rem',
-  })}
+  fontSize: '1.3rem',
+  padding: '1rem 2rem',
+})}
 
   ${smallest({ fontSize: '1rem' })}
 

@@ -12,10 +12,10 @@ const Product = () => {
   const { pathname } = useLocation();
   const slug = pathname.split('/')[2];
 
+  const [size, setSize] = useState('');
+  const [color, setColor] = useState('');
   const [product, setProduct] = useState({});
   const [quantity, setQuantity] = useState(1);
-  const [color, setColor] = useState('');
-  const [size, setSize] = useState('');
 
   const dispatch = useDispatch();
 

@@ -9,12 +9,13 @@ import { setLogout } from 'redux/user/userSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { user } = useSelector((state) => state.user);
   const { quantity } = useSelector((state) => state.cart);
 
   const handleLogout = () => {
-    dispatch(logout());
-    window.location.replace('/login');
+    dispatch(setLogout());
+    navigate('/');
   };
 
   return (

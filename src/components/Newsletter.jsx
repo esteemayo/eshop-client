@@ -45,10 +45,10 @@ const Title = styled.h1`
   margin: 2rem;
 
   ${mobile({
-    fontSize: '5rem',
-    fontWeight: 400,
-    margin: '1rem',
-  })}
+  fontSize: '5rem',
+  fontWeight: 400,
+  margin: '1rem',
+})}
 `;
 
 const Description = styled.div`
@@ -57,10 +57,10 @@ const Description = styled.div`
   margin-bottom: 2rem;
 
   ${mobile({
-    fontSize: '2rem',
-    textAlign: 'center',
-    marginBottom: '1.2rem',
-  })}
+  fontSize: '2rem',
+  textAlign: 'center',
+  marginBottom: '1.2rem',
+})}
 `;
 
 const InputContainer = styled.div`

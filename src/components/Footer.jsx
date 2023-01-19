@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import {
   Facebook,
   Instagram,
@@ -8,8 +10,6 @@ import {
   Room,
   Twitter,
 } from '@material-ui/icons';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
@@ -95,8 +95,8 @@ const Container = styled.div`
   display: flex;
 
   ${tab({
-    flexDirection: 'column',
-  })}
+  flexDirection: 'column',
+})}
 `;
 
 const Left = styled.div`
@@ -108,8 +108,8 @@ const Left = styled.div`
   justify-content: center;
 
   ${tab({
-    padding: '0 8rem',
-  })}
+  padding: '0 8rem',
+})}
 
   ${mobile({ padding: '2rem' })}
 `;
@@ -129,10 +129,10 @@ const Description = styled.p`
   margin: 2rem 0;
 
   ${mobile({
-    fontSize: '1.35rem',
-    margin: '1.5rem 0',
-    letterSpacing: '1px',
-  })}
+  fontSize: '1.35rem',
+  margin: '1.5rem 0',
+  letterSpacing: '1px',
+})}
 `;
 
 const SocialContainer = styled.div`
@@ -151,14 +151,14 @@ const SocialIcon = styled.div`
   align-items: center;
 
   ${laptop({
-    width: '3.5rem',
-    height: '3.5rem',
-  })}
+  width: '3.5rem',
+  height: '3.5rem',
+})}
 
   ${mobile({
-    width: '3rem',
-    height: '3rem',
-  })}
+  width: '3rem',
+  height: '3rem',
+})}
 
   &:not(:last-of-type) {
     margin-right: 2rem;
@@ -172,9 +172,9 @@ const Center = styled.div`
   padding: 2rem;
 
   ${tab({
-    padding: '3rem 7rem',
-    margin: '0 auto',
-  })}
+  padding: '3rem 7rem',
+  margin: '0 auto',
+})}
 
   ${mobile({ display: 'none' })}
 `;
@@ -185,9 +185,9 @@ const Title = styled.h3`
   margin-bottom: 3rem;
 
   ${mobile({
-    fontSize: '1.8rem',
-    fontWeight: 400,
-  })}
+  fontSize: '1.8rem',
+  fontWeight: 400,
+})}
 `;
 
 const List = styled.ul`
@@ -210,13 +210,13 @@ const Right = styled.div`
   padding: 2rem;
 
   ${tab({
-    padding: '2rem 8rem',
-  })}
+  padding: '2rem 8rem',
+})}
 
   ${mobile({
-    padding: '2rem',
-    backgroundColor: '#fff8f8',
-  })}
+  padding: '2rem',
+  backgroundColor: '#fff8f8',
+})}
 `;
 
 const ContactItem = styled.div`
@@ -242,13 +242,13 @@ const CopyRightText = styled.p`
   margin: 2rem 0;
 
   ${tab({
-    padding: '0 8rem',
-  })}
+  padding: '0 8rem',
+})}
 
   ${mobile({
-    fontSize: '1.25rem',
-    margin: '1.5rem 0',
-  })}
+  fontSize: '1.25rem',
+  margin: '1.5rem 0',
+})}
 
   ${smallest({ fontSize: '1rem' })}
 `;

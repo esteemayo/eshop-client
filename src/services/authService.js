@@ -1,7 +1,7 @@
 import http from './httpService';
+import { tokenKey } from 'utils';
 
 const apiEndpoint = '/auth';
-const tokenKey = 'accessToken';
 
 export function login(credentials) {
   return http.post(`${apiEndpoint}/login`, credentials);
@@ -12,5 +12,5 @@ export function register(credentials) {
 }
 
 export function getJWT() {
-  return localStorage.getItem(tokenKey);
+  return localStorage.getItem(tokenKey)?.accessToken;
 }

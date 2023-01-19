@@ -67,7 +67,7 @@ const Cart = () => {
                 <>
                   <Product key={_id}>
                     <ProductDetail>
-                      <Image src={img} alt={title} />
+                      <Image src={img} alt='' />
                       <Details>
                         <ProductName>
                           <strong>Product:</strong> {title}

@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 
-import { logout } from 'redux/user';
+import { logout } from 'redux/user/userSlice';
 import { mobile, small } from '../responsive';
 
 const Navbar = () => {
@@ -148,10 +148,10 @@ const Logo = styled.h1`
   color: #008b8b;
 
   ${mobile({
-    fontSize: '2.8rem',
-    display: 'flex',
-    justifyContent: 'flex-end',
-  })}
+  fontSize: '2.8rem',
+  display: 'flex',
+  justifyContent: 'flex-end',
+})}
 
   ${small({ fontSize: '2.4rem' })}
 `;
@@ -164,9 +164,9 @@ const Right = styled.div`
   align-items: center;
 
   ${mobile({
-    flex: 2,
-    justifyContent: 'center',
-  })}
+  flex: 2,
+  justifyContent: 'center',
+})}
 `;
 
 const MenuItem = styled.div`
@@ -176,9 +176,9 @@ const MenuItem = styled.div`
   text-transform: uppercase;
 
   ${mobile({
-    fontSize: '1.2rem',
-    marginLeft: '1rem',
-  })}
+  fontSize: '1.2rem',
+  marginLeft: '1rem',
+})}
 `;
 
 export default Navbar;

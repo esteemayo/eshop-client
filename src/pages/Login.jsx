@@ -8,11 +8,12 @@ import { loginUserAsync } from 'redux/user/userSlice';
 import { mobile, smallest, tabLand } from 'responsive';
 
 const Login = () => {
-  const usernameRef = useRef();
-  const passwordRef = useRef();
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
+
+  const usernameRef = useRef();
+  const passwordRef = useRef();
   const { error, isFetching } = useSelector((state) => state.user);
 
   useEffect(() => {

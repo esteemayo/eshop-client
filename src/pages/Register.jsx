@@ -27,6 +27,7 @@ const Register = () => {
   const navigate = useNavigate();
   const { error, isFetching } = useSelector((state) => state.user);
 
+  const [perc, setPerc] = useState(0);
   const [file, setFile] = useState(null);
   const [values, setValues] = useState(initialState);
 

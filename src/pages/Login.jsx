@@ -11,10 +11,10 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
+  const { error, isFetching } = useSelector((state) => state.user);
 
   const usernameRef = useRef();
   const passwordRef = useRef();
-  const { error, isFetching } = useSelector((state) => state.user);
 
   useEffect(() => {
     usernameRef.current.focus();

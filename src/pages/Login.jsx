@@ -4,8 +4,8 @@ import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-import { loginUserAsync, reset } from 'redux/user/userSlice';
 import { mobile, smallest, tabLand } from 'responsive';
+import { loginUserAsync, reset } from 'redux/user/userSlice';
 
 const Login = () => {
   const dispatch = useDispatch();

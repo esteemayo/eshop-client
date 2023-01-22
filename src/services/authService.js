@@ -1,5 +1,5 @@
 import http from './httpService';
-import { tokenKey } from 'utils';
+import { getFromStorage, tokenKey } from 'utils';
 
 const apiEndpoint = '/auth';
 
@@ -12,5 +12,5 @@ export function register(credentials) {
 }
 
 export function getJWT() {
-  return localStorage.getItem(tokenKey)?.accessToken;
+  return getFromStorage(tokenKey)?.accessToken;
 }

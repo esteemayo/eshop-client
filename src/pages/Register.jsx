@@ -81,7 +81,6 @@ const Register = () => {
       };
 
       dispatch(registerUserAsync({ credentials, toast }));
-      isSuccess && navigate('/', { replace: true });
     }
   };
 
@@ -90,8 +89,9 @@ const Register = () => {
   }, [file]);
 
   useEffect(() => {
+    isSuccess && navigate('/', { replace: true });
     dispatch(reset());
-  }, [dispatch]);
+  }, [isSuccess, navigate, dispatch]);
 
   return (
     <Container>

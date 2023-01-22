@@ -4,14 +4,14 @@ import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-import { loginUserAsync } from 'redux/user/userSlice';
+import { loginUserAsync, reset } from 'redux/user/userSlice';
 import { mobile, smallest, tabLand } from 'responsive';
 
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
-  const { error, isFetching } = useSelector((state) => state.user);
+  const { isError, isSuccess, isFetching } = useSelector((state) => state.user);
 
   const usernameRef = useRef();
   const passwordRef = useRef();
@@ -31,7 +31,7 @@ const Login = () => {
       dispatch(loginUserAsync({ credentials, toast }));
 
       const origin = location.state?.from?.pathname || '/';
-      navigate(origin);
+      isSuccess && navigate(origin);
       // navigate('/', { replace: true });
     }
   };
@@ -39,6 +39,10 @@ const Login = () => {
   useEffect(() => {
     usernameRef.current.focus();
   });
+
+  useEffect(() => {
+    dispatch(reset());
+  }, [dispatch])
 
   return (
     <Container>
@@ -66,7 +70,7 @@ const Login = () => {
             <FormLabel htmlFor='password'>Password</FormLabel>
           </FormContainer>
           <Button disabled={isFetching}>Login</Button>
-          {error && <Error>Something went wrong...</Error>}
+          {isError && <Error>Something went wrong...</Error>}
           <Link>Do not you remember the password?</Link>
           <Link>Create a new account</Link>
         </Form>

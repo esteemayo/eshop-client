@@ -10,7 +10,7 @@ import {
 } from 'utils';
 
 export const loginUserAsync = createAsyncThunk(
-  'user/login',
+  'auth/login',
   async ({ credentials, toast }, { rejectWithValue }) => {
     try {
       const { data } = await authAPI.login({ ...credentials });
@@ -23,7 +23,7 @@ export const loginUserAsync = createAsyncThunk(
 );
 
 export const registerUserAsync = createAsyncThunk(
-  'user/register',
+  'auth/register',
   async ({ credentials, toast }, { rejectWithValue }) => {
     try {
       const { data } = await authAPI.register({ ...credentials });

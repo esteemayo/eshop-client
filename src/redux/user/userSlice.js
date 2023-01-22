@@ -41,7 +41,8 @@ const user = getFromStorage(tokenKey);
 const initialState = {
   user: user ?? null,
   isFetching: false,
-  error: false,
+  isSuccess: false,
+  isError: false,
 };
 
 if (token) {
@@ -60,7 +61,8 @@ export const userSlice = createSlice({
   reducers: {
     reset: (state) => {
       state.isFetching = false;
-      state.error = false;
+      state.isSuccess = false;
+      state.isError = false;
     },
     setLogout: (state) => {
       removeFromStorage(tokenKey);
@@ -73,26 +75,30 @@ export const userSlice = createSlice({
     },
     [loginUserAsync.fulfilled]: (state, { payload }) => {
       state.isFetching = false;
+      state.isSuccess = true;
       setToStorage(tokenKey, payload);
       state.user = payload;
     },
     [loginUserAsync.rejected]: (state) => {
       state.isFetching = false;
+      state.isSuccess = false;
       state.user = null;
-      state.error = true;
+      state.isError = true;
     },
     [registerUserAsync.pending]: (state) => {
       state.isFetching = true;
     },
     [registerUserAsync.fulfilled]: (state, { payload }) => {
       state.isFetching = false;
+      state.isSuccess = true;
       setToStorage(tokenKey, payload);
       state.user = payload;
     },
     [registerUserAsync.rejected]: (state) => {
       state.isFetching = false;
+      state.isSuccess = false;
       state.user = null;
-      state.error = true;
+      state.isError = true;
     },
   },
 });

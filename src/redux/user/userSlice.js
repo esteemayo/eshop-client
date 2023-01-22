@@ -58,6 +58,10 @@ export const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
+    reset: (state) => {
+      state.isFetching = false;
+      state.error = false;
+    },
     setLogout: (state) => {
       removeFromStorage(tokenKey);
       state.user = null;
@@ -93,6 +97,6 @@ export const userSlice = createSlice({
   },
 });
 
-export const { setLogout } = userSlice.actions;
+export const { reset, setLogout } = userSlice.actions;
 
 export default userSlice.reducer;

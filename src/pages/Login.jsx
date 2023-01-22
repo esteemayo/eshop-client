@@ -16,10 +16,6 @@ const Login = () => {
   const usernameRef = useRef();
   const passwordRef = useRef();
 
-  useEffect(() => {
-    usernameRef.current.focus();
-  });
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -39,6 +35,10 @@ const Login = () => {
       // navigate('/', { replace: true });
     }
   };
+
+  useEffect(() => {
+    usernameRef.current.focus();
+  });
 
   return (
     <Container>

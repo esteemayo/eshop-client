@@ -38,7 +38,7 @@ const Login = () => {
 
   useEffect(() => {
     usernameRef.current.focus();
-  });
+  }, []);
 
   useEffect(() => {
     dispatch(reset());

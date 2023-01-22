@@ -2,9 +2,7 @@ import http from './httpService';
 
 const apiEndpoint = '/products';
 
-const productUrl = (id) => {
-  return `${apiEndpoint}/${id}`;
-};
+const productUrl = (id) => `${apiEndpoint}/${id}`;
 
 export function getProducts(category) {
   return http.get(

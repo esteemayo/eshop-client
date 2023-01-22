@@ -12,7 +12,7 @@ import {
 
 import app from '../firebase';
 import { mobile, smallest, tabLand } from 'responsive';
-import { registerUserAsync } from 'redux/user/userSlice';
+import { registerUserAsync, reset } from 'redux/user/userSlice';
 
 const initialState = {
   name: '',
@@ -25,7 +25,7 @@ const initialState = {
 const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { error, isFetching } = useSelector((state) => state.user);
+  const { isError, isSuccess, isFetching } = useSelector((state) => state.user);
 
   const [perc, setPerc] = useState(0);
   const [file, setFile] = useState(null);
@@ -81,13 +81,17 @@ const Register = () => {
       };
 
       dispatch(registerUserAsync({ credentials, toast }));
-      navigate('/', { replace: true });
+      isSuccess && navigate('/', { replace: true });
     }
   };
 
   useEffect(() => {
     file && uploadFile(file);
   }, [file]);
+
+  useEffect(() => {
+    dispatch(reset());
+  }, [dispatch]);
 
   return (
     <Container>
@@ -175,7 +179,7 @@ const Register = () => {
           <Button disabled={isFetching || (perc > 0 && perc < 100)}>
             Create
           </Button>
-          {error && <Error>Something went wrong...</Error>}
+          {isError && <Error>Something went wrong...</Error>}
         </Form>
       </Wrapper>
     </Container>

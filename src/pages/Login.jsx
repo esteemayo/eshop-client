@@ -42,7 +42,7 @@ const Login = () => {
 
   useEffect(() => {
     dispatch(reset());
-  }, [dispatch])
+  }, [dispatch]);
 
   return (
     <Container>

@@ -46,7 +46,7 @@ const initialState = {
 
 if (token) {
   const decodedToken = jwtDecode(token);
-  const expiredToken = decodedToken.exp * 1000
+  const expiredToken = decodedToken.exp * 1000;
 
   if (Date.now() > expiredToken) {
     removeFromStorage(tokenKey);

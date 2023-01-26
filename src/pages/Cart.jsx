@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import { Add, Remove } from '@material-ui/icons';
 import StripeCheckout from 'react-stripe-checkout';
+import { NumericFormat } from 'react-number-format';
 import { useDispatch, useSelector } from 'react-redux';
 import { Fragment, useCallback, useEffect, useState } from 'react';
 
@@ -89,7 +90,14 @@ const Cart = () => {
                         <ProductAmount>{quantity}</ProductAmount>
                         <Remove />
                       </ProductAmountContainer>
-                      <ProductPrice>$ {price * quantity}</ProductPrice>
+                      <ProductPrice>
+                        <NumericFormat
+                          value={price * quantity}
+                          displayType={'text'}
+                          thousandSeparator={true}
+                          prefix={'$'}
+                        />
+                      </ProductPrice>
                     </PriceDetail>
                   </Product>
                   <Hr />
@@ -113,7 +121,14 @@ const Cart = () => {
             </SummaryItem>
             <SummaryItem type='total'>
               <SummaryItemText>Total</SummaryItemText>
-              <SummaryItemPrice>$ {total}</SummaryItemPrice>
+              <SummaryItemPrice>
+                <NumericFormat
+                  value={total}
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
+              </SummaryItemPrice>
             </SummaryItem>
             <StripeCheckout
               name='eShop'

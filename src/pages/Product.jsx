@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { Add, Remove } from '@material-ui/icons';
+import { NumericFormat } from 'react-number-format';
 import { useEffect, useState, useCallback } from 'react';
 
 import { mobile, tabLand } from 'responsive';
@@ -56,7 +57,14 @@ const Product = () => {
         <InfoContainer>
           <Title>{product.title}</Title>
           <Description>{product.desc}</Description>
-          <Price>$ {product.price}</Price>
+          <Price>
+            <NumericFormat
+              value={product.price}
+              displayType={'text'}
+              thousandSeparator={true}
+              prefix={'$'}
+            />
+          </Price>
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>

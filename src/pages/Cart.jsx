@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import { Add, Remove } from '@material-ui/icons';
 import StripeCheckout from 'react-stripe-checkout';

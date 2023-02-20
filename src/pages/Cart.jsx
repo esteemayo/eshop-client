@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import StripeCheckout from 'react-stripe-checkout';
-import { NumericFormat } from 'react-number-format';
+import { Add, Remove } from '@material-ui/icons';
 import { useDispatch, useSelector } from 'react-redux';
 import { Fragment, useCallback, useEffect, useState } from 'react';
 

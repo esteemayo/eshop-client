@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NumericFormat } from 'react-number-format';
 import { Fragment, useCallback, useEffect, useState } from 'react';
 
-import { reset } from 'redux/cart/cartSlice';
 import { stripePayment } from 'services/stripeService';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 

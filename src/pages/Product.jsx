@@ -5,7 +5,6 @@ import { NumericFormat } from 'react-number-format';
 import { Add, Remove } from '@material-ui/icons';
 import { useEffect, useState, useCallback } from 'react';
 
-import { mobile, tabLand } from 'responsive';
 import { addProduct } from 'redux/cart/cartSlice';
 import { getProductBySlug } from 'services/productService';
 

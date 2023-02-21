@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { FaceOutlined, Visibility, VisibilityOff } from '@material-ui/icons';
 import {
   getStorage,
   ref,

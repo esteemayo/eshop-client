@@ -124,6 +124,7 @@ const Register = () => {
                 <FormLabel htmlFor={id}>{label}</FormLabel>
                 {name === 'name' && <PersonOutline className='username__icon' />}
                 {name === 'username' && <FaceOutlined className='username__icon' />}
+                {name === 'email' && <EmailOutlined className='username__icon' />}
               </FormContainer>
             );
           })}

@@ -13,7 +13,7 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
-  const { message, isSuccess, isFetching } = useSelector((state) => state.user);
+  const { user, message, isSuccess, isFetching } = useSelector((state) => state.user);
 
   const usernameRef = useRef();
   const passwordRef = useRef();

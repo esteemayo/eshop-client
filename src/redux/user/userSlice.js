@@ -62,7 +62,7 @@ export const userSlice = createSlice({
     reset: (state) => {
       state.isFetching = false;
       state.isSuccess = false;
-      state.isError = false;
+      state.message = false;
     },
     setLogout: (state) => {
       removeFromStorage(tokenKey);

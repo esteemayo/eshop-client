@@ -21,48 +21,48 @@ function App() {
 
   return (
     <ThemeProvider>
-    <Router>
-      <Routes>
-        <Route path='/' element={<SharedLayout />}>
-          <Route index element={<Home />} />
-          <Route path='products/:category' element={<ProductList />} />
-          <Route path='product/:slug' element={<Product />} />
-          <Route
-            path='register'
-            element={
-              <ProtectedRoute>
-                <Register />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path='login'
-            element={
-              <ProtectedRoute>
-                <Login />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path='cart'
-            element={
-              <AuthRoute>
-                <Cart />
-              </AuthRoute>
-            }
-          />
-          <Route
-            path='success'
-            element={
-              <AuthRoute>
-                <Success />
-              </AuthRoute>
-            }
-          />
-          <Route path='*' element={<NotFound />} />
-        </Route>
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path='/' element={<SharedLayout />}>
+            <Route index element={<Home />} />
+            <Route path='products/:category' element={<ProductList />} />
+            <Route path='product/:slug' element={<Product />} />
+            <Route
+              path='register'
+              element={
+                <ProtectedRoute>
+                  <Register />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path='login'
+              element={
+                <ProtectedRoute>
+                  <Login />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path='cart'
+              element={
+                <AuthRoute>
+                  <Cart />
+                </AuthRoute>
+              }
+            />
+            <Route
+              path='success'
+              element={
+                <AuthRoute>
+                  <Success />
+                </AuthRoute>
+              }
+            />
+            <Route path='*' element={<NotFound />} />
+          </Route>
+        </Routes>
+      </Router>
     </ThemeProvider>
   );
 }

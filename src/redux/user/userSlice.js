@@ -98,7 +98,7 @@ export const userSlice = createSlice({
       state.isFetching = false;
       state.isSuccess = false;
       state.user = null;
-      state.isError = payload.message;
+      state.message = payload.message;
     },
   },
 });

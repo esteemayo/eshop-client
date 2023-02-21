@@ -31,6 +31,7 @@ export const registerInputs = [
     id: 'passwordConfirm',
     name: 'passwordConfirm',
     type: 'password',
+    label: 'Confirm password',
     placeholder: '********',
   },
 ];

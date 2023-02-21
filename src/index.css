@@ -74,7 +74,8 @@ a:visited {
   color: #008b8b !important;
 }
 
-.username__icon {
+.username__icon,
+.register__icon {
   cursor: text;
 }
 

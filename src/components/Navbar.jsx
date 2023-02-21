@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Badge } from '@material-ui/core';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';

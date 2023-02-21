@@ -38,7 +38,7 @@ const Login = () => {
       dispatch(loginUserAsync({ credentials, toast }));
 
       const origin = location.state?.from?.pathname || '/';
-      isSuccess && navigate(origin);
+      user && isSuccess && navigate(origin);
       // navigate('/', { replace: true });
     }
   };

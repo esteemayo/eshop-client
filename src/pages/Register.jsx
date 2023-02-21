@@ -106,7 +106,6 @@ const Register = () => {
                 <FormInput
                   type={type}
                   name={name}
-                  id={id}
                   placeholder={placeholder}
                   required
                   autoFocus={name === 'name' ? true : false}

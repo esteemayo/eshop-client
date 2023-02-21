@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { useDispatch } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { Add, Remove } from '@material-ui/icons';
 import { NumericFormat } from 'react-number-format';

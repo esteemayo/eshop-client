@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import { toast } from 'react-toastify';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { FaceOutlined, Visibility, VisibilityOff } from '@material-ui/icons';
+import { FaceOutlined, Visibility, VisibilityOff, VisibilityOffOutlined, VisibilityOutlined } from '@material-ui/icons';
 
 import { mobile, smallest, tabLand } from 'responsive';
 import { useState } from 'react';

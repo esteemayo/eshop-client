@@ -17,6 +17,8 @@ import {
 import { useSelector } from 'react-redux';
 
 function App() {
+  const { darkMode } = useSelector((state) => state.darkMode);
+
   return (
     <Router>
       <Routes>

@@ -150,7 +150,7 @@ const Register = () => {
                       className='password__icon'
                     />
                   ) : (
-                    <Visibility
+                    <VisibilityOutlined
                       onClick={handleShowPassword}
                       className='password__icon'
                     />

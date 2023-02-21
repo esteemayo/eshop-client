@@ -59,6 +59,7 @@ const Login = () => {
               ref={usernameRef}
             />
             <FormLabel htmlFor='username'>Username</FormLabel>
+            <FaceOutlined />
           </FormContainer>
           <FormContainer>
             <FormInput

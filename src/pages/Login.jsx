@@ -88,7 +88,9 @@ const Login = () => {
               />
             )}
           </FormContainer>
-          <Button disabled={isFetching}>Login</Button>
+          <Button disabled={isFetching}>
+            {isFetching ? 'Processing...' : 'Login'}
+          </Button>
           {message && <Error>{message}</Error>}
           <Link>Do not you remember the password?</Link>
           <Link>Create a new account</Link>

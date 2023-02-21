@@ -118,7 +118,7 @@ const Register = () => {
               <FormContainer>
                 <FormInput
                   id={id}
-                  type={type}
+                  type={showPassword ? 'text' : type}
                   name={name}
                   placeholder={placeholder}
                   required

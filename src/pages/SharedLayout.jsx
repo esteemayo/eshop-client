@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify';
 
 import Navbar from 'components/Navbar';
 import Announcement from 'components/Announcement';
+import Footer from 'components/Footer';
 
 import 'react-toastify/dist/ReactToastify.css';
 

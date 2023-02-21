@@ -3,7 +3,14 @@ import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { EmailOutlined, FaceOutlined, PersonOutline, Publish, Visibility, VisibilityOff } from '@material-ui/icons';
+import { 
+  EmailOutlined, 
+  FaceOutlined, 
+  PersonOutline,
+   Publish,
+   Visibility,
+   VisibilityOff 
+} from '@material-ui/icons';
 import {
   getStorage,
   ref,

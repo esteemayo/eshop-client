@@ -105,7 +105,7 @@ const Register = () => {
   useEffect(() => {
     user && isSuccess && navigate('/', { replace: true });
     return () => dispatch(reset());
-  }, [isSuccess, navigate, dispatch]);
+  }, [user, isSuccess, navigate, dispatch]);
 
   return (
     <Container>

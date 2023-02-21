@@ -77,5 +77,3 @@ const popularProducts = [
     img: 'https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png',
   },
 ];
-
-export { sliderItems, categories, popularProducts };

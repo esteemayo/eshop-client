@@ -99,19 +99,23 @@ const Register = () => {
       <Wrapper>
         <Title>Create an account</Title>
         <Form onSubmit={handleSubmit}>
-          <FormContainer>
-            <FormInput
-              type='text'
-              name='name'
-              id='name'
-              placeholder='Name'
-              required
-              autoFocus
-              value={values.name}
-              onChange={handleChange}
-            />
-            <FormLabel htmlFor='username'>Name</FormLabel>
-          </FormContainer>
+          {registerInputs.map((input) => {
+            return (
+              <FormContainer>
+                <FormInput
+                  type='text'
+                  name='name'
+                  id='name'
+                  placeholder='Name'
+                  required
+                  autoFocus
+                  value={values.name}
+                  onChange={handleChange}
+                />
+                <FormLabel htmlFor='username'>Name</FormLabel>
+              </FormContainer>
+            );
+          })}
           <FormContainer>
             {perc > 0 ? (
               `Uploading: ${perc}%`

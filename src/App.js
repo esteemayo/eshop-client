@@ -20,6 +20,7 @@ function App() {
   const { darkMode } = useSelector((state) => state.darkMode);
 
   return (
+    <ThemeProvider>
     <Router>
       <Routes>
         <Route path='/' element={<SharedLayout />}>
@@ -62,6 +63,7 @@ function App() {
         </Route>
       </Routes>
     </Router>
+    </ThemeProvider>
   );
 }
 

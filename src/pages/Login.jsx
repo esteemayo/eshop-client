@@ -41,7 +41,7 @@ const Login = () => {
   }, []);
 
   useEffect(() => {
-    dispatch(reset());
+    return () => dispatch(reset());
   }, [dispatch]);
 
   return (

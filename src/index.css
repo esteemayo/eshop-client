@@ -73,3 +73,20 @@ a:visited {
 .active {
   color: #008b8b !important;
 }
+
+.username__icon {
+  cursor: text;
+}
+
+.password__icon {
+  cursor: pointer;
+}
+
+.username__icon,
+.password__icon {
+  font-size: 2rem !important;
+  color: #008080;
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+}

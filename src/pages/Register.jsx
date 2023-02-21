@@ -130,6 +130,13 @@ const Register = () => {
                 {name === 'name' && <PersonOutline className='username__icon' />}
                 {name === 'username' && <FaceOutlined className='username__icon' />}
                 {name === 'email' && <EmailOutlined className='username__icon' />}
+                {name === 'password' && (
+                  showPassword ? (
+                    <VisibilityOff className='password__icon' />
+                  ) : (
+                    <Visibility className='password__icon' />
+                  )
+                )}
               </FormContainer>
             );
           })}

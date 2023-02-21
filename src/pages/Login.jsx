@@ -165,6 +165,8 @@ const Form = styled.form`
 `;
 
 const FormContainer = styled.div`
+  position: relative;
+
   &:not(:last-child) {
     margin-bottom: 1rem;
 

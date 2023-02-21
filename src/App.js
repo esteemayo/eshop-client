@@ -15,6 +15,7 @@ import {
   SharedLayout,
   Success,
 } from 'pages/index';
+import { darkTheme, lightTheme } from 'utils/Theme';
 
 function App() {
   const { darkMode } = useSelector((state) => state.darkMode);

@@ -109,8 +109,8 @@ const Register = () => {
                   id={id}
                   placeholder={placeholder}
                   required
-                  autoFocus
-                  value={values.name}
+                  autoFocus={name === 'name' ? true : false}
+                  value={values[name]}
                   onChange={handleChange}
                 />
                 <FormLabel htmlFor={id}>{label}</FormLabel>

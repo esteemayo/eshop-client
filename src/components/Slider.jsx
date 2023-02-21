@@ -27,7 +27,7 @@ const Slider = () => {
           return (
             <Slide bg='f5fafd' key={id}>
               <ImgContainer>
-                <Image src={img} />
+                <Image src={img} alt='' />
               </ImgContainer>
               <InfoContainer>
                 <Title>{title}</Title>

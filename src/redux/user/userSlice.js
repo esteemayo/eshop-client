@@ -42,7 +42,7 @@ const initialState = {
   user: user ?? null,
   isFetching: false,
   isSuccess: false,
-  isError: '',
+  message: '',
 };
 
 if (token) {

@@ -179,7 +179,7 @@ const Register = () => {
           <Button disabled={isFetching || (perc > 0 && perc < 100)}>
             Create
           </Button>
-          {message && <Error>Something went wrong...</Error>}
+          {message && <Error>{message}</Error>}
         </Form>
       </Wrapper>
     </Container>

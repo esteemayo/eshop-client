@@ -17,6 +17,7 @@ export const registerInputs = [
     id: 'email',
     name: 'email',
     type: 'email',
+    label: 'Email',
     placeholder: 'you@user.com',
   },
   {

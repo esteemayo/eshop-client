@@ -69,7 +69,7 @@ const Login = () => {
           </FormContainer>
           <FormContainer>
             <FormInput
-              type='password'
+              type={showPassword ? 'text' : 'password'}
               id='password'
               placeholder='********'
               required

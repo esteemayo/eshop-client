@@ -70,7 +70,7 @@ const Login = () => {
             <FormLabel htmlFor='password'>Password</FormLabel>
           </FormContainer>
           <Button disabled={isFetching}>Login</Button>
-          {message && <Error>Something went wrong...</Error>}
+          {message && <Error>{message}</Error>}
           <Link>Do not you remember the password?</Link>
           <Link>Create a new account</Link>
         </Form>

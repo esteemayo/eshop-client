@@ -24,6 +24,7 @@ export const registerInputs = [
     id: 'password',
     name: 'password',
     type: 'password',
+    label: 'Password',
     placeholder: '********',
   },
   {

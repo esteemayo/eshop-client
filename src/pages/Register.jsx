@@ -264,6 +264,7 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 3rem;
 `;
 
 const FormContainer = styled.div`

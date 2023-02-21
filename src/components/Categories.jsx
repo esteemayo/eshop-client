@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import { mobile } from 'responsive';
+import { categories } from 'data';
 import CategoryItem from './CategoryItem';
 
 const Categories = () => {

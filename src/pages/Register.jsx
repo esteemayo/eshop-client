@@ -140,6 +140,7 @@ const Register = () => {
               />
             )}
             <FormLabel htmlFor='file'>Image</FormLabel>
+            <PublishOutlined className='username__icon' />
           </FormContainer>
           <Agreement>
             By creating an account, I consent to the processing of my personal

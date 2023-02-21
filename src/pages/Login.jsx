@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useEffect, useRef } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { toast } from 'react-toastify';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 import { mobile, smallest, tabLand } from 'responsive';

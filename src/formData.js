@@ -3,6 +3,7 @@ export const registerInputs = [
     id: 'name',
     name: 'name',
     type: 'text',
+    label: 'Name',
     placeholder: 'Name',
   },
   {

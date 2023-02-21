@@ -7,7 +7,7 @@ import {
   EmailOutlined,
   FaceOutlined,
   PersonOutline,
-  Publish,
+  PublishOutlined,
   Visibility,
   VisibilityOff
 } from '@material-ui/icons';

@@ -103,7 +103,7 @@ const Register = () => {
   }, [file]);
 
   useEffect(() => {
-    isSuccess && navigate('/', { replace: true });
+    user && isSuccess && navigate('/', { replace: true });
     return () => dispatch(reset());
   }, [isSuccess, navigate, dispatch]);
 

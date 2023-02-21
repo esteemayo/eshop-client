@@ -112,54 +112,6 @@ const Register = () => {
             <FormLabel htmlFor='username'>Name</FormLabel>
           </FormContainer>
           <FormContainer>
-            <FormInput
-              type='text'
-              name='username'
-              id='username'
-              placeholder='Username'
-              required
-              value={values.username}
-              onChange={handleChange}
-            />
-            <FormLabel htmlFor='username'>Username</FormLabel>
-          </FormContainer>
-          <FormContainer>
-            <FormInput
-              type='email'
-              id='email'
-              name='email'
-              placeholder='you@user.com'
-              required
-              value={values.email}
-              onChange={handleChange}
-            />
-            <FormLabel htmlFor='email'>Email</FormLabel>
-          </FormContainer>
-          <FormContainer>
-            <FormInput
-              type='password'
-              id='password'
-              name='password'
-              placeholder='********'
-              required
-              value={values.password}
-              onChange={handleChange}
-            />
-            <FormLabel htmlFor='password'>Password</FormLabel>
-          </FormContainer>
-          <FormContainer>
-            <FormInput
-              type='password'
-              id='passwordConfirm'
-              name='passwordConfirm'
-              placeholder='********'
-              required
-              value={values.passwordConfirm}
-              onChange={handleChange}
-            />
-            <FormLabel htmlFor='passwordConfirm'>Confirm password</FormLabel>
-          </FormContainer>
-          <FormContainer>
             {perc > 0 ? (
               `Uploading: ${perc}%`
             ) : (

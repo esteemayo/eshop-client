@@ -14,6 +14,7 @@ import {
 import userReducer from 'redux/user/userSlice';
 import cartReducer from 'redux/cart/cartSlice';
 import productReducer from 'redux/products/productSlice';
+import darkModeReducer from 'redux/darkMode/darkModeSlice';
 
 const persistConfig = {
   key: 'root',
@@ -25,6 +26,7 @@ const rootReducer = combineReducers({
   products: productReducer,
   user: userReducer,
   cart: cartReducer,
+  darkMode: darkModeReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

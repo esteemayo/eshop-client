@@ -77,9 +77,9 @@ const Login = () => {
             />
             <FormLabel htmlFor='password'>Password</FormLabel>
             {showPassword ? (
-              <VisibilityOff className='password__icon' />
+              <VisibilityOff onClick={handleShowPassword} className='password__icon' />
             ) : (
-              <Visibility className='password__icon' />
+              <Visibility onClick={handleShowPassword} className='password__icon' />
             )}
           </FormContainer>
           <Button disabled={isFetching}>Login</Button>

@@ -82,7 +82,10 @@ const Login = () => {
                 className='password__icon'
               />
             ) : (
-              <Visibility onClick={handleShowPassword} className='password__icon' />
+              <Visibility
+                onClick={handleShowPassword}
+                className='password__icon'
+              />
             )}
           </FormContainer>
           <Button disabled={isFetching}>Login</Button>

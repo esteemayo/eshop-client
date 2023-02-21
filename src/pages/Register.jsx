@@ -41,6 +41,10 @@ const Register = () => {
   const [values, setValues] = useState(initialState);
   const [showPassword, setShowPassword] = useState(false);
 
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
     setValues((prev) => ({ ...prev, [name]: value }));

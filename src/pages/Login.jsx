@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { toast } from 'react-toastify';
 import { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useLocation } from 'react-router-dom';

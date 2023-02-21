@@ -100,7 +100,7 @@ const Register = () => {
         <Title>Create an account</Title>
         <Form onSubmit={handleSubmit}>
           {registerInputs.map((input) => {
-            const { id, name, type, placeholder } = input;
+            const { id, name, type, label, placeholder } = input;
             return (
               <FormContainer>
                 <FormInput

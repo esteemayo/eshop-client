@@ -122,6 +122,7 @@ const Register = () => {
                   onChange={handleChange}
                 />
                 <FormLabel htmlFor={id}>{label}</FormLabel>
+                {name === 'name' && <PersonOutline className='username__icon' />}
               </FormContainer>
             );
           })}

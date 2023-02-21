@@ -39,6 +39,7 @@ const Register = () => {
   const [perc, setPerc] = useState(0);
   const [file, setFile] = useState(null);
   const [values, setValues] = useState(initialState);
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;

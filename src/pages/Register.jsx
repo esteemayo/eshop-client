@@ -132,9 +132,9 @@ const Register = () => {
                 {name === 'email' && <EmailOutlined className='username__icon' />}
                 {name === 'password' && (
                   showPassword ? (
-                    <VisibilityOff className='password__icon' />
+                    <VisibilityOff onClick={handleShowPassword} className='password__icon' />
                   ) : (
-                    <Visibility className='password__icon' />
+                    <Visibility onClick={handleShowPassword} className='password__icon' />
                   )
                 )}
               </FormContainer>

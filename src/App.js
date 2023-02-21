@@ -21,7 +21,7 @@ function App() {
   const { darkMode } = useSelector((state) => state.darkMode);
 
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router>
         <Routes>
           <Route path='/' element={<SharedLayout />}>

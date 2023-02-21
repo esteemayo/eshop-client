@@ -59,7 +59,7 @@ const Login = () => {
               ref={usernameRef}
             />
             <FormLabel htmlFor='username'>Username</FormLabel>
-            <FaceOutlined />
+            <FaceOutlined className='username__icon' />
           </FormContainer>
           <FormContainer>
             <FormInput

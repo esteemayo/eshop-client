@@ -130,20 +130,7 @@ const Register = () => {
                 {name === 'name' && <PersonOutline className='register__icon' />}
                 {name === 'username' && <FaceOutlined className='register__icon' />}
                 {name === 'email' && <EmailOutlined className='register__icon' />}
-                {name === 'password' && (
-                  showPassword ? (
-                    <VisibilityOffOutlined
-                      onClick={handleShowPassword}
-                      className='password__icon'
-                    />
-                  ) : (
-                    <VisibilityOutlined
-                      onClick={handleShowPassword}
-                      className='password__icon'
-                    />
-                  )
-                )}
-                {name === 'passwordConfirm' && (
+                {(name === 'password' || name === 'passwordConfirm') && (
                   showPassword ? (
                     <VisibilityOffOutlined
                       onClick={handleShowPassword}

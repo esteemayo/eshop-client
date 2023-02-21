@@ -127,9 +127,9 @@ const Register = () => {
                   onChange={handleChange}
                 />
                 <FormLabel htmlFor={id}>{label}</FormLabel>
-                {name === 'name' && <PersonOutline className='username__icon' />}
-                {name === 'username' && <FaceOutlined className='username__icon' />}
-                {name === 'email' && <EmailOutlined className='username__icon' />}
+                {name === 'name' && <PersonOutline className='register__icon' />}
+                {name === 'username' && <FaceOutlined className='register__icon' />}
+                {name === 'email' && <EmailOutlined className='register__icon' />}
                 {name === 'password' && (
                   showPassword ? (
                     <VisibilityOffOutlined

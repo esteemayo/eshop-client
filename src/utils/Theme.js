@@ -6,4 +6,10 @@ export const darkTheme = {
   soft: '#373737',
 };
 
-export const lightTheme = {};
+export const lightTheme = {
+  bg: 'var(--color-white)',
+  bgLight: 'rgb(251, 251, 255)',
+  text: '#777777',
+  textSoft: '#606060',
+  soft: '#f5f5f5',
+};

@@ -7,7 +7,7 @@ const productUrl = (productId) => `${apiEndpoint}/${productId}`;
 export const getProducts = (category) =>
   http.get(category ? `${apiEndpoint}?category=${category}` : apiEndpoint);
 
-export const getProductById = (id) => http.get(productUrl(id));
+export const getProductById = (productId) => http.get(productUrl(productId));
 
 export const getProductBySlug = (slug) =>
   http.get(`${apiEndpoint}/details/${slug}`);

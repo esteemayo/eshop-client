@@ -6,6 +6,7 @@ import { Add, Remove } from '@material-ui/icons';
 import { useEffect, useState, useCallback } from 'react';
 
 import { addProduct } from 'redux/cart/cartSlice';
+import { mobile, tabLand } from 'responsive';
 import { getProductBySlug } from 'services/productService';
 
 const Product = () => {

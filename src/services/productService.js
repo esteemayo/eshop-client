@@ -2,7 +2,7 @@ import http from './httpService';
 
 const apiEndpoint = '/products';
 
-const productUrl = (id) => `${apiEndpoint}/${id}`;
+const productUrl = (productId) => `${apiEndpoint}/${productId}`;
 
 export const getProducts = (category) =>
   http.get(category ? `${apiEndpoint}?category=${category}` : apiEndpoint);

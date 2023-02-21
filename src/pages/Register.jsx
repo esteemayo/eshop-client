@@ -104,16 +104,16 @@ const Register = () => {
             return (
               <FormContainer>
                 <FormInput
-                  type='text'
-                  name='name'
-                  id='name'
-                  placeholder='Name'
+                  type={type}
+                  name={name}
+                  id={id}
+                  placeholder={placeholder}
                   required
                   autoFocus
                   value={values.name}
                   onChange={handleChange}
                 />
-                <FormLabel htmlFor='username'>Name</FormLabel>
+                <FormLabel htmlFor={id}>{label}</FormLabel>
               </FormContainer>
             );
           })}

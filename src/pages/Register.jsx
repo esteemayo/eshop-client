@@ -25,7 +25,7 @@ const initialState = {
 const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { isError, isSuccess, isFetching } = useSelector((state) => state.user);
+  const { message, isSuccess, isFetching } = useSelector((state) => state.user);
 
   const [perc, setPerc] = useState(0);
   const [file, setFile] = useState(null);

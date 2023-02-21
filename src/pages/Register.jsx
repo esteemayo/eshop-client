@@ -251,7 +251,7 @@ const Title = styled.h1`
   &::after {
     display: block;
     content: '';
-    width: 25%;
+    width: 13%;
     height: 3px;
     background-color: #008080;
     margin: 0 auto;

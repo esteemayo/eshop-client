@@ -10,6 +10,7 @@ export const registerInputs = [
     id: 'username',
     name: 'username',
     type: 'text',
+    label: 'Username',
     placeholder: 'Username',
   },
   {

@@ -8,8 +8,8 @@ import {
   FaceOutlined,
   PersonOutline,
   PublishOutlined,
-  Visibility,
-  VisibilityOff
+  VisibilityOffOutlined,
+  VisibilityOutlined
 } from '@material-ui/icons';
 import {
   getStorage,

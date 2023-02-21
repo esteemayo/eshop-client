@@ -1,4 +1,4 @@
-const sliderItems = [
+export const sliderItems = [
   {
     id: 1,
     img: './assets/hero-1.png',

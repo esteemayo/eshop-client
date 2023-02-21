@@ -83,7 +83,7 @@ export const userSlice = createSlice({
       state.isFetching = false;
       state.isSuccess = false;
       state.user = null;
-      state.isError = true;
+      state.isError = payload.message;
     },
     [registerUserAsync.pending]: (state) => {
       state.isFetching = true;

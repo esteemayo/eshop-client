@@ -143,6 +143,19 @@ const Register = () => {
                     />
                   )
                 )}
+                {name === 'passwordConfirm' && (
+                  showPassword ? (
+                    <VisibilityOff
+                      onClick={handleShowPassword}
+                      className='password__icon'
+                    />
+                  ) : (
+                    <Visibility
+                      onClick={handleShowPassword}
+                      className='password__icon'
+                    />
+                  )
+                )}
               </FormContainer>
             );
           })}

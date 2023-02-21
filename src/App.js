@@ -14,6 +14,7 @@ import {
   SharedLayout,
   Success,
 } from 'pages/index';
+import { useSelector } from 'react-redux';
 
 function App() {
   return (

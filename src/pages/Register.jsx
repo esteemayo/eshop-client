@@ -137,7 +137,10 @@ const Register = () => {
                       className='password__icon'
                     />
                   ) : (
-                    <Visibility onClick={handleShowPassword} className='password__icon' />
+                    <Visibility
+                      onClick={handleShowPassword}
+                      className='password__icon'
+                    />
                   )
                 )}
               </FormContainer>

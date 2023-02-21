@@ -104,6 +104,7 @@ const Register = () => {
             return (
               <FormContainer>
                 <FormInput
+                  id={id}
                   type={type}
                   name={name}
                   placeholder={placeholder}

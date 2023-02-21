@@ -90,7 +90,7 @@ const Register = () => {
 
   useEffect(() => {
     isSuccess && navigate('/', { replace: true });
-    dispatch(reset());
+    return () => dispatch(reset());
   }, [isSuccess, navigate, dispatch]);
 
   return (

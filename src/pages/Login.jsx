@@ -17,6 +17,7 @@ const Login = () => {
 
   const usernameRef = useRef();
   const passwordRef = useRef();
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();

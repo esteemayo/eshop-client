@@ -167,7 +167,7 @@ const Title = styled.h1`
   &::after {
     display: block;
     content: '';
-    width: 15%;
+    width: 10%;
     height: 3px;
     background-color: #008080;
     margin: 0 auto;

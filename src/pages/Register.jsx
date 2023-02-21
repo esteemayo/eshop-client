@@ -13,6 +13,7 @@ import {
 import { mobile, smallest, tabLand } from 'responsive';
 import app from '../firebase';
 import { registerUserAsync, reset } from 'redux/user/userSlice';
+import { registerInputs } from 'formData';
 
 const initialState = {
   name: '',

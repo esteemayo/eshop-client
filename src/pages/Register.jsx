@@ -3,13 +3,13 @@ import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { 
-  EmailOutlined, 
-  FaceOutlined, 
+import {
+  EmailOutlined,
+  FaceOutlined,
   PersonOutline,
-   Publish,
-   Visibility,
-   VisibilityOff 
+  Publish,
+  Visibility,
+  VisibilityOff
 } from '@material-ui/icons';
 import {
   getStorage,
@@ -245,6 +245,8 @@ const Form = styled.form`
 `;
 
 const FormContainer = styled.div`
+  position: relative;
+
   &:not(:last-child) {
     margin-bottom: 1rem;
 

@@ -17,4 +17,4 @@ export const createProduct = (data) => http.post(apiEndpoint, data);
 export const updateProduct = (productId, data) =>
   http.patch(productUrl(productId), data);
 
-export const deleteProduct = (id) => http.delete(productUrl(id));
+export const deleteProduct = (productId) => http.delete(productUrl(productId));

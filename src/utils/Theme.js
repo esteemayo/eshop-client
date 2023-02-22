@@ -23,6 +23,7 @@ export const darkTheme = {
   crInput: 'rgb(156, 156, 156)',
   sizeBorder: '#808080',
   sizeOption: '#181818',
+  bgProdBtn: '#008080',
 };
 
 export const lightTheme = {
@@ -50,4 +51,5 @@ export const lightTheme = {
   crInput: '#008080',
   sizeBorder: '#dddddd',
   sizeOption: 'var(--color-white)',
+  bgProdBtn: 'var(--color-white)',
 };

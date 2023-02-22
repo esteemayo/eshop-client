@@ -220,7 +220,7 @@ const TopButton = styled.button`
 })}
 
   &:hover {
-    background-color: ${(props) => props.type === 'filled' && '#333'};
+    background-color: ${({ type }) => type === 'filled' && '#333'};
     opacity: ${(props) => props.type === 'filled' && '0.8'};
   }
 

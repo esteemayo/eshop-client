@@ -174,6 +174,7 @@ const Right = styled.div`
 const MenuItem = styled.div`
   font-size: 1.6rem;
   text-transform: uppercase;
+  color: ${({ theme }) => theme.menuBtn};
   margin-left: 2.5rem;
   cursor: pointer;
 

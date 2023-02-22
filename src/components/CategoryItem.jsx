@@ -45,7 +45,7 @@ const Overlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.95);
+  background-color: rgba(97, 93, 93, 0.7);
 `;
 
 const Image = styled.img`

@@ -429,7 +429,7 @@ const Button = styled.button`
   display: block;
   border-radius: 5px;
   text-transform: uppercase;
-  background-color: #000;
+  background-color: ${({ theme }) => theme.bgCartBtn};
   color: var(--color-white);
   font-weight: 600;
   cursor: pointer;

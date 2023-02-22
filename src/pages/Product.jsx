@@ -111,7 +111,9 @@ const Product = () => {
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+`;
 
 const Wrapper = styled.div`
   padding: 5rem;

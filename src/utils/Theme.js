@@ -13,6 +13,7 @@ export const darkTheme = {
   catText: '#d4d8db',
   bgProduct: '#2a383d',
   bgCircle: 'rgba(65, 64, 64, 0.4)',
+  bgProdIcon: 'rgb(156, 156, 156)',
 };
 
 export const lightTheme = {
@@ -30,4 +31,5 @@ export const lightTheme = {
   catText: 'var(--color-white)',
   bgProduct: '#f5fbfd',
   bgCircle: 'var(--color-white)',
+  bgProdIcon: 'var(--color-white)',
 };

@@ -41,7 +41,10 @@ const Info = styled.div`
   justify-content: center;
 `;
 
-const Overlay = styled.div``;
+const Overlay = styled.div`
+  position: absolute;
+  background-color: rgba(0,0,0,0.95);
+`;
 
 const Image = styled.img`
   width: 100%;

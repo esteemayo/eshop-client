@@ -119,7 +119,7 @@ const Language = styled.span`
 `;
 
 const SearchContainer = styled.div`
-  border: 0.5px solid lightgray;
+  border: 0.5px solid ${({ theme }) => theme.searchBorder};
   border-radius: 3px;
 
   display: flex;

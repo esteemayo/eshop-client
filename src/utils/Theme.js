@@ -13,7 +13,7 @@ export const darkTheme = {
   catText: '#d4d8db',
   bgProduct: '#2a383d',
   bgCircle: 'rgba(65, 64, 64, 0.4)',
-  bgProdIcon: 'rgb(156, 156, 156)',
+  bgProdIcon: 'rgb(94, 94, 94)',
 };
 
 export const lightTheme = {

@@ -4,7 +4,7 @@ export const darkTheme = {
   text: 'rgb(156, 156, 156)',
   textSoft: '#aaaaaa',
   soft: '#373737',
-  logo: 'var(--color-white)',
+  logo: '#d4d8db',
   menuBtn: '#cccccc',
 };
 

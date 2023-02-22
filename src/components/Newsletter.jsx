@@ -21,7 +21,7 @@ const Newsletter = () => {
 const Container = styled.div`
   width: 100vw;
   height: 60vh;
-  background-color: #fcf5f5;
+  background-color: ${({ theme }) => theme.bgNews};
   display: flex;
   flex-direction: column;
   align-items: center;

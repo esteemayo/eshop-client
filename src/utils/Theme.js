@@ -15,7 +15,7 @@ export const darkTheme = {
   bgCircle: 'rgba(65, 64, 64, 0.4)',
   bgProdIcon: 'rgb(94, 94, 94)',
   bgProdIconHover: '#627979',
-  bgNews: '#1b1111',
+  bgNews: '#111010',
 };
 
 export const lightTheme = {

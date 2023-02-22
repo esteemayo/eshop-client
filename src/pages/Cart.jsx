@@ -397,7 +397,7 @@ const SummaryItem = styled.div`
   margin: 3rem 0;
   display: flex;
   justify-content: space-between;
-  font-weight: ${(props) => props.type === 'total' && '500'};
+  font-weight: ${({ type }) => type === 'total' && '500'};
   font-size: ${(props) => (props.type === 'total' ? '2.4rem' : '1.6rem')};
 
   ${laptop({ margin: '2.5rem 0' })}

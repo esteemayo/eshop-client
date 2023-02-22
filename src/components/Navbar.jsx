@@ -83,7 +83,7 @@ const Navbar = () => {
 
 const Container = styled.div`
   height: 8rem;
-  background-color: ${({ theme }) => theme.bg};
+  background-color: ${({ theme }) => theme.bgLight};
 
   ${mobile({ height: '5rem' })}
 `;

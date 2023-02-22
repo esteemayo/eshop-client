@@ -25,6 +25,7 @@ export const darkTheme = {
   sizeOption: '#181818',
   bgProdBtn: '#008080',
   textProdBtn: 'rgb(184, 181, 181)',
+  bgProdBtnHover: '#074646',
 };
 
 export const lightTheme = {
@@ -54,4 +55,5 @@ export const lightTheme = {
   sizeOption: 'var(--color-white)',
   bgProdBtn: 'var(--color-white)',
   textProdBtn: '#008080',
+  bgProdBtnHover: '#f8f4f4',
 };

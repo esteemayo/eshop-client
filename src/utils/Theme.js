@@ -9,6 +9,7 @@ export const darkTheme = {
   searchBorder: '#686767',
   searchPlaceholder: '#999999',
   bgCatBtn: '#808080',
+  textCatBtn: 'var(--color-white)',
 };
 
 export const lightTheme = {
@@ -22,4 +23,5 @@ export const lightTheme = {
   searchBorder: 'lightgray',
   searchPlaceholder: '#cccccc',
   bgCatBtn: 'var(--color-white)',
+  textCatBtn: '#808080',
 };

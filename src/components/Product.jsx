@@ -66,7 +66,7 @@ const Circle = styled.div`
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  background-color: var(--color-white);
+  background-color: ${({ theme }) => theme.bgCircle};
   position: absolute;
 `;
 

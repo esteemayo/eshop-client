@@ -174,6 +174,8 @@ const Right = styled.div`
 const MenuItem = styled.div`
   font-size: 1.6rem;
   text-transform: uppercase;
+  margin-left: 2.5rem;
+  cursor: pointer;
 
   ${mobile({
   fontSize: '1.2rem',

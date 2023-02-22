@@ -157,7 +157,9 @@ const Cart = () => {
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+
+`;
 
 const Wrapper = styled.div`
   padding: 2rem;

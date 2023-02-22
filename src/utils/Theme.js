@@ -11,7 +11,7 @@ export const darkTheme = {
   bgCatBtn: '#808080',
   textCatBtn: '#d4d8db',
   catText: '#d4d8db',
-  bgProduct: '#afafaf',
+  bgProduct: '#2a383d',
 };
 
 export const lightTheme = {

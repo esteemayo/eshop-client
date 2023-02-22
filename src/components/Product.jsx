@@ -79,7 +79,7 @@ const Icon = styled.div`
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: var(--color-white);
+  background-color: ${({ theme }) => theme.bgProdIcon};
 
   display: flex;
   align-items: center;

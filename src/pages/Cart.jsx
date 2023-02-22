@@ -359,7 +359,7 @@ const ProductPrice = styled.div`
 `;
 
 const Hr = styled.hr`
-  background-color: #eee;
+  background-color: ${({ theme }) => theme.hr};
   border: none;
   height: 1px;
 `;

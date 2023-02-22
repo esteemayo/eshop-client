@@ -4,8 +4,8 @@ const apiEndpoint = '/products';
 
 const productUrl = (productId) => `${apiEndpoint}/${productId}`;
 
-export const getProducts = (category) =>
-  http.get(category ? `${apiEndpoint}?category=${category}` : apiEndpoint);
+export const getProducts = (category, token) =>
+  http.get(category ? `${apiEndpoint}?category=${category}` : apiEndpoint, { cancelToken: token });
 
 export const getProductById = (productId) => http.get(productUrl(productId));
 

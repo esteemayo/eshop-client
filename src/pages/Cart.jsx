@@ -220,7 +220,7 @@ const TopButton = styled.button`
 })}
 
   &:hover {
-    background-color: ${({ type }) => type === 'filled' && '#333'};
+    background-color: ${({ type, theme }) => type === 'filled' && theme.bgCartBtnHover};
     opacity: ${({ type }) => type === 'filled' && '0.8'};
   }
 

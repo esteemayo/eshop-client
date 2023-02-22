@@ -83,7 +83,7 @@ const Input = styled.input`
   border: none;
   padding-left: 2rem;
   background-color: transparent;
-  caret-color: #008080;
+  caret-color: ${({ theme }) => theme.crInput};
 
   &:focus {
     outline: none;

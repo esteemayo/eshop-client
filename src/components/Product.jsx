@@ -45,23 +45,6 @@ const Info = styled.div`
   transition: all 0.5s ease;
 `;
 
-const Container = styled.div`
-  flex: 1;
-  margin: 5px;
-  min-width: 28rem;
-  height: 35rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f5fbfd;
-  position: relative;
-
-  &:hover ${Info} {
-    opacity: 1;
-  }
-`;
-
 const Circle = styled.div`
   width: 20rem;
   height: 20rem;

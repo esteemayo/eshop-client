@@ -68,7 +68,7 @@ const InputContainer = styled.div`
   width: 50%;
   height: 4rem;
   background-color: ${({ theme }) => theme.bgNewsInput};
-  border: 1px solid lightgray;
+  border: 1px solid ${({ theme }) => theme.searchBorder};
 
   display: flex;
   align-items: stretch;

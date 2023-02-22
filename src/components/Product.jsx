@@ -28,6 +28,23 @@ const Product = ({ img, slug }) => {
   );
 };
 
+const Container = styled.div`
+  flex: 1;
+  margin: 5px;
+  min-width: 28rem;
+  height: 35rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5fbfd;
+  position: relative;
+
+  &:hover ${Info} {
+    opacity: 1;
+  }
+`;
+
 const Info = styled.div`
   opacity: 0;
   width: 100%;

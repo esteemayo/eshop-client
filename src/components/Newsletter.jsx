@@ -22,6 +22,7 @@ const Container = styled.div`
   width: 100vw;
   height: 60vh;
   background-color: ${({ theme }) => theme.bgNews};
+  color: ${({ theme }) => theme.textNews};
   display: flex;
   flex-direction: column;
   align-items: center;

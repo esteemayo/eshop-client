@@ -233,7 +233,9 @@ const FilterSize = styled.select`
   }
 `;
 
-const FilterSizeOption = styled.option``;
+const FilterSizeOption = styled.option`
+  background-color:  ${({ theme }) => theme.sizeOption};
+`;
 
 const AddContainer = styled.div`
   width: 50%;

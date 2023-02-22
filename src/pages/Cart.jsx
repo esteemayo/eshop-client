@@ -436,7 +436,7 @@ const Button = styled.button`
   transition: all 0.5s ease;
 
   &:hover {
-    background-color: #333;
+    background-color: ${({ theme }) => theme.bgCartBtnHover};
     letter-spacing: 2px;
   }
 

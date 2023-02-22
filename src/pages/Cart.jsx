@@ -221,7 +221,7 @@ const TopButton = styled.button`
 
   &:hover {
     background-color: ${({ type }) => type === 'filled' && '#333'};
-    opacity: ${(props) => props.type === 'filled' && '0.8'};
+    opacity: ${({ type }) => type === 'filled' && '0.8'};
   }
 
   &:focus {

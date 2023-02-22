@@ -16,7 +16,7 @@ export const darkTheme = {
   bgProdIcon: 'rgb(94, 94, 94)',
   bgProdIconHover: '#627979',
   bgNews: '#111010',
-  textNews: '#d4d8db',
+  textNews: '#808080',
 };
 
 export const lightTheme = {

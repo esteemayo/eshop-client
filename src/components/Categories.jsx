@@ -18,6 +18,7 @@ const Categories = () => {
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
+  background-color: ${({ theme }) => theme.bg};
   padding: 2rem;
 
   ${mobile({

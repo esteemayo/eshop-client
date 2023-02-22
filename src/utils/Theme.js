@@ -21,6 +21,7 @@ export const darkTheme = {
   bgNewsBtn: '#1b1919',
   textNewsBtn: '#808080',
   crInput: 'rgb(156, 156, 156)',
+  sizeBorder: '#808080',
 };
 
 export const lightTheme = {
@@ -46,4 +47,5 @@ export const lightTheme = {
   bgNewsBtn: '#008080',
   textNewsBtn: 'var(--color-white)',
   crInput: '#008080',
+  sizeBorder: '#dddddd',
 };

@@ -31,6 +31,7 @@ export const darkTheme = {
   textCartBtn: 'rgb(184, 181, 181)',
   bgCartBtnHover: '#444444',
   hr: '#333333',
+  borderSummary: '#333333',
 };
 
 export const lightTheme = {
@@ -66,4 +67,5 @@ export const lightTheme = {
   textCartBtn: 'var(--color-white)',
   bgCartBtnHover: '#333333',
   hr: '#eeeeee',
+  borderSummary: 'lightgray',
 };

@@ -63,7 +63,9 @@ const ProductList = () => {
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+`;
 
 const Title = styled.h1`
   text-transform: capitalize;

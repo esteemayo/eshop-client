@@ -66,7 +66,7 @@ const Image = styled.img`
 
 const Title = styled.h1`
   text-transform: uppercase;
-  color: #fff;
+  color: ${({ theme }) => theme.catText};
   margin-bottom: 2rem;
 
     ${mobile({

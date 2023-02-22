@@ -29,7 +29,7 @@ export const lightTheme = {
   logo: '#008b8b',
   menuBtn: '#333333',
   searchBorder: 'lightgray',
-  searchPlaceholder: '#cccccc',
+  searchPlaceholder: '#bbbbbb',
   bgCatBtn: 'var(--color-white)',
   textCatBtn: '#808080',
   catText: 'var(--color-white)',

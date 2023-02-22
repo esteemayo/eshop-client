@@ -6,6 +6,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 import { mobile, small } from '../responsive';
 import { setLogout } from 'redux/user/userSlice';
+import { toggle } from 'redux/darkMode/darkModeSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();

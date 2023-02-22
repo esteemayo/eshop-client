@@ -299,7 +299,7 @@ const Button = styled.button`
 })}
 
   &:hover {
-    background-color: #f8f4f4;
+    background-color: ${({ theme }) => theme.bgProdBtnHover};
     -webkit-box-shadow: 1.5rem 1.1rem 36rem -0.5rem rgba(0, 0, 0, 0.29);
     -moz-box-shadow: 1.5rem 1.1rem 36rem -0.5rem rgba(0, 0, 0, 0.29);
     box-shadow: 1.5rem 1.1rem 36rem -0.5rem rgba(0, 0, 0, 0.29);

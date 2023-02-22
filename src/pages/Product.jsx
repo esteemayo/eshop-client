@@ -285,7 +285,7 @@ const Button = styled.button`
   text-transform: uppercase;
   font-weight: 500;
   padding: 1.5rem;
-  background-color: var(--color-white);
+  background-color: ${({ theme }) => theme.bgProdBtn};
   color: #008080;
   border: 2px solid #008080;
   border-radius: 3px;

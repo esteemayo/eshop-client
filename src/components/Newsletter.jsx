@@ -82,6 +82,7 @@ const Input = styled.input`
   font-family: inherit;
   border: none;
   padding-left: 2rem;
+  background-color: transparent;
   caret-color: #008080;
 
   &:focus {

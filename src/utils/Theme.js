@@ -9,7 +9,7 @@ export const darkTheme = {
   searchBorder: '#686767',
   searchPlaceholder: '#999999',
   bgCatBtn: '#808080',
-  textCatBtn: 'var(--color-white)',
+  textCatBtn: '#d4d8db',
 };
 
 export const lightTheme = {

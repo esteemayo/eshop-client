@@ -194,7 +194,7 @@ const Top = styled.div`
 
 const TopButton = styled.button`
   border: ${({ type }) => type === 'filled' ? 'none' : '2px solid #008080'};
-  background-color: ${({ type }) => type === 'filled' ? '#000' : 'transparent'};
+  background-color: ${({ type, theme }) => type === 'filled' ? theme.bgCartBtn : 'transparent'};
   color: ${({ type }) => (type === 'filled' ? '#fff' : '#008080')};
   display: inline-block;
   border-radius: 5px;

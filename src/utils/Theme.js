@@ -19,6 +19,7 @@ export const darkTheme = {
   textNews: '#808080',
   bgNewsInput: 'transparent',
   bgNewsBtn: '#1b1919',
+  textNewsBtn: '#808080',
 };
 
 export const lightTheme = {
@@ -42,4 +43,5 @@ export const lightTheme = {
   textNews: '#333333',
   bgNewsInput: 'var(--color-white)',
   bgNewsBtn: '#008080',
+  textNewsBtn: 'var(--color-white)',
 };

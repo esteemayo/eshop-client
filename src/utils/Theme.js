@@ -9,7 +9,7 @@ export const darkTheme = {
 
 export const lightTheme = {
   bg: 'var(--color-white)',
-  bgLight: 'rgb(251, 251, 255)',
+  bgLight: 'var(--color-white)',
   text: '#777777',
   textSoft: '#606060',
   soft: '#f5f5f5',

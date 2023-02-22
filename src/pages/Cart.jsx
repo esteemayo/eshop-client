@@ -411,7 +411,7 @@ const SummaryItem = styled.div`
   ${mobile({
   margin: '2.7rem 0',
   fontSize: css`
-      ${(props) => (props.type === 'total' ? '2.2rem' : '1.45rem')}
+      ${({ type }) => (type === 'total' ? '2.2rem' : '1.45rem')}
     `,
 })}
 `;

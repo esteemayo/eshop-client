@@ -89,7 +89,9 @@ const Footer = () => {
   );
 };
 
-const FooterContainer = styled.div``;
+const FooterContainer = styled.div`
+  background-color: ${({ theme }) => theme.bgLight};
+`;
 
 const Container = styled.div`
   display: flex;

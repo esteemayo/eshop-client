@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 import { mobile } from 'responsive';
-import { useSelector } from 'react-redux';
 
 const CategoryItem = ({ img, title, category }) => {
   const { darkMode } = useSelector((state) => state.darkMode);

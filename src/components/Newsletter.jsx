@@ -90,7 +90,7 @@ const Input = styled.input`
   }
 
   &::-webkit-input-placeholder {
-    color: #bbb;
+    color: ${({ theme }) => theme.searchPlaceholder};
   }
 `;
 

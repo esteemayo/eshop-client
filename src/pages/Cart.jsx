@@ -366,7 +366,7 @@ const Hr = styled.hr`
 
 const Summary = styled.div`
   flex: 1;
-  border: 0.5px solid lightgray;
+  border: 0.5px solid ${({ theme }) => theme.borderSummary};
   border-radius: 1rem;
   padding: 2rem;
   height: 50vh;

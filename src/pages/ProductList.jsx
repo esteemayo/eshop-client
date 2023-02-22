@@ -65,6 +65,7 @@ const ProductList = () => {
 
 const Container = styled.div`
   background-color: ${({ theme }) => theme.bg};
+  padding-top: 1px;
 `;
 
 const Title = styled.h1`

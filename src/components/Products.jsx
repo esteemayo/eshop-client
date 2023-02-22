@@ -8,13 +8,15 @@ const Products = ({ category, filters, sort }) => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  const fetchProducts = useCallback(async () => {
-    try {
-      const { data } = await getProducts(category);
-      setProducts(data.products);
-    } catch (err) {
-      console.log(err);
-    }
+  useEffect(() => {
+    (async () => {
+      try {
+        const { data } = await getProducts(category);
+        setProducts(data.products);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
   }, [category]);
 
   useEffect(() => {

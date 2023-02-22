@@ -404,7 +404,7 @@ const SummaryItem = styled.div`
 
   ${tab({
   fontSize: css`
-      ${(props) => (props.type === 'total' ? '2rem' : '1.48rem')}
+      ${({ type }) => (type === 'total' ? '2rem' : '1.48rem')}
     `,
 })}
 

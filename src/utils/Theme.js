@@ -8,7 +8,7 @@ export const darkTheme = {
   menuBtn: '#cccccc',
   searchBorder: '#686767',
   searchPlaceholder: '#999999',
-  catBtn: '#808080',
+  bgCatBtn: '#808080',
 };
 
 export const lightTheme = {
@@ -21,5 +21,5 @@ export const lightTheme = {
   menuBtn: '#333333',
   searchBorder: 'lightgray',
   searchPlaceholder: '#cccccc',
-  catBtn: 'var(--color-white)',
+  bgCatBtn: 'var(--color-white)',
 };

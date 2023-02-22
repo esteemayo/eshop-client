@@ -6,6 +6,7 @@ export const darkTheme = {
   soft: '#373737',
   logo: '#d4d8db',
   menuBtn: '#cccccc',
+  searchBorder: 'darkgray',
 };
 
 export const lightTheme = {
@@ -16,4 +17,5 @@ export const lightTheme = {
   soft: '#f5f5f5',
   logo: '#008b8b',
   menuBtn: '#333333',
+  searchBorder: 'lightgray',
 };

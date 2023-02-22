@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 
 import Product from './Product';
 import { getProducts } from 'services/productService';
-import axios from 'axios';
 
 const Products = ({ category, filters, sort }) => {
   const [products, setProducts] = useState([]);

@@ -98,7 +98,7 @@ const Button = styled.button`
   flex: 1;
   border: none;
   background-color: ${({ theme }) => theme.bgNewsBtn};
-  color: var(--color-white);
+  color: ${({ theme }) => theme.textNewsBtn};
   cursor: pointer;
 
   ${mobile({ flex: 2 })}

@@ -67,7 +67,7 @@ const Description = styled.div`
 const InputContainer = styled.div`
   width: 50%;
   height: 4rem;
-  background-color: var(--color-white);
+  background-color: ${({ theme }) => theme.bgNewsInput};
   border: 1px solid lightgray;
 
   display: flex;

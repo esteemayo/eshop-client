@@ -26,7 +26,7 @@ export const darkTheme = {
   bgProdBtn: '#074646',
   textProdBtn: 'rgb(184, 181, 181)',
   bgProdBtnHover: '#062222',
-  boxProd: '1.5rem 1.1rem 36rem -0.5rem rgba(0, 0, 0, 0.9)',
+  boxProd: '1.5rem 1.1rem 36rem -0.5rem rgba(126, 125, 125, 0.9)',
 };
 
 export const lightTheme = {

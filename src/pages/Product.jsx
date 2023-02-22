@@ -286,7 +286,7 @@ const Button = styled.button`
   font-weight: 500;
   padding: 1.5rem;
   background-color: ${({ theme }) => theme.bgProdBtn};
-  color: #008080;
+  color: ${({ theme }) => theme.textProdBtn};
   border: 2px solid #008080;
   border-radius: 3px;
   cursor: pointer;

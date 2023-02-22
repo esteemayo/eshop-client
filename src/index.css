@@ -74,6 +74,14 @@ a:visited {
   color: #008b8b !important;
 }
 
+.search__icon--dark {
+  color: darkgray;
+}
+
+.search__icon--light {
+  color: gray;
+}
+
 .username__icon,
 .register__icon {
   cursor: text;

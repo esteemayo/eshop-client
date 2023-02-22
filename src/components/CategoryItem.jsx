@@ -69,7 +69,7 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.catText};
   margin-bottom: 2rem;
 
-    ${mobile({
+  ${mobile({
   fontSize: '1.8rem',
   fontWeight: 400,
   letterSpacing: '1px',

@@ -6,7 +6,7 @@ export const darkTheme = {
   soft: '#373737',
   logo: '#d4d8db',
   menuBtn: '#cccccc',
-  searchBorder: '#4b4a4a',
+  searchBorder: '#686767',
   searchPlaceholder: '#999999',
 };
 

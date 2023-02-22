@@ -18,7 +18,7 @@ export const darkTheme = {
   bgNews: '#111010',
   textNews: '#808080',
   bgNewsInput: 'transparent',
-  bgNewsBtn: '#777777',
+  bgNewsBtn: '#1b1919',
 };
 
 export const lightTheme = {

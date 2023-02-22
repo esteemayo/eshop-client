@@ -82,7 +82,7 @@ const Button = styled.button`
   text-transform: uppercase;
   padding: 1rem;
   font-weight: 600;
-  background-color: var(--color-white);
+  background-color: ${({ theme }) => theme.bgCatBtn};
   color: gray;
   border-radius: 3px;
   cursor: pointer;

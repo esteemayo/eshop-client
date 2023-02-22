@@ -205,19 +205,19 @@ const TopButton = styled.button`
   transition: all 0.5s ease;
 
   ${mobile({
-      border: css`
+  border: css`
       ${(props) => props.type !== 'filled' && '1px solid currentColor'}
     `,
-    })}
+})}
 
   ${small({
-      fontWeight: 400,
-      padding: '0.7rem',
-    })}
+  fontWeight: 400,
+  padding: '0.7rem',
+})}
 
   ${small({
-      textTransform: 'capitalize',
-    })}
+  textTransform: 'capitalize',
+})}
 
   &:hover {
     background-color: ${(props) => props.type === 'filled' && '#333'};

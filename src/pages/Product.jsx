@@ -113,6 +113,7 @@ const Product = () => {
 
 const Container = styled.div`
   background-color: ${({ theme }) => theme.bg};
+  color: ${({ theme }) => theme.text};
 `;
 
 const Wrapper = styled.div`

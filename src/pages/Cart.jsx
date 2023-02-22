@@ -194,8 +194,8 @@ const Top = styled.div`
 
 const TopButton = styled.button`
   border: ${({ type }) => type === 'filled' ? 'none' : '2px solid #008080'};
-  background-color: ${(props) =>
-    props.type === 'filled' ? '#000' : 'transparent'};
+  background-color: ${({ type }) =>
+    type === 'filled' ? '#000' : 'transparent'};
   color: ${(props) => (props.type === 'filled' ? '#fff' : '#008080')};
   display: inline-block;
   border-radius: 5px;

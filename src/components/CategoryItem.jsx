@@ -40,6 +40,8 @@ const Info = styled.div`
   justify-content: center;
 `;
 
+const Overlay = styled.div``;
+
 const Image = styled.img`
   width: 100%;
   height: 100%;

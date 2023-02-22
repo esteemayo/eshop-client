@@ -29,7 +29,7 @@ export const darkTheme = {
   boxProd: '1.5rem 1.1rem 36rem -0.5rem rgba(126, 125, 125, 0.9)',
   bgCartBtn: '#333333',
   textCartBtn: 'rgb(184, 181, 181)',
-  bgCartBtnHover: '#555555',
+  bgCartBtnHover: '#444444',
 };
 
 export const lightTheme = {

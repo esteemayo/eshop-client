@@ -147,7 +147,7 @@ const Logo = styled.h1`
   font-size: 4.5rem;
   font-weight: bold;
   font-family: 'Great Vibes', cursive;
-  color: #008b8b;
+  color: ${({ theme }) => theme.logo};
 
   ${mobile({
   fontSize: '2.8rem',

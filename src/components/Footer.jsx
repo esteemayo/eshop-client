@@ -236,7 +236,9 @@ const Payment = styled.img`
   width: 50%;
 `;
 
-const CopyRight = styled.div``;
+const CopyRight = styled.div`
+  padding-bottom: 1rem;
+`;
 
 const CopyRightText = styled.p`
   text-align: center;

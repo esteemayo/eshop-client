@@ -134,7 +134,7 @@ const SearchContainer = styled.div`
 const Input = styled.input`
   border: none;
   background-color: transparent;
-  caret-color: #008080;
+  caret-color: ${({ theme }) => theme.crInput};
 
   &:focus {
     outline: none;

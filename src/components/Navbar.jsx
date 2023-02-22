@@ -35,6 +35,9 @@ const Navbar = () => {
           </Link>
         </Center>
         <Right>
+          <MenuItem>
+            {darkMode ? 'Light' : 'Dark'} Mode
+          </MenuItem>
           {!user && (
             <MenuItem>
               <NavLink

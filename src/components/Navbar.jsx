@@ -71,7 +71,7 @@ const Navbar = () => {
               className={({ isActive }) => (isActive ? 'active' : '')}
             >
               <Badge badgeContent={quantity} color='primary'>
-                <ShoppingCartOutlined style={{ fontSize: 16 }} />
+                <ShoppingCartOutlined style={{ fontSize: ' 1.6rem' }} />
               </Badge>
             </NavLink>
           </MenuItem>

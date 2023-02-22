@@ -24,6 +24,7 @@ export const darkTheme = {
   sizeBorder: '#808080',
   sizeOption: '#181818',
   bgProdBtn: '#008080',
+  textProdBtn: 'rgb(156, 156, 156)',
 };
 
 export const lightTheme = {
@@ -52,4 +53,5 @@ export const lightTheme = {
   sizeBorder: '#dddddd',
   sizeOption: 'var(--color-white)',
   bgProdBtn: 'var(--color-white)',
+  textProdBtn: '#008080',
 };

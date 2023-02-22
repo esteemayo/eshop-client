@@ -206,7 +206,7 @@ const TopButton = styled.button`
 
   ${mobile({
   border: css`
-      ${(props) => props.type !== 'filled' && '1px solid currentColor'}
+      ${({ type }) => type !== 'filled' && '1px solid currentColor'}
     `,
 })}
 

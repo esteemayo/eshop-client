@@ -31,7 +31,7 @@ export const darkTheme = {
   textCartBtn: 'rgb(184, 181, 181)',
   bgCartBtnHover: '#444444',
   hr: '#333333',
-  borderSummary: '#333333',
+  borderSummary: '#555555',
 };
 
 export const lightTheme = {

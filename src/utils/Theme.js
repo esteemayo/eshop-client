@@ -10,6 +10,7 @@ export const darkTheme = {
   searchPlaceholder: '#999999',
   bgCatBtn: '#808080',
   textCatBtn: '#d4d8db',
+  catText: '#d4d8db',
 };
 
 export const lightTheme = {
@@ -24,4 +25,5 @@ export const lightTheme = {
   searchPlaceholder: '#cccccc',
   bgCatBtn: 'var(--color-white)',
   textCatBtn: '#808080',
+  catText: 'var(--color-white)',
 };

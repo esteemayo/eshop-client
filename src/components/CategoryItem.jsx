@@ -5,6 +5,8 @@ import { mobile } from 'responsive';
 import { useSelector } from 'react-redux';
 
 const CategoryItem = ({ img, title, category }) => {
+  const { darkMode } = useSelector((state) => state.darkMode);
+
   return (
     <Container>
       <Link to={`products/${category}`}>

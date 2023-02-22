@@ -300,9 +300,9 @@ const Button = styled.button`
 
   &:hover {
     background-color: ${({ theme }) => theme.bgProdBtnHover};
-    -webkit-box-shadow: 1.5rem 1.1rem 36rem -0.5rem rgba(0, 0, 0, 0.29);
-    -moz-box-shadow: 1.5rem 1.1rem 36rem -0.5rem rgba(0, 0, 0, 0.29);
-    box-shadow: 1.5rem 1.1rem 36rem -0.5rem rgba(0, 0, 0, 0.29);
+    -webkit-box-shadow: ${({ theme }) => theme.boxProd};
+    -moz-box-shadow: ${({ theme }) => theme.boxProd};
+    box-shadow: ${({ theme }) => theme.boxProd};
   }
 
   &:focus {

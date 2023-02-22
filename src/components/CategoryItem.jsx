@@ -83,7 +83,7 @@ const Button = styled.button`
   padding: 1rem;
   font-weight: 600;
   background-color: ${({ theme }) => theme.bgCatBtn};
-  color: gray;
+  color: ${({ theme }) => theme.textCatBtn};
   border-radius: 3px;
   cursor: pointer;
 

@@ -226,7 +226,7 @@ const FilterSize = styled.select`
   padding: 0.5rem;
   background-color: transparent;
   color: currentColor;
-  border: 1px solid #ddd;
+  border: 1px solid ${({ theme }) => theme.sizeBorder};
 
   &:focus {
     outline: none;

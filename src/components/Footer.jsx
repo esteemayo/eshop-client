@@ -91,6 +91,7 @@ const Footer = () => {
 
 const FooterContainer = styled.div`
   background-color: ${({ theme }) => theme.bgLight};
+  color: ${({ theme }) => theme.soft};
 `;
 
 const Container = styled.div`

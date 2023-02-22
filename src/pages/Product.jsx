@@ -224,6 +224,7 @@ const FilterColor = styled.div`
 const FilterSize = styled.select`
   margin-left: 1rem;
   padding: 0.5rem;
+  background-color: transparent;
   color: currentColor;
   border: 1px solid #ddd;
 

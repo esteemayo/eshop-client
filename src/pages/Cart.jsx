@@ -158,7 +158,7 @@ const Cart = () => {
 };
 
 const Container = styled.div`
-
+  background-color: ${({ theme }) => theme.bg};
 `;
 
 const Wrapper = styled.div`

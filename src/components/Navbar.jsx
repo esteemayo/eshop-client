@@ -12,6 +12,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.user);
   const { quantity } = useSelector((state) => state.cart);
+  const { darkMode } = useSelector((state) => state.darkMode);
 
   const handleLogout = () => {
     dispatch(setLogout());

@@ -18,10 +18,6 @@ const Products = ({ category, filters, sort }) => {
   }, [category]);
 
   useEffect(() => {
-    fetchProducts();
-  }, [fetchProducts]);
-
-  useEffect(() => {
     category &&
       setFilteredProducts(
         products.filter((item) =>

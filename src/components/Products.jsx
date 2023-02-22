@@ -12,10 +12,15 @@ const Products = ({ category, filters, sort }) => {
   useEffect(() => {
     (async () => {
       try {
-        const { data } = await getProducts(category);
+        const { token } = await axios.CancelToken.source();
+        const { data } = await getProducts(category, token);
         setProducts(data.products);
       } catch (err) {
-        console.log(err);
+        if (axios.isCancel(err)) {
+          console.log('cancelled');
+        } else {
+          console.log(err);
+        }
       }
     })();
   }, [category]);

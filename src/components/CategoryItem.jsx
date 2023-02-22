@@ -10,7 +10,7 @@ const CategoryItem = ({ img, title, category }) => {
   return (
     <Container>
       <Link to={`products/${category}`}>
-        {darkMode && <Overlay />}
+        {darkMode && <Overlay>&nbsp;</Overlay>}
         <Image src={img} alt='' />
         <Info>
           <Title>{title}</Title>

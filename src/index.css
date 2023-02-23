@@ -111,3 +111,7 @@ a:visited {
 .register__icon--dark {
   color: rgb(156, 156, 156);
 }
+
+.arrow__light {
+  fill: #333333;
+}

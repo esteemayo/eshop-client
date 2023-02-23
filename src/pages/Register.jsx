@@ -313,7 +313,7 @@ const FormInput = styled.input`
   border: none;
   border-radius: 4px;
   border-bottom: 3px solid transparent;
-  caret-color: #008080;
+  caret-color: ${({ theme }) => theme.crInput};
   transition: all 0.5s ease;
 
   @media only screen and (max-width: 57.19em) {

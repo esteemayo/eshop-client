@@ -74,7 +74,7 @@ const Arrow = styled.div`
   position: absolute;
   top: 0;
   bottom: 0;
-  left: ${(props) => props.direction === 'left' && '10px'};
+  left: ${({ direction }) => direction === 'left' && '10px'};
   right: ${(props) => props.direction === 'right' && '10px'};
   margin: auto;
   cursor: pointer;

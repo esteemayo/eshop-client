@@ -100,6 +100,7 @@ const FilterText = styled.span`
   font-size: 2rem;
   font-weight: 600;
   text-transform: capitalize;
+  color: ${({ theme }) => theme.textCat};
   margin-right: 2rem;
 
   ${tabLand({ marginRight: '1rem' })}

@@ -223,9 +223,9 @@ const Wrapper = styled.div`
   padding: 2rem;
   background-color: ${({ theme }) => theme.bg};
   border-radius: 5px;
-  -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
-  -moz-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
-  box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow:  ${({ theme }) => theme.boxWrapper};
+  -moz-box-shadow:  ${({ theme }) => theme.boxWrapper};
+  box-shadow:  ${({ theme }) => theme.boxWrapper};
 
   ${tabLand({
   width: '65%',

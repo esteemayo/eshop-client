@@ -75,6 +75,7 @@ const Container = styled.div`
 const Title = styled.h1`
   text-transform: capitalize;
   font-size: 3.2rem;
+  color: ${({ theme }) => theme.textCat};
   margin: 2rem;
 `;
 

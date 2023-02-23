@@ -34,6 +34,7 @@ export const darkTheme = {
   borderSummary: '#555555',
   textCat: '#808080',
   borderFilter: '#555555',
+  btnSlide: '#202020',
 };
 
 export const lightTheme = {
@@ -72,4 +73,5 @@ export const lightTheme = {
   borderSummary: 'lightgray',
   textCat: '#333333',
   borderFilter: '#333333',
+  btnSlide: '#fff7f7',
 };

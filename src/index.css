@@ -95,7 +95,6 @@ a:visited {
 .password__icon,
 .register__icon {
   font-size: 2rem !important;
-  color: #008080;
   position: absolute;
   top: 1.5rem;
   right: 2rem;

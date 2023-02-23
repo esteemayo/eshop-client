@@ -174,7 +174,7 @@ const Title = styled.h1`
     content: '';
     width: 10%;
     height: 3px;
-    background-color: #008080;
+    background-color: ${({ theme }) => theme.bgUnderline};
     margin: 0 auto;
 
     ${mobile({ display: 'none' })}

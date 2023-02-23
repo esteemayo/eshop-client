@@ -129,7 +129,7 @@ const Register = () => {
                 />
                 <FormLabel htmlFor={id}>{label}</FormLabel>
                 {name === 'name' && <PersonOutline className={`register__icon ${darkMode ? 'register__icon--dark' : 'register__icon--light'}`} />}
-                {name === 'username' && <FaceOutlined className='register__icon' />}
+                {name === 'username' && <FaceOutlined className={`register__icon ${darkMode ? 'register__icon--dark' : 'register__icon--light'}`} />}
                 {name === 'email' && <EmailOutlined className='register__icon' />}
                 {(name === 'password' || name === 'passwordConfirm') && (
                   showPassword ? (

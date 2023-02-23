@@ -301,6 +301,7 @@ const Link = styled.a`
   margin: 0.5rem 0;
   font-size: 1.4rem;
   text-decoration: none;
+  color: ${({ theme }) => theme.text};
 
   ${mobile({ fontSize: '1.25rem' })}
 `;

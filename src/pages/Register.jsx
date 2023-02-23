@@ -233,6 +233,7 @@ const Title = styled.h1`
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+  color: ${({ theme }) => theme.text};
   margin-bottom: 1rem;
 
   @media only screen and (max-width: 57.19em) {

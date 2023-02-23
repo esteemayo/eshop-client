@@ -355,6 +355,7 @@ const FormInput = styled.input`
 
 const Agreement = styled.span`
   font-size: 1.4rem;
+  color: ${({ theme }) => theme.text};
 
   ${mobile({
   fontSize: '1.25rem',

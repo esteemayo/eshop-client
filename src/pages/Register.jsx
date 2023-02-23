@@ -138,7 +138,11 @@ const Register = () => {
                     className={`register__icon ${darkMode ? 'register__icon--dark' : 'register__icon--light'}`}
                   />
                 )}
-                {name === 'email' && <EmailOutlined className={`register__icon ${darkMode ? 'register__icon--dark' : 'register__icon--light'}`} />}
+                {name === 'email' && (
+                  <EmailOutlined
+                    className={`register__icon ${darkMode ? 'register__icon--dark' : 'register__icon--light'}`}
+                  />
+                )}
                 {(name === 'password' || name === 'passwordConfirm') && (
                   showPassword ? (
                     <VisibilityOffOutlined

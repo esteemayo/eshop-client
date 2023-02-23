@@ -113,7 +113,7 @@ a:visited {
 }
 
 .arrow__light {
-  fill: #333333;
+  fill: #333333 !important;
 }
 
 .arrow__dark {

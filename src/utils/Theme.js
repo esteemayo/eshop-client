@@ -40,6 +40,7 @@ export const darkTheme = {
   bgFormBtn: '#333333',
   textFormBtn: 'rgb(156, 156, 156)',
   box: '2px 4px 10px 1px rgba(201, 201, 201, 0.47)',
+  bgImage: 'linear-gradient(rgba(34, 33, 33, 0.5),rgba(255, 255, 255, 0.5))',
 };
 
 export const lightTheme = {
@@ -84,4 +85,5 @@ export const lightTheme = {
   bgFormBtn: '#008080',
   textFormBtn: 'var(--color-white)',
   box: '0 1rem 2rem rgba(00, 00, 00, 0.1)',
+  bgImage: 'linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5))',
 };

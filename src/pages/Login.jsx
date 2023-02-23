@@ -106,6 +106,7 @@ const Login = () => {
 const Container = styled.div`
   width: 100%;
   height: 100vh;
+  background-color: ${({ theme }) => theme.bg};
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)

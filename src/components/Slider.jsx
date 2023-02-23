@@ -95,7 +95,7 @@ const Slide = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #${(props) => props.bg};
+  background-color: #${({ bg }) => bg};
   z-index: 2000;
 `;
 

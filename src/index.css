@@ -103,3 +103,7 @@ a:visited {
 .username__icon--light {
   color: #008080;
 }
+
+.username__icon--dark {
+  color: rgb(156, 156, 156);
+}

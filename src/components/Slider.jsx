@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux';
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
+  const { darkMode } = useSelector((state) => state.darkMode);
 
   const handleClick = (direction) => {
     if (direction === 'left') {

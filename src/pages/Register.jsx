@@ -297,7 +297,7 @@ const FormContainer = styled.div`
 `;
 
 const FormLabel = styled.label`
-  display: block;
+  display: inline-block;
   font-size: 1.2rem;
   font-weight: 700;
   color: #999;

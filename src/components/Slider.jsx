@@ -116,6 +116,7 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
   font-size: 7rem;
+  background-color: ${({ theme }) => theme.textSoft};
 
   ${tabLand({ fontSize: '3.5rem' })}
 `;

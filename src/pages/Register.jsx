@@ -194,10 +194,7 @@ const Container = styled.div`
   height: 100vh;
   min-height: 120vh;
   background-color: ${({ theme }) => theme.bg};
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
+  background-image:  ${({ theme }) => theme.bgImage},
     url('https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size: cover;
   background-position: center;

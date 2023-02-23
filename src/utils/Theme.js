@@ -33,6 +33,7 @@ export const darkTheme = {
   hr: '#333333',
   borderSummary: '#555555',
   textCat: '#808080',
+  borderFilter: '#555555',
 };
 
 export const lightTheme = {
@@ -70,4 +71,5 @@ export const lightTheme = {
   hr: '#eeeeee',
   borderSummary: 'lightgray',
   textCat: '#333333',
+  borderFilter: '#333333',
 };

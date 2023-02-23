@@ -75,5 +75,5 @@ export const lightTheme = {
   textCat: '#333333',
   borderFilter: '#333333',
   btnSlide: '#fff7f7',
-  bgInput: 'transparent',
+  bgInput: '#f9f9f9',
 };

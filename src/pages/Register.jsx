@@ -209,7 +209,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 40%;
   padding: 2rem;
-  background-color: var(--color-white);
+  background-color: ${({ theme }) => theme.bg};
   border-radius: 5px;
   -webkit-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);
   -moz-box-shadow: 0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06);

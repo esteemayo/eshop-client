@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
+import { useSelector } from 'react-redux';
 
 import { sliderItems } from 'data';
 import { mobile, tabLand } from '../responsive';

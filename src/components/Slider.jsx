@@ -21,7 +21,7 @@ const Slider = () => {
   return (
     <Container>
       <Arrow direction='left' onClick={() => handleClick('left')}>
-        <ArrowLeftOutlined />
+        <ArrowLeftOutlined className={darkMode ? 'arrow__dark' : 'arrow__light'} />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => {

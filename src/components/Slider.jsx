@@ -4,7 +4,6 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 
 import { sliderItems } from 'data';
 import { mobile, tabLand } from '../responsive';
-import { useSelector } from 'react-redux';
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);

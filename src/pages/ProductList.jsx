@@ -113,7 +113,7 @@ const Select = styled.select`
   margin-right: 2rem;
   background-color: transparent;
   color: currentColor;
-  border: 1px solid currentColor;
+  border: 1px solid ${({ theme }) => theme.borderFilter};
 
   ${mobile({ margin: '1rem 0' })}
 

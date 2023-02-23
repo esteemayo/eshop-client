@@ -64,7 +64,7 @@ const Container = styled.div`
 const Arrow = styled.div`
   width: 5rem;
   height: 5rem;
-  background-color: #fff7f7;
+  background-color: ${({ theme }) => theme.btnSlide};
   border-radius: 50%;
 
   display: flex;

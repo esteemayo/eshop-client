@@ -87,7 +87,7 @@ const Login = () => {
             ) : (
               <VisibilityOutlined
                 onClick={handleShowPassword}
-                className='password__icon'
+                className={`password__icon ${darkMode ? 'password__icon--dark' : 'password__icon--light'}`}
               />
             )}
           </FormContainer>

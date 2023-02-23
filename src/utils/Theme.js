@@ -38,6 +38,7 @@ export const darkTheme = {
   bgInput: '#333333',
   bgUnderline: 'rgb(156, 156, 156)',
   bgFormBtn: '#333333',
+  textFormBtn: 'rgb(156, 156, 156)',
 };
 
 export const lightTheme = {
@@ -80,4 +81,5 @@ export const lightTheme = {
   bgInput: '#f9f9f9',
   bgUnderline: '#008080',
   bgFormBtn: '#008080',
+  textFormBtn: 'var(--color-white)',
 };

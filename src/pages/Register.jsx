@@ -305,6 +305,7 @@ const FormInput = styled.input`
   display: block;
   font-size: 1.5rem;
   font-family: inherit;
+  background-color: ${({ theme }) => theme.bgInput};
   color: #999;
   padding: 1.5rem 2rem;
   width: 100%;

@@ -348,9 +348,9 @@ const FormInput = styled.input`
   &:focus {
     outline: none;
     border-bottom: 3px solid #008080;
-    -webkit-box-shadow: ${({ theme }) => theme.boxt};
-    -moz-box-shadow: ${({ theme }) => theme.boxt};
-    box-shadow: ${({ theme }) => theme.boxt};
+    -webkit-box-shadow: ${({ theme }) => theme.box};
+    -moz-box-shadow: ${({ theme }) => theme.box};
+    box-shadow: ${({ theme }) => theme.box};
   }
 
   &:focus:invalid {

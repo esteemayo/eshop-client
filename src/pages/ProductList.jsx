@@ -122,6 +122,8 @@ const Select = styled.select`
   }
 `;
 
-const Option = styled.option``;
+const Option = styled.option`
+  background-color: ${({ theme }) => theme.bgOption};
+`;
 
 export default ProductList;

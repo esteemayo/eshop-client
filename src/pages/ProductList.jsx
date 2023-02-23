@@ -112,7 +112,7 @@ const Select = styled.select`
   padding: 1rem;
   margin-right: 2rem;
   background-color: transparent;
-  color: currentColor;
+  color: ${({ theme }) => theme.textCat};
   border: 1px solid ${({ theme }) => theme.borderFilter};
 
   ${mobile({ margin: '1rem 0' })}

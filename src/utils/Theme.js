@@ -32,6 +32,7 @@ export const darkTheme = {
   bgCartBtnHover: '#444444',
   hr: '#333333',
   borderSummary: '#555555',
+  textCat: '#808080',
 };
 
 export const lightTheme = {
@@ -68,4 +69,5 @@ export const lightTheme = {
   bgCartBtnHover: '#333333',
   hr: '#eeeeee',
   borderSummary: 'lightgray',
+  textCat: '#333333',
 };

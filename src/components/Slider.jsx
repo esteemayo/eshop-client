@@ -125,6 +125,7 @@ const Description = styled.p`
   margin: 5rem 0;
   font-size: 2rem;
   font-weight: 500;
+  color: ${({ theme }) => theme.textSoft};
   letter-spacing: 3px;
 
   ${tabLand({

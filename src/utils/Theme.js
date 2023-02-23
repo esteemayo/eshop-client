@@ -41,7 +41,7 @@ export const darkTheme = {
   textFormBtn: 'rgb(156, 156, 156)',
   box: '2px 4px 10px 1px rgba(201, 201, 201, 0.47)',
   bgImage: 'linear-gradient(rgba(83, 82, 82, 0.2),rgba(83, 82, 82, 0.2))',
-  boxWrapper: '2px 4px 10px 1px rgba(201, 201, 201, 0.47)',
+  boxWrapper: '2px 4px 10px 1px rgba(105, 104, 104, 0.47)',
 };
 
 export const lightTheme = {

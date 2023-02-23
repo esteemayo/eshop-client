@@ -393,7 +393,7 @@ const Button = styled.button`
   text-transform: uppercase;
   padding: 1.5rem 2rem;
   margin-top: 2rem;
-  background-color: #008080;
+  background-color: ${({ theme }) => theme.bgFormBtn};
   color: var(--color-white);
   cursor: pointer;
   transition: all 0.5s ease;

@@ -234,7 +234,7 @@ const FilterSize = styled.select`
 `;
 
 const FilterSizeOption = styled.option`
-  background-color:  ${({ theme }) => theme.sizeOption};
+  background-color:  ${({ theme }) => theme.bgOption};
 `;
 
 const AddContainer = styled.div`

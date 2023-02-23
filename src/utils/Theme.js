@@ -37,6 +37,7 @@ export const darkTheme = {
   btnSlide: 'rgb(156, 156, 156)',
   bgInput: '#333333',
   bgUnderline: 'rgb(156, 156, 156)',
+  bgFormBtn: '#333333',
 };
 
 export const lightTheme = {
@@ -78,4 +79,5 @@ export const lightTheme = {
   btnSlide: '#fff7f7',
   bgInput: '#f9f9f9',
   bgUnderline: '#008080',
+  bgFormBtn: '#008080',
 };

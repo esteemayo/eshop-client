@@ -66,7 +66,7 @@ const Login = () => {
               ref={usernameRef}
             />
             <FormLabel htmlFor='username'>Username</FormLabel>
-            <FaceOutlined className='username__icon' />
+            <FaceOutlined className={`username__icon ${darkMode ? 'username__icon--dark' : 'username__icon--light'}`} />
           </FormContainer>
           <FormContainer>
             <FormInput

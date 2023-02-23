@@ -394,7 +394,7 @@ const Button = styled.button`
   padding: 1.5rem 2rem;
   margin-top: 2rem;
   background-color: ${({ theme }) => theme.bgFormBtn};
-  color: var(--color-white);
+  color: ${({ theme }) => theme.textFormBtn};
   cursor: pointer;
   transition: all 0.5s ease;
 

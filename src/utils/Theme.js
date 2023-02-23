@@ -39,6 +39,7 @@ export const darkTheme = {
   bgUnderline: 'rgb(156, 156, 156)',
   bgFormBtn: '#333333',
   textFormBtn: 'rgb(156, 156, 156)',
+  box: '2px 4px 10px 1px rgba(201, 201, 201, 0.47)',
 };
 
 export const lightTheme = {
@@ -82,4 +83,5 @@ export const lightTheme = {
   bgUnderline: '#008080',
   bgFormBtn: '#008080',
   textFormBtn: 'var(--color-white)',
+  box: '0 1rem 2rem rgba(00, 00, 00, 0.1)',
 };

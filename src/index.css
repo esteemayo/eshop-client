@@ -107,6 +107,7 @@ a:visited {
 }
 
 .username__icon--dark,
-.password__icon--dark {
+.password__icon--dark,
+.register__icon--dark {
   color: rgb(156, 156, 156);
 }

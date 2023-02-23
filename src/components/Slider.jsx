@@ -27,7 +27,7 @@ const Slider = () => {
         {sliderItems.map((item) => {
           const { id, img, desc, title } = item;
           return (
-            <Slide bg='f5fafd' key={id}>
+            <Slide bg={darkMode ? '111010' : 'f5fafd'} key={id}>
               <ImgContainer>
                 <Image src={img} alt='' />
               </ImgContainer>

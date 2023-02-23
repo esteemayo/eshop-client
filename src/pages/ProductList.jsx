@@ -111,6 +111,7 @@ const FilterText = styled.span`
 const Select = styled.select`
   padding: 1rem;
   margin-right: 2rem;
+  background-color: transparent;
   color: currentColor;
   border: 1px solid currentColor;
 

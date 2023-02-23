@@ -117,5 +117,5 @@ a:visited {
 }
 
 .arrow__dark {
-  fill: #aaaaaa;
+  fill: #aaaaaa !important;
 }

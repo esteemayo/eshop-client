@@ -159,7 +159,9 @@ const Register = () => {
               />
             )}
             <FormLabel htmlFor='file'>Image</FormLabel>
-            <PublishOutlined className={`register__icon ${darkMode ? 'register__icon--dark' : 'register__icon--light'}`} />
+            <PublishOutlined
+              className={`register__icon ${darkMode ? 'register__icon--dark' : 'register__icon--light'}`}
+            />
           </FormContainer>
           <Agreement>
             By creating an account, I consent to the processing of my personal

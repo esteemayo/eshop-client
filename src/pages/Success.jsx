@@ -5,7 +5,7 @@ const Success = () => {
   const { state } = useLocation();
   console.log(state);
 
-  return <div>Success</div>;
+  return <Container>Success</Container>;
 };
 
 const Container = styled.div`

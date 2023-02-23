@@ -35,6 +35,7 @@ export const darkTheme = {
   textCat: '#808080',
   borderFilter: '#555555',
   btnSlide: 'rgb(156, 156, 156)',
+  bgInput: '#333333',
 };
 
 export const lightTheme = {
@@ -74,4 +75,5 @@ export const lightTheme = {
   textCat: '#333333',
   borderFilter: '#333333',
   btnSlide: '#fff7f7',
+  bgInput: 'transparent',
 };

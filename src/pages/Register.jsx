@@ -382,7 +382,7 @@ const Agreement = styled.span`
 `;
 
 const Button = styled.button`
-  display: block;
+  display: inline-block;
   border: none;
   border-radius: 5px;
   width: 40%;

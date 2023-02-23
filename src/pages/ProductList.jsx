@@ -82,7 +82,6 @@ const Title = styled.h1`
 const FilterContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  color: ${({ theme }) => theme.borderFilter};
 `;
 
 const Filter = styled.div`

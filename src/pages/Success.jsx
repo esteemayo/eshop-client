@@ -8,4 +8,8 @@ const Success = () => {
   return <div>Success</div>;
 };
 
+const Container = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+`;
+
 export default Success;

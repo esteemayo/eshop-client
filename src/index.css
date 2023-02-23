@@ -115,3 +115,7 @@ a:visited {
 .arrow__light {
   fill: #333333;
 }
+
+.arrow__dark {
+  fill: #aaaaaa;
+}

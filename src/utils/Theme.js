@@ -36,6 +36,7 @@ export const darkTheme = {
   borderFilter: '#555555',
   btnSlide: 'rgb(156, 156, 156)',
   bgInput: '#333333',
+  bgUnderline: 'rgb(156, 156, 156)',
 };
 
 export const lightTheme = {
@@ -76,4 +77,5 @@ export const lightTheme = {
   borderFilter: '#333333',
   btnSlide: '#fff7f7',
   bgInput: '#f9f9f9',
+  bgUnderline: '#008080',
 };

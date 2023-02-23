@@ -34,7 +34,7 @@ export const darkTheme = {
   borderSummary: '#555555',
   textCat: '#808080',
   borderFilter: '#555555',
-  btnSlide: '#202020',
+  btnSlide: 'rgb(156, 156, 156)',
 };
 
 export const lightTheme = {

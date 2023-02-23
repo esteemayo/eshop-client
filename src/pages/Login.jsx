@@ -157,6 +157,7 @@ const Title = styled.h1`
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+  color: ${({ theme }) => theme.text};
   margin-bottom: 1rem;
 
   ${mobile({

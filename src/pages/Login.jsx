@@ -224,7 +224,7 @@ const FormInput = styled.input`
   border-radius: 4px;
   border-bottom: 3px solid transparent;
   background-color: #f9f9f9;
-  caret-color: #008080;
+  caret-color: ${({ theme }) => theme.crInput};
   transition: all 0.5s ease;
 
   ${mobile({

@@ -283,7 +283,7 @@ const Amount = styled.span`
 `;
 
 const Button = styled.button`
-  display: block;
+  display: inline-block;
   border: none;
   text-transform: uppercase;
   font-weight: 500;

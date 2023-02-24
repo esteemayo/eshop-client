@@ -10,6 +10,7 @@ import { mobile, tabLand } from 'responsive';
 import { getProductBySlug } from 'services/productService';
 
 const Product = () => {
+  const dispatch = useDispatch();
   const { pathname } = useLocation();
   const slug = pathname.split('/')[2];
 

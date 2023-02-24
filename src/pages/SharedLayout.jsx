@@ -14,6 +14,7 @@ const SharedLayout = () => {
       <Announcement />
       <Navbar />
       <ToastContainer style={{ fontSize: '1.4rem' }} />
+      <ScrollToTop />
       <Outlet />
       <Footer />
     </>

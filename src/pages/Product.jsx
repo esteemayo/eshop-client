@@ -35,13 +35,18 @@ const Product = () => {
   useEffect(() => {
     slug && (async () => {
       try {
+        const { token } = axios.CancelToken.source();
         const {
           data: { product },
-        } = await getProductBySlug(slug);
+        } = await getProductBySlug(slug, token);
 
         setProduct(product);
       } catch (err) {
-        console.log(err);
+        if (axios.isCancel(err)) {
+          console.log('cancelled');
+        } else {
+          console.log(err);
+        }
       }
     })();
   }, [slug]);

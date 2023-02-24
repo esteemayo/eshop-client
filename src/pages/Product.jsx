@@ -20,18 +20,6 @@ const Product = () => {
 
   const dispatch = useDispatch();
 
-  const fetchProduct = useCallback(async () => {
-    try {
-      const {
-        data: { product },
-      } = await getProductBySlug(slug);
-
-      setProduct(product);
-    } catch (err) {
-      console.log(err);
-    }
-  }, [slug]);
-
   const handleQuantity = (type) => {
     if (type === 'dec') {
       quantity > 1 && setQuantity(quantity - 1);

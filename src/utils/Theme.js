@@ -97,5 +97,5 @@ export const lightTheme = {
   boxWrapper: '0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06)',
   bgScrollBtn: '#008080',
   textScbgScrollBtn: 'var(--color-white)',
-  bgScrollBtn: '#038f8f',
+  bgScrollBtnHover: '#038f8f',
 };

@@ -29,6 +29,7 @@ const IconWrapper = styled.div`
   color: ${({ theme }) => theme.textAnnounce};
   box-shadow: rgb(0, 0, 0, 0.25) 0 0.4rem 2rem;
   border-radius: 2rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   cursor: pointer;
 `;
 

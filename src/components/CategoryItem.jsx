@@ -65,6 +65,7 @@ const Image = styled.img`
 `;
 
 const Title = styled.h1`
+  display: inline-block;
   text-transform: uppercase;
   color: ${({ theme }) => theme.catText};
   margin-bottom: 2rem;

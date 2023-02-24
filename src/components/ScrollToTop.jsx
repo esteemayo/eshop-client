@@ -53,6 +53,10 @@ const IconWrapper = styled.div`
   border-radius: 2rem;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   cursor: pointer;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.bgScrollBtn};
+  }
 `;
 
 export default ScrollToTop;

@@ -16,7 +16,9 @@ const Product = ({ img, slug }) => {
       <Image src={img} alt='' />
       <Info>
         <Icon>
-          <ShoppingCartOutlined className={darkMode ? 'product__icon--dark' : 'product__icon--light'} />
+          <ShoppingCartOutlined
+            className={darkMode ? 'product__icon--dark' : 'product__icon--light'}
+          />
         </Icon>
         <Icon>
           <Link to={`/product/${slug}`} className='product__link'>

@@ -17,6 +17,9 @@ const Container = styled.div`
 `;
 
 const IconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 4rem;
   height: 4rem;
   font-size: 1.5rem;

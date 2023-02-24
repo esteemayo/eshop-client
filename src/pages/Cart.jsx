@@ -64,7 +64,7 @@ const Cart = () => {
         </Top>
         <Bottom>
           <Info>
-            {cart.map((item) => {
+            {cart?.map((item) => {
               const { _id: id, img, size, price, color, title, quantity } = item;
               return (
                 <Fragment key={id}>

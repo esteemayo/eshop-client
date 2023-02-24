@@ -11,7 +11,7 @@ export const darkTheme = {
   bgCatBtn: '#808080',
   textCatBtn: '#d4d8db',
   catText: '#d4d8db',
-  bgProduct: '#2a383d',
+  bgProduct: '#111111',
   bgCircle: 'rgba(65, 64, 64, 0.4)',
   bgProdIcon: 'rgb(94, 94, 94)',
   bgProdIconHover: '#627979',

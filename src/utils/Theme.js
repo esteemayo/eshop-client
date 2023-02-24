@@ -14,7 +14,7 @@ export const darkTheme = {
   bgProduct: '#111111',
   bgCircle: 'rgba(65, 64, 64, 0.4)',
   bgProdIcon: 'rgb(94, 94, 94)',
-  bgProdIconHover: '#627979',
+  bgProdIconHover: '#424242',
   bgNews: '#111010',
   textNews: '#808080',
   bgNewsInput: 'transparent',

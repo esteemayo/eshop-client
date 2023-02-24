@@ -426,7 +426,7 @@ const Button = styled.button`
   border: none;
   width: 100%;
   padding: 1rem;
-  display: block;
+  display: inline-block;
   border-radius: 5px;
   text-transform: uppercase;
   background-color: ${({ theme }) => theme.bgCartBtn};

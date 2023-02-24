@@ -3,9 +3,9 @@ import styled from 'styled-components';
 const ScrollToTop = () => {
   return (
     <Container>
-      <Wrapper>
+      <IconWrapper>
         Top
-      </Wrapper>
+      </IconWrapper>
     </Container>
   );
 };

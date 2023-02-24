@@ -5,12 +5,20 @@ import { useEffect, useState } from 'react';
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
+  const toggleVisibilityHandler = () => {
+    setIsVisible(window.pageYOffset > 350 ? true : false);
+  };
+
   const handleScroll = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
   };
+
+  useEffect(() => {
+    document.addEventListener('scroll')
+  })
 
   return (
     <Container>

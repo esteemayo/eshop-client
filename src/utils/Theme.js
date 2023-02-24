@@ -5,7 +5,7 @@ export const darkTheme = {
   textSoft: '#aaaaaa',
   soft: '#373737',
   bgAnnounce: '#062222',
-  textAnnounce: 'rgb(156, 156, 156)',
+  textAnnounce: 'rgb(206, 206, 206)',
   logo: '#d4d8db',
   menuBtn: '#cccccc',
   searchBorder: '#686767',

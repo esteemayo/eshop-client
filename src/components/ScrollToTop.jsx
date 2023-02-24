@@ -16,7 +16,7 @@ const Container = styled.div`
   right: 0.5rem;
 `;
 
-const Wrapper = styled.div`
+const IconWrapper = styled.div`
   
 `;
 

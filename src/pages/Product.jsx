@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { NumericFormat } from 'react-number-format';
 import { useEffect, useState } from 'react';
 import { Add, Remove } from '@material-ui/icons';
+import axios from 'axios';
 
 import { addProduct } from 'redux/cart/cartSlice';
 import { mobile, tabLand } from 'responsive';

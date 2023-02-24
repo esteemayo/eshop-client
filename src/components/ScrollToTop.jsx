@@ -14,6 +14,7 @@ const Container = styled.div`
   position: fixed;
   bottom: 1rem;
   right: 0.5rem;
+  z-index: 3000;
 `;
 
 const IconWrapper = styled.div`

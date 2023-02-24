@@ -90,7 +90,7 @@ const Cart = () => {
                     </ProductDetail>
                     <PriceDetail>
                       <ProductAmountContainer>
-                        <Add onClick={handleIncrement} />
+                        <Add onClick={() => handleIncrement(id)} />
                         <ProductAmount>{quantity}</ProductAmount>
                         <Remove />
                       </ProductAmountContainer>

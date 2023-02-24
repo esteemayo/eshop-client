@@ -33,8 +33,18 @@ const Product = () => {
   };
 
   useEffect(() => {
-    fetchProduct();
-  }, [fetchProduct]);
+    slug && (async () => {
+      try {
+        const {
+          data: { product },
+        } = await getProductBySlug(slug);
+
+        setProduct(product);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
+  }, [slug]);
 
   return (
     <Container>

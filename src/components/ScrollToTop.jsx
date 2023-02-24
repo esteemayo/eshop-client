@@ -21,6 +21,7 @@ const IconWrapper = styled.div`
   height: 4rem;
   font-size: 1.5rem;
   background-color: ${({ theme }) => theme.bgAnnounce};
+  color: ${({ theme }) => theme.textAnnounce};
 `;
 
 export default ScrollToTop;

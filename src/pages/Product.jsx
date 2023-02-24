@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { NumericFormat } from 'react-number-format';
 import { Add, Remove } from '@material-ui/icons';
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState } from 'react';
 
 import { addProduct } from 'redux/cart/cartSlice';
 import { mobile, tabLand } from 'responsive';

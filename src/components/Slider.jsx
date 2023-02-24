@@ -16,7 +16,7 @@ const Slider = () => {
     if (direction === 'left') {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : lastSlideIndex);
     } else {
-      setSlideIndex(slideIndex < sliderItems.length - 1 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < lastSlideIndex ? slideIndex + 1 : 0);
     }
   };
 

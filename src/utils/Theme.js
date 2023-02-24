@@ -10,7 +10,7 @@ export const darkTheme = {
   menuBtn: '#cccccc',
   searchBorder: '#686767',
   searchPlaceholder: '#999999',
-  bgCatBtn: '#808080',
+  bgCatBtn: '#444343',
   textCatBtn: '#d4d8db',
   catText: '#d4d8db',
   bgProduct: '#111111',

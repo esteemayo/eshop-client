@@ -49,7 +49,7 @@ const IconWrapper = styled.div`
   font-size: 1.5rem;
   background-color: ${({ theme }) => theme.bgScrollBtn};
   color: ${({ theme }) => theme.textScrollBtn};
-  box-shadow: ${({ theme }) => theme.boxScroll};;
+  box-shadow: ${({ theme }) => theme.boxScroll};
   border-radius: 2rem;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   cursor: pointer;

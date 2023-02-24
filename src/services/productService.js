@@ -9,8 +9,8 @@ export const getProducts = (category, token) =>
 
 export const getProductById = (productId) => http.get(productUrl(productId));
 
-export const getProductBySlug = (slug) =>
-  http.get(`${apiEndpoint}/details/${slug}`);
+export const getProductBySlug = (slug, token) =>
+  http.get(`${apiEndpoint}/details/${slug}`, { cancelToken: token });
 
 export const createProduct = (data) => http.post(apiEndpoint, data);
 

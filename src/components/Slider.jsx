@@ -43,7 +43,9 @@ const Slider = () => {
         })}
       </Wrapper>
       <Arrow direction='right' onClick={() => handleClick('right')}>
-        <ArrowRightOutlined className={darkMode ? 'arrow__dark' : 'arrow__light'} />
+        <ArrowRightOutlined
+          className={darkMode ? 'arrow__dark' : 'arrow__light'}
+        />
       </Arrow>
     </Container>
   );

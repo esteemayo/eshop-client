@@ -8,7 +8,7 @@ const Announcement = () => {
 const Container = styled.div`
   height: 3rem;
   background-color: ${({ theme }) => theme.bgAnnounce};
-  color: #fff;
+  color: ${({ theme }) => theme.textAnnounce};
   display: flex;
   justify-content: center;
   align-items: center;

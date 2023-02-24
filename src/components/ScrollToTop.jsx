@@ -17,8 +17,9 @@ const ScrollToTop = () => {
   };
 
   useEffect(() => {
-    document.addEventListener('scroll')
-  })
+    document.addEventListener('scroll', toggleVisibilityHandler);
+    return () => document.removeEventListener('scroll', toggleVisibilityHandler);
+  }, []);
 
   return (
     <Container>

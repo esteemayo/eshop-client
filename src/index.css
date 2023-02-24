@@ -127,3 +127,13 @@ a:visited {
 .product__icon--dark {
   fill: #808080 !important;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

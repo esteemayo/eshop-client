@@ -96,6 +96,6 @@ export const lightTheme = {
   bgImage: 'linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5))',
   boxWrapper: '0 2.5rem 8rem 2rem rgba(0, 0, 0, 0.06)',
   bgScrollBtn: '#008080',
-  textScbgScrollBtn: 'var(--color-white)',
+  textScrollBtn: 'var(--color-white)',
   bgScrollBtnHover: '#038f8f',
 };

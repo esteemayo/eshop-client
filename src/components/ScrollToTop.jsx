@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ScrollToTop = () => {
   return (
-    <div>ScrollToTop</div>
+    <Container>ScrollToTop</Container>
   );
 };
 

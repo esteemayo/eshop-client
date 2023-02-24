@@ -23,9 +23,11 @@ const ScrollToTop = () => {
 
   return (
     <Container>
-      <IconWrapper>
-        <KeyboardArrowUpOutlined style={{ fontSize: '2rem' }} />
-      </IconWrapper>
+      {isVisible && (
+        <IconWrapper>
+          <KeyboardArrowUpOutlined style={{ fontSize: '2rem' }} />
+        </IconWrapper>
+      )}
     </Container>
   );
 };

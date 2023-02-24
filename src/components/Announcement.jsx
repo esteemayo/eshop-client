@@ -7,7 +7,7 @@ const Announcement = () => {
 
 const Container = styled.div`
   height: 3rem;
-  background-color: #008080;
+  background-color: ${({ theme }) => theme.bgAnnounce};
   color: #fff;
   display: flex;
   justify-content: center;

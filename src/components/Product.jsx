@@ -5,6 +5,7 @@ import {
   SearchOutlined,
   ShoppingCartOutlined,
 } from '@material-ui/icons';
+import { useSelector } from 'react-redux';
 
 const Product = ({ img, slug }) => {
   return (

@@ -18,6 +18,10 @@ const Cart = () => {
   const [stripeToken, setStripeToken] = useState(null);
   const navigate = useNavigate();
 
+  const handleIncrement = (cartId) => {
+    dispatch(increment());
+  };
+
   const onToken = (token) => {
     setStripeToken(token);
   };

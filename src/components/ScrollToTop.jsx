@@ -24,7 +24,7 @@ const ScrollToTop = () => {
   return (
     <Container>
       {isVisible && (
-        <IconWrapper>
+        <IconWrapper onClick={handleScroll}>
           <KeyboardArrowUpOutlined style={{ fontSize: '2rem' }} />
         </IconWrapper>
       )}

@@ -8,6 +8,8 @@ import {
 import { useSelector } from 'react-redux';
 
 const Product = ({ img, slug }) => {
+  const { darkMode } = useSelector((state) => state.darkMode);
+
   return (
     <Container>
       <Circle />

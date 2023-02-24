@@ -11,6 +11,8 @@ const Slider = () => {
   const { darkMode } = useSelector((state) => state.darkMode);
 
   const handleClick = (direction) => {
+    const lastSlideIndex = sliderItems.length - 1;
+
     if (direction === 'left') {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : sliderItems.length - 1);
     } else {

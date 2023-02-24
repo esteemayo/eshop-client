@@ -119,3 +119,7 @@ a:visited {
 .arrow__dark {
   fill: #202020 !important;
 }
+
+.product__icon--light {
+  fill: #333333 !important;
+}

@@ -19,7 +19,7 @@ const Cart = () => {
   const navigate = useNavigate();
 
   const handleIncrement = (cartId) => {
-    dispatch(increment());
+    dispatch(increment(cartId));
   };
 
   const onToken = (token) => {

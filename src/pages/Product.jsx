@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { NumericFormat } from 'react-number-format';
+import { useEffect, useState } from 'react';
 import { Add, Remove } from '@material-ui/icons';
 
 import { addProduct } from 'redux/cart/cartSlice';

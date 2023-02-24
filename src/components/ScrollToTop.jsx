@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { KeyboardArrowUpOutlined } from '@material-ui/icons'
 
 const ScrollToTop = () => {
   return (

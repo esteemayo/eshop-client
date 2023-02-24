@@ -55,7 +55,7 @@ const IconWrapper = styled.div`
   cursor: pointer;
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgScrollBtn};
+    background-color: ${({ theme }) => theme.bgScrollBtnHover};
   }
 `;
 

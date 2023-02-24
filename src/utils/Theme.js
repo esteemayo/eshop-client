@@ -46,7 +46,7 @@ export const darkTheme = {
   boxWrapper: '2px 4px 10px 1px rgba(105, 104, 104, 0.47)',
   bgScrollBtn: '#062222',
   textScrollBtn: 'rgb(206, 206, 206)',
-  bgScrollBtnHover: '#0b3b3b',
+  bgScrollBtnHover: '#035252',
 };
 
 export const lightTheme = {

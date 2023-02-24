@@ -123,3 +123,7 @@ a:visited {
 .product__icon--light {
   fill: #333333 !important;
 }
+
+.product__icon--dark {
+  fill: #808080 !important;
+}

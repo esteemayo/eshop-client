@@ -28,7 +28,9 @@ const Product = ({ img, slug }) => {
           </Link>
         </Icon>
         <Icon>
-          <FavoriteBorderOutlined className={darkMode ? 'product__icon--dark' : 'product__icon--light'} />
+          <FavoriteBorderOutlined
+            className={darkMode ? 'product__icon--dark' : 'product__icon--light'}
+          />
         </Icon>
       </Info>
     </Container>

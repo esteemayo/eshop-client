@@ -19,7 +19,6 @@ const Product = () => {
   const [product, setProduct] = useState({});
   const [quantity, setQuantity] = useState(1);
 
-
   const handleQuantity = (type) => {
     if (type === 'dec') {
       quantity > 1 && setQuantity(quantity - 1);

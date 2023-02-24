@@ -2,7 +2,11 @@ import styled from 'styled-components';
 
 const ScrollToTop = () => {
   return (
-    <Container>ScrollToTop</Container>
+    <Container>
+      <Wrapper>
+        Top
+      </Wrapper>
+    </Container>
   );
 };
 

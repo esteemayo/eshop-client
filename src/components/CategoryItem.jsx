@@ -78,7 +78,7 @@ const Title = styled.h1`
 
 const Button = styled.button`
   border: none;
-  display: block;
+  display: inline-block;
   text-transform: uppercase;
   padding: 1rem;
   font-weight: 600;

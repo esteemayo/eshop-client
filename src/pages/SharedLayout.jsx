@@ -6,7 +6,6 @@ import Announcement from 'components/Announcement';
 import Footer from 'components/Footer';
 
 import 'react-toastify/dist/ReactToastify.css';
-import ScrollToTop from 'components/ScrollToTop';
 
 const SharedLayout = () => {
   return (

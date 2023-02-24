@@ -55,7 +55,7 @@ const Products = ({ category, filters, sort }) => {
   return (
     <Container>
       {category
-        ? filteredProducts.map((item) => {
+        ? filteredProducts?.map((item) => {
           const { _id: id } = item;
           return <Product key={id} {...item} />;
         })

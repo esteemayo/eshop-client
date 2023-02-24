@@ -20,6 +20,7 @@ const IconWrapper = styled.div`
   width: 4rem;
   height: 4rem;
   font-size: 1.5rem;
+  background-color: ${({ theme }) => theme.bgAnnounce};
 `;
 
 export default ScrollToTop;

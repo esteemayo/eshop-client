@@ -22,7 +22,9 @@ const Product = ({ img, slug }) => {
         </Icon>
         <Icon>
           <Link to={`/product/${slug}`} className='product__link'>
-            <SearchOutlined className={darkMode ? 'product__icon--dark' : 'product__icon--light'} />
+            <SearchOutlined
+              className={darkMode ? 'product__icon--dark' : 'product__icon--light'}
+            />
           </Link>
         </Icon>
         <Icon>

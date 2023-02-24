@@ -12,4 +12,8 @@ const Container = styled.div`
   right: 0.5rem;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default ScrollToTop;

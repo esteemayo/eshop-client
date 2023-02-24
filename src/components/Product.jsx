@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { useSelector } from 'react-redux';
 import {
   FavoriteBorderOutlined,
   SearchOutlined,

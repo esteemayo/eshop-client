@@ -8,6 +8,7 @@ import { Add, Remove } from '@material-ui/icons';
 import { addProduct } from 'redux/cart/cartSlice';
 import { mobile, tabLand } from 'responsive';
 import { getProductBySlug } from 'services/productService';
+import axios from 'axios';
 
 const Product = () => {
   const dispatch = useDispatch();

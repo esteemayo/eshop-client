@@ -5,7 +5,7 @@ const ScrollToTop = () => {
   return (
     <Container>
       <IconWrapper>
-        Top
+        <KeyboardArrowUpOutlined style={{ fontSize: '2rem' }} />
       </IconWrapper>
     </Container>
   );

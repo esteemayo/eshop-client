@@ -15,6 +15,7 @@ const Container = styled.div`
   bottom: 1rem;
   right: 0.5rem;
   z-index: 3000;
+  animation: fadeIn 700ms ease-in-out 1s both;
 `;
 
 const IconWrapper = styled.div`

@@ -270,6 +270,7 @@ const Amount = styled.span`
   height: 3rem;
   border-radius: 1rem;
   border: 1px solid #008080;
+  outline-color: ${({ theme }) => theme.text};
 
   display: flex;
   align-items: center;

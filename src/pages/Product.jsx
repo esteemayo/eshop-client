@@ -292,6 +292,7 @@ const Button = styled.button`
   color: ${({ theme }) => theme.textProdBtn};
   border: 2px solid #008080;
   border-radius: 3px;
+  outline-color: ${({ theme }) => theme.text};
   cursor: pointer;
   transition: all 0.5s ease;
 

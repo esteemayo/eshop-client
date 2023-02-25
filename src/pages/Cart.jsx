@@ -7,7 +7,7 @@ import { NumericFormat } from 'react-number-format';
 import { Fragment, useCallback, useEffect, useState } from 'react';
 
 import { stripePayment } from 'services/stripeService';
-import { increment, reset } from 'redux/cart/cartSlice';
+import { reset } from 'redux/cart/cartSlice';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Cart = () => {

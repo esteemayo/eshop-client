@@ -230,6 +230,7 @@ const FilterSize = styled.select`
   background-color: transparent;
   color: currentColor;
   border: 1px solid ${({ theme }) => theme.sizeBorder};
+  outline-color: ${({ theme }) => theme.text};
 `;
 
 const FilterSizeOption = styled.option`

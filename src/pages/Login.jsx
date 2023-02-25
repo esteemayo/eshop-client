@@ -267,6 +267,7 @@ const Button = styled.button`
   margin-bottom: 1rem;
   background-color: ${({ theme }) => theme.bgFormBtn};
   color: ${({ theme }) => theme.textFormBtn};
+  outline-color: ${({ theme }) => theme.text};
   cursor: pointer;
   transition: all 0.5s ease;
 

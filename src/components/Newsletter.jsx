@@ -99,6 +99,7 @@ const Button = styled.button`
   border: none;
   background-color: ${({ theme }) => theme.bgNewsBtn};
   color: ${({ theme }) => theme.textNewsBtn};
+  outline-color: ${({ theme }) => theme.text};
   cursor: pointer;
 
   ${mobile({ flex: 2 })}

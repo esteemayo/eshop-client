@@ -70,7 +70,8 @@ a:visited {
   text-decoration: none;
 }
 
-.nav__link--light:focus {
+.nav__link--light:focus,
+.footer__link--light {
   outline-color: #777777;
 }
 

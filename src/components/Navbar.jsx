@@ -34,7 +34,10 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Link to='/' className={`nav__link ${darkMode ? 'nav__link----dark' : 'nav__link--light'}`}>
+          <Link
+            to='/'
+            className={`nav__link ${darkMode ? 'nav__link----dark' : 'nav__link--light'}`}
+          >
             <Logo>eShop</Logo>
           </Link>
         </Center>

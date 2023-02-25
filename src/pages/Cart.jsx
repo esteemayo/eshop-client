@@ -96,7 +96,7 @@ const Cart = () => {
                       </ProductAmountContainer>
                       <ProductPrice>
                         <NumericFormat
-                          value={price * quantity}
+                          value={price}
                           displayType={'text'}
                           thousandSeparator={true}
                           prefix={'$'}

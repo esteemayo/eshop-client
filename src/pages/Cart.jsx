@@ -441,10 +441,6 @@ const Button = styled.button`
     background-color: ${({ theme }) => theme.bgCartBtnHover};
     letter-spacing: 2px;
   }
-
-  &:focus {
-    outline: none;
-  }
 `;
 
 export default Cart;

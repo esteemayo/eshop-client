@@ -70,6 +70,10 @@ a:visited {
   text-decoration: none;
 }
 
+.nav__link--light:focus {
+  outline-color: #777777;
+}
+
 .active {
   color: #008b8b !important;
 }

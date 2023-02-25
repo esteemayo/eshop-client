@@ -307,10 +307,6 @@ const Button = styled.button`
     -moz-box-shadow: ${({ theme }) => theme.boxProd};
     box-shadow: ${({ theme }) => theme.boxProd};
   }
-
-  &:focus {
-    outline: none;
-  }
 `;
 
 export default Product;

@@ -284,10 +284,6 @@ const Button = styled.button`
     letter-spacing: 2px;
   }
 
-  &:focus {
-    outline: none;
-  }
-
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;

@@ -18,6 +18,9 @@ export const cartSlice = createSlice({
     increment: (state, { payload }) => {
       const index = state.cart.findIndex((item) => item._id === payload);
       state.cart[index].quantity++;
+      state.cart[index].price = state.cart[index].price * state.cart[index].quantity;
+      state.total = state.cart.map((item) => item.price)
+        .reduce((acc, cur) => (acc += cur), 0);
     },
     reset: (state) => initialState,
   },

@@ -75,7 +75,8 @@ a:visited {
   outline-color: #777777;
 }
 
-.nav__link--dark:focus {
+.nav__link--dark:focus,
+.footer__link--dark:focus {
   outline-color: rgb(156, 156, 156);
 }
 

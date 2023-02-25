@@ -205,6 +205,7 @@ const TopButton = styled.button`
   padding: 1rem;
   font-weight: 600;
   text-transform: uppercase;
+  outline-color: ${({ theme }) => theme.text};
   cursor: pointer;
   transition: all 0.5s ease;
 

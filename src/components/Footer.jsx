@@ -22,7 +22,10 @@ const Footer = () => {
     <FooterContainer>
       <Container>
         <Left>
-          <Link to='/' className={`footer__link ${darkMode ? 'footer__link--dark' : 'footer__link--light'}`}>
+          <Link
+            to='/'
+            className={`footer__link ${darkMode ? 'footer__link--dark' : 'footer__link--light'}`}
+          >
             <Logo>eShop</Logo>
           </Link>
           <Description>

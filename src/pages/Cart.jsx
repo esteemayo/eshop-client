@@ -228,10 +228,6 @@ const TopButton = styled.button`
     background-color: ${({ type, theme }) => type === 'filled' && theme.bgCartBtnHover};
     opacity: ${({ type }) => type === 'filled' && '0.8'};
   }
-
-  &:focus {
-    outline: none;
-  }
 `;
 
 const TopTexts = styled.div`

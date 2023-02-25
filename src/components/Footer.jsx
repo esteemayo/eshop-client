@@ -15,6 +15,7 @@ import { laptop, mobile, small, smallest, tab } from 'responsive';
 import { useSelector } from 'react-redux';
 
 const Footer = () => {
+  const { darkMode } = useSelector((state) => state.darkMode);
   const copyRightYear = new Date().getFullYear();
 
   return (

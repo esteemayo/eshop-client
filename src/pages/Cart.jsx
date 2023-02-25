@@ -22,20 +22,6 @@ const Cart = () => {
     setStripeToken(token);
   };
 
-  const makePayment = useCallback(async () => {
-    try {
-      const { data } = await stripePayment({
-        tokenId: stripeToken.id,
-        amount: total * 100,
-      });
-
-      dispatch(reset());
-      navigate('/success', { state: data });
-    } catch (err) {
-      console.log(err);
-    }
-  }, [total, navigate, stripeToken, dispatch]);
-
   useEffect(() => {
     stripeToken && total >= 1 && (async () => {
       try {

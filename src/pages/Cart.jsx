@@ -436,6 +436,7 @@ const Button = styled.button`
   background-color: ${({ theme }) => theme.bgCartBtn};
   color: ${({ theme }) => theme.textCartBtn};
   font-weight: 600;
+  outline-color: ${({ theme }) => theme.text};
   cursor: pointer;
   transition: all 0.5s ease;
 

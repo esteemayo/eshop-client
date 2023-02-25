@@ -71,7 +71,7 @@ a:visited {
 }
 
 .nav__link--light:focus,
-.footer__link--light {
+.footer__link--light:focus {
   outline-color: #777777;
 }
 

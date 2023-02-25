@@ -37,8 +37,20 @@ const Cart = () => {
   }, [total, navigate, stripeToken, dispatch]);
 
   useEffect(() => {
-    stripeToken && total >= 1 && makePayment();
-  }, [makePayment, stripeToken, total]);
+    stripeToken && total >= 1 && (async () => {
+      try {
+        const { data } = await stripePayment({
+          tokenId: stripeToken.id,
+          amount: total * 100,
+        });
+
+        dispatch(reset());
+        navigate('/success', { state: data });
+      } catch (err) {
+        console.log(err);
+      }
+    })();
+  }, [total, stripeToken, navigate, dispatch]);
 
   if (cart.length === 0) {
     return (

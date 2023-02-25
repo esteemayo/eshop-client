@@ -114,6 +114,7 @@ const Select = styled.select`
   background-color: transparent;
   color: ${({ theme }) => theme.textCat};
   border: 1px solid ${({ theme }) => theme.borderFilter};
+  outline-color: ${({ theme }) => theme.text};
 
   ${mobile({ margin: '1rem 0' })}
 `;

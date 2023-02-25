@@ -116,10 +116,6 @@ const Select = styled.select`
   border: 1px solid ${({ theme }) => theme.borderFilter};
 
   ${mobile({ margin: '1rem 0' })}
-
-  &:focus {
-    outline: none;
-  }
 `;
 
 const Option = styled.option`

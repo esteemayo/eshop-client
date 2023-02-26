@@ -80,7 +80,7 @@ a:visited {
   outline-color: rgb(156, 156, 156);
 }
 
-.active {
+.active--light {
   color: #008b8b !important;
 }
 

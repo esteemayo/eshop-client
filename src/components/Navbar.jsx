@@ -36,7 +36,7 @@ const Navbar = () => {
         <Center>
           <Link
             to='/'
-            className={`nav__link ${darkMode ? 'nav__link----dark' : 'nav__link--light'}`}
+            className={`nav__link ${darkMode ? 'nav__link--dark' : 'nav__link--light'}`}
           >
             <Logo>eShop</Logo>
           </Link>

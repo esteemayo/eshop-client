@@ -27,6 +27,9 @@ const Container = styled.div`
   height: 100vh;
   background-color: ${({ theme }) => theme.bg};
   color: ${({ theme }) => theme.textSoft};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Text = styled.h5`

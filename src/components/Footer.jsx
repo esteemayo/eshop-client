@@ -219,6 +219,7 @@ const ListItem = styled.li`
 
   & > * {
     transition: all 1s ease-in-out;
+
     &:hover {
       text-decoration: underline;
     }

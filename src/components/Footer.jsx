@@ -59,12 +59,12 @@ const Footer = () => {
             {menuLinks.map((menu) => {
               const { id, url, text } = menu;
               return (
-                <ListItem>
+                <ListItem key={id}>
                   <Link
-                    to='/'
+                    to={url}
                     className={`footer__link ${darkMode ? 'footer__link--dark' : 'footer__link--light'}`}
                   >
-                    Home
+                    {text}
                   </Link>
                 </ListItem>
               );

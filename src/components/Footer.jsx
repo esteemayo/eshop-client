@@ -55,7 +55,9 @@ const Footer = () => {
         <Center>
           <Title>Useful links</Title>
           <List>
-            <ListItem>Home</ListItem>
+            <ListItem>
+              <Link to='/'>Home</Link>
+            </ListItem>
             <ListItem>Cart</ListItem>
             <ListItem>Man Fashion</ListItem>
             <ListItem>Woman Fashion</ListItem>

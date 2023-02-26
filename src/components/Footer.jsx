@@ -63,22 +63,6 @@ const Footer = () => {
                 Home
               </Link>
             </ListItem>
-            <ListItem>
-              <Link
-                to='/cart'
-                className={`footer__link ${darkMode ? 'footer__link--dark' : 'footer__link--light'}`}
-              >
-                Cart
-              </Link>
-            </ListItem>
-            <ListItem>Man Fashion</ListItem>
-            <ListItem>Woman Fashion</ListItem>
-            <ListItem>Accessories</ListItem>
-            <ListItem>My Account</ListItem>
-            <ListItem>Order Tracking</ListItem>
-            <ListItem>Wishlist</ListItem>
-            <ListItem>WishList</ListItem>
-            <ListItem>Terms</ListItem>
           </List>
         </Center>
         <Right>

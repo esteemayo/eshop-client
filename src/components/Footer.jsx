@@ -57,6 +57,7 @@ const Footer = () => {
           <Title>Useful links</Title>
           <List>
             {menuLinks.map((menu) => {
+              const { id, url, text } = menu;
               return (
                 <ListItem>
                   <Link

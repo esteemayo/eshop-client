@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
+import { useEffect, useState } from 'react';
 
 const LoadingToRedirect = () => {
   const navigate = useNavigate();

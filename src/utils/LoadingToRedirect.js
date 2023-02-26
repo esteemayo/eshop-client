@@ -6,6 +6,15 @@ const LoadingToRedirect = () => {
   const navigate = useNavigate();
   const [count, setCount] = useState(5);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCount((prev) => --prev);
+    }, [1000]);
+
+    count === 0 && navigate('/login');
+    return () => clearInterval(interval);
+  }, [count, navigate]);
+
   return (
     <div>LoadingToRedirect</div>
   );

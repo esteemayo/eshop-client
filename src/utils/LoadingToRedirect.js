@@ -33,7 +33,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.h5`
-  
+  font-size: 3rem;
 `;
 
 export default LoadingToRedirect;

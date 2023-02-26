@@ -79,7 +79,7 @@ const Navbar = () => {
           <MenuItem>
             <NavLink
               to='/cart'
-              className={({ isActive }) => (isActive ? 'active' : '')}
+              className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
             >
               <Badge badgeContent={quantity} color='primary'>
                 <ShoppingCartOutlined style={{ fontSize: ' 1.6rem' }} />

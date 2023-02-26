@@ -77,3 +77,56 @@ export const popularProducts = [
     img: 'https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png',
   },
 ];
+
+export const menuLinks = [
+  {
+    id: 'home',
+    url: '/',
+    text: 'Home',
+  },
+  {
+    id: 'cart',
+    url: '/cart',
+    text: 'Cart',
+  },
+  {
+    id: 'man-fashion',
+    url: '#',
+    text: 'Man Fashion',
+  },
+  {
+    id: 'woman-fashion',
+    url: '#',
+    text: 'Woman Fashion',
+  },
+  {
+    id: 'cccessories',
+    url: '#',
+    text: 'Accessories',
+  },
+  {
+    id: 'my-account',
+    url: '#',
+    text: 'My Account',
+  },
+  {
+    id: 'order-tracking',
+    url: '#',
+    text: 'Order Tracking',
+  },
+  {
+    id: 'wishlist',
+    url: '#',
+    text: 'Wishlist',
+  },
+  {
+    id: 'wish-list',
+    url: '#',
+    text: 'WishList',
+  },
+  {
+    id: 'terms',
+    url: '#',
+    text: 'Terms',
+  },
+];

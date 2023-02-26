@@ -17,7 +17,6 @@ import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Footer = () => {
   const { darkMode } = useSelector((state) => state.darkMode);
-  const copyRightYear = new Date().getFullYear();
 
   return (
     <FooterContainer>

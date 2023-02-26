@@ -59,7 +59,7 @@ const Navbar = () => {
             <MenuItem>
               <NavLink
                 to='/login'
-                className={({ isActive }) => (isActive ? 'active' : '')}
+                className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
               >
                 Login
               </NavLink>

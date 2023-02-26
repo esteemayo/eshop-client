@@ -13,6 +13,7 @@ import {
 } from '@material-ui/icons';
 
 import { laptop, mobile, small, smallest, tab } from 'responsive';
+import { menuLinks } from 'data';
 
 const Footer = () => {
   const { darkMode } = useSelector((state) => state.darkMode);

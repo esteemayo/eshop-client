@@ -69,7 +69,7 @@ const Navbar = () => {
             {user && (
               <NavLink
                 to='/'
-                className={({ isActive }) => (isActive ? 'active' : '')}
+                className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
               >
                 {user?.username}
               </NavLink>

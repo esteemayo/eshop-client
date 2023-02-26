@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { mobile } from 'responsive';
 
 const CategoryItem = ({ img, title, category }) => {
-  const { darkMode } = useSelector((state) => state.darkMode);
 
   return (
     <Container>

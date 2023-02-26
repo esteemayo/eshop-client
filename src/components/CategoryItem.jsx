@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { mobile } from 'responsive';
 
 const CategoryItem = ({ img, title, category }) => {
-
   return (
     <Container>
       <Link to={`products/${category}`}>

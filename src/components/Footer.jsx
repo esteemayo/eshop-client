@@ -12,6 +12,7 @@ import {
   Twitter,
 } from '@material-ui/icons';
 
+import { menuLinks } from 'data';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Footer = () => {

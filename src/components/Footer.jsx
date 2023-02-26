@@ -63,7 +63,9 @@ const Footer = () => {
                 Home
               </Link>
             </ListItem>
-            <ListItem>Cart</ListItem>
+            <ListItem>
+              <Link to='/cart'>Cart</Link>
+            </ListItem>
             <ListItem>Man Fashion</ListItem>
             <ListItem>Woman Fashion</ListItem>
             <ListItem>Accessories</ListItem>

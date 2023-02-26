@@ -33,6 +33,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.h5`
+  font-weight: 400;
   font-size: 3rem;
 `;
 

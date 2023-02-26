@@ -216,6 +216,13 @@ const ListItem = styled.li`
   &:not(:last-of-type) {
     margin-bottom: 1rem;
   }
+
+  & > * {
+    transition: all 1s ease-in-out;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const Right = styled.div`

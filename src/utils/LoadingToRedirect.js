@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styled from 'styled-components';
 
 const LoadingToRedirect = () => {
   const [count, setCount] = useState(5);

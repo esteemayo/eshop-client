@@ -26,6 +26,7 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: ${({ theme }) => theme.bg};
+  color: ${({ theme }) => theme.textSoft};
 `;
 
 const Text = styled.h5`

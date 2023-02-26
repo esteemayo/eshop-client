@@ -16,6 +16,7 @@ import { menuLinks } from 'data';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Footer = () => {
+  const copyRightYear = new Date().getFullYear();
   const { darkMode } = useSelector((state) => state.darkMode);
 
   return (

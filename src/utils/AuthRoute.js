@@ -4,7 +4,7 @@ import LoadingToRedirect from './LoadingToRedirect';
 const AuthRoute = ({ children }) => {
   const { user } = useSelector((state) => state.user);
 
-  return !user ? <Navigate to='/login' replace state={{ from: location }} /> : children;
+  return !user ? <LoadingToRedirect /> : children;
 };
 
 export default AuthRoute;

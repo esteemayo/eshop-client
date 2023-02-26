@@ -84,6 +84,10 @@ a:visited {
   color: #008b8b !important;
 }
 
+.active--dark {
+  color: #07cfcf !important;
+}
+
 .search__icon--dark {
   color: darkgray;
 }

@@ -25,4 +25,8 @@ const Container = styled.div`
   height: 100vh;
 `;
 
+const Text = styled.h5`
+  
+`;
+
 export default LoadingToRedirect;

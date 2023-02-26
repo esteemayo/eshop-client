@@ -1,6 +1,4 @@
 import { useSelector } from 'react-redux';
-import { useLocation } from 'react-router-dom';
-
 import LoadingToRedirect from './LoadingToRedirect';
 
 const AuthRoute = ({ children }) => {

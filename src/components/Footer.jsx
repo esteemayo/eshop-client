@@ -64,7 +64,7 @@ const Footer = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link to='/cart'>Cart</Link>
+              <Link to='/cart' className={`footer__link ${darkMode ? 'footer__link--dark' : 'footer__link--light'}`}>Cart</Link>
             </ListItem>
             <ListItem>Man Fashion</ListItem>
             <ListItem>Woman Fashion</ListItem>

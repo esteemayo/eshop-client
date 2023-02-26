@@ -56,14 +56,18 @@ const Footer = () => {
         <Center>
           <Title>Useful links</Title>
           <List>
-            <ListItem>
-              <Link
-                to='/'
-                className={`footer__link ${darkMode ? 'footer__link--dark' : 'footer__link--light'}`}
-              >
-                Home
-              </Link>
-            </ListItem>
+            {menuLinks.map((menu) => {
+              return (
+                <ListItem>
+                  <Link
+                    to='/'
+                    className={`footer__link ${darkMode ? 'footer__link--dark' : 'footer__link--light'}`}
+                  >
+                    Home
+                  </Link>
+                </ListItem>
+              );
+            })}
           </List>
         </Center>
         <Right>

@@ -167,6 +167,7 @@ const SocialIcon = styled.div`
   border-radius: 50%;
   background-color: #${(props) => props.color};
   color: var(--color-white);
+  cursor: pointer;
 
   display: flex;
   justify-content: center;

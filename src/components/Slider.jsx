@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import { useSelector } from 'react-redux';

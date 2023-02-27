@@ -20,6 +20,14 @@ const Slider = () => {
     }
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlideIndex(slideIndex === 2 ? 0 : slideIndex + 1);
+    }, [5000]);
+
+    return () => clearInterval(interval);
+  }, [slideIndex]);
+
   return (
     <Container>
       <Arrow direction='left' onClick={() => handleClick('left')}>

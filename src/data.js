@@ -37,7 +37,7 @@ export const categories = [
   },
   {
     id: 3,
-    img: 'https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
+    img: './assets/category-3.jpeg',
     title: 'LIGHT JACKETS',
     category: 'jeans',
   },

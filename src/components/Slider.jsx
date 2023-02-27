@@ -24,7 +24,7 @@ const Slider = () => {
     const lastSlideIndex = sliderItems.length - 1;
 
     const interval = setInterval(() => {
-      setSlideIndex(slideIndex === 2 ? 0 : slideIndex + 1);
+      setSlideIndex(slideIndex === lastSlideIndex ? 0 : slideIndex + 1);
     }, [5000]);
 
     return () => clearInterval(interval);

@@ -7,6 +7,7 @@ import Footer from 'components/Footer';
 import ScrollToTop from 'components/ScrollToTop';
 
 import 'react-toastify/dist/ReactToastify.css';
+import DarkMode from 'components/DarkMode';
 
 const SharedLayout = () => {
   return (

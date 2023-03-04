@@ -9,7 +9,8 @@ const DarkMode = () => {
 };
 
 const Container = styled.div`
-
+  width: 4.5rem;
+  height: 4.5rem;
 `;
 
 export default DarkMode;

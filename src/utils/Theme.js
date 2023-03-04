@@ -48,6 +48,7 @@ export const darkTheme = {
   textScrollBtn: 'rgb(206, 206, 206)',
   bgScrollBtnHover: '#0b3b3b',
   boxScroll: 'rgb(201, 201, 201, 0.25) 0 0.4rem 2rem',
+  bgMode: '#131417',
 };
 
 export const lightTheme = {
@@ -100,4 +101,5 @@ export const lightTheme = {
   textScrollBtn: 'var(--color-white)',
   bgScrollBtnHover: '#038f8f',
   boxScroll: 'rgb(0, 0, 0, 0.25) 0 0.4rem 2rem',
+  bgMode: 'rgb(236, 236, 236)',
 };

@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const DarkMode = () => {
   return (
-    <Container>DarkMode</Container>
+    <Container>
+      DarkMode
+    </Container>
   );
 };
 

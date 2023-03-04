@@ -5,6 +5,7 @@ import Navbar from 'components/Navbar';
 import Announcement from 'components/Announcement';
 import Footer from 'components/Footer';
 import ScrollToTop from 'components/ScrollToTop';
+import DarkMode from 'components/DarkMode';
 
 import 'react-toastify/dist/ReactToastify.css';
 

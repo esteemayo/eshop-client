@@ -49,6 +49,7 @@ export const darkTheme = {
   bgScrollBtnHover: '#0b3b3b',
   boxScroll: 'rgb(201, 201, 201, 0.25) 0 0.4rem 2rem',
   bgMode: '#131417',
+  bgIconMode: '#e4e4e8',
 };
 
 export const lightTheme = {
@@ -102,4 +103,5 @@ export const lightTheme = {
   bgScrollBtnHover: '#038f8f',
   boxScroll: 'rgb(0, 0, 0, 0.25) 0 0.4rem 2rem',
   bgMode: 'rgb(236, 236, 236)',
+  bgIconMode: '#39393c',
 };

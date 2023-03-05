@@ -42,9 +42,6 @@ const Navbar = () => {
           </Link>
         </Center>
         <Right>
-          <MenuItem onClick={() => dispatch(toggle())}>
-            {darkMode ? 'Light' : 'Dark'} Mode
-          </MenuItem>
           {!user && (
             <MenuItem>
               <NavLink

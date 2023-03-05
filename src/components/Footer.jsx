@@ -30,7 +30,11 @@ const Footer = () => {
             {socialIcons.map((item) => {
               const { id, icon, color } = item;
               return (
-                <SocialIcon key={id} color={color} darkMode={darkMode}>
+                <SocialIcon
+                  key={id}
+                  color={color}
+                  darkMode={darkMode}
+                >
                   {icon}
                 </SocialIcon>
               );

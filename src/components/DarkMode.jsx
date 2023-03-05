@@ -32,6 +32,7 @@ const Wrapper = styled.div`
   justify-content: center;
   width: 4.5rem;
   height: 4.5rem;
+  background-color:  ${({ theme }) => theme.bgIconMode};
 `;
 
 export default DarkMode;

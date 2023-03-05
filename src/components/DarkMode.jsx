@@ -33,6 +33,7 @@ const Wrapper = styled.div`
   width: 4.5rem;
   height: 4.5rem;
   background-color:  ${({ theme }) => theme.bgIconMode};
+  border-radius: 50%;
 `;
 
 export default DarkMode;

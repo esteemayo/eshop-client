@@ -36,9 +36,13 @@ const Footer = () => {
             believable.
           </Description>
           <SocialContainer>
-            <SocialIcon color='3B5999' darkMode={darkMode}>
-              <Facebook style={{ fontSize: '2rem' }} />
-            </SocialIcon>
+            {socialIcons.map((item) => {
+              return (
+                <SocialIcon color='3B5999' darkMode={darkMode}>
+                  <Facebook style={{ fontSize: '2rem' }} />
+                </SocialIcon>
+              );
+            })}
           </SocialContainer>
         </Left>
         <Center>

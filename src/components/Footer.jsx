@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import {
   MailOutline,
   Phone,
-  Pinterest,
   Room,
   Twitter,
 } from '@material-ui/icons';

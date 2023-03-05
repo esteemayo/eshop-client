@@ -24,4 +24,8 @@ const Container = styled.div`
   z-index: 3000;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default DarkMode;

@@ -15,6 +15,9 @@ const Container = styled.div`
   width: 4.5rem;
   height: 4.5rem;
   background-color: ${({ theme }) => theme.bgMode};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default DarkMode;

@@ -32,6 +32,7 @@ const Container = styled.div`
   -moz-box-shadow: ${({ theme }) => theme.boxMode};
   box-shadow: ${({ theme }) => theme.boxMode};
   z-index: 3000;
+  transition: all 200ms ease-in;
 
   &:hover {
     width: 5rem;

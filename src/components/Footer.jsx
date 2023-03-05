@@ -231,7 +231,7 @@ const Right = styled.div`
 
   ${mobile({
   padding: '2rem',
-  backgroundColor: `${({ theme }) => theme.bgRight}`,
+  backgroundColor: '#fff8f8',
 })}
 `;
 

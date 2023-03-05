@@ -164,6 +164,10 @@ const SocialIcon = styled.div`
   justify-content: center;
   align-items: center;
 
+  &:hover {
+    background-color: #${({ color, darkMode }) => darkMode && color};
+  }
+
   ${laptop({
   width: '3.5rem',
   height: '3.5rem',

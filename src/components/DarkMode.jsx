@@ -14,8 +14,8 @@ const Container = styled.div`
   position: fixed;
   left: 0;
   bottom: 1%;
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   background-color: ${({ theme }) => theme.bgMode};
   display: flex;
   align-items: center;

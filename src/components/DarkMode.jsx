@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { toggle } from 'redux/darkMode/darkModeSlice';
 import styled from 'styled-components';
 
 const DarkMode = () => {

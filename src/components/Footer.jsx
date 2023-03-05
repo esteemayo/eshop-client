@@ -5,7 +5,6 @@ import {
   MailOutline,
   Phone,
   Room,
-  Twitter,
 } from '@material-ui/icons';
 
 import { menuLinks, socialIcons } from 'data';

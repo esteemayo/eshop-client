@@ -32,6 +32,10 @@ const Container = styled.div`
   -moz-box-shadow: ${({ theme }) => theme.boxMode};
   box-shadow: ${({ theme }) => theme.boxMode};
   z-index: 3000;
+
+  &:hover {
+    width: 5rem;
+  }
 `;
 
 const Wrapper = styled.div`

@@ -1,4 +1,10 @@
-import { Facebook, Instagram, LinkedIn, Pinterest, Twitter } from '@material-ui/icons';
+import {
+  Facebook,
+  Instagram,
+  LinkedIn,
+  Pinterest,
+  Twitter,
+} from '@material-ui/icons';
 
 export const sliderItems = [
   {

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { MailOutline, Phone, Room } from '@material-ui/icons';
 
 import { menuLinks, socialIcons } from 'data';

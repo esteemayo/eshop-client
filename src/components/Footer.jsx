@@ -42,7 +42,7 @@ const Footer = () => {
             <SocialIcon color='E4405F' darkMode={darkMode}>
               <Instagram style={{ fontSize: '2rem' }} />
             </SocialIcon>
-            <SocialIcon color='55ACEE'>
+            <SocialIcon color='55ACEE' darkMode={darkMode}>
               <Twitter style={{ fontSize: '2rem' }} />
             </SocialIcon>
             <SocialIcon color='E60023'>

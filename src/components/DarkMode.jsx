@@ -41,6 +41,9 @@ const Wrapper = styled.div`
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   margin: 0.2rem;
   border: 0;
+  transform: scale(0.75);
+  cursor: pointer;
+  transition: all 200ms ease-in;
 `;
 
 export default DarkMode;

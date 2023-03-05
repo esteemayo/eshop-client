@@ -47,6 +47,11 @@ const Wrapper = styled.div`
   transform: scale(0.75);
   cursor: pointer;
   transition: all 200ms ease-in;
+
+  & > * {
+    font-size: 1.4rem;
+    color: ${({ theme }) => theme.textMode};
+  }
 `;
 
 export default DarkMode;

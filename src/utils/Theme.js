@@ -53,6 +53,7 @@ export const darkTheme = {
   textMode: '#39393c',
   boxMode: '0px 0px 4px rgba(255, 255, 255, 0.5)',
   textFooterIcon: 'rgb(206, 206, 206)',
+  bgRight: '#181818',
 };
 
 export const lightTheme = {
@@ -110,4 +111,5 @@ export const lightTheme = {
   textMode: '#e4e4e8',
   boxMode: '0px 0px 4px rgba(82, 76, 76, 0.5)',
   textFooterIcon: 'var(--color-white)',
+  bgRight: '#fff8f8',
 };

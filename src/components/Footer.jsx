@@ -167,6 +167,7 @@ const SocialIcon = styled.div`
 
   &:hover {
     background-color: #${({ color, darkMode }) => darkMode && color};
+    color: ${({ darkMode }) => darkMode && 'var(--color-white)'};
   }
 
   ${laptop({

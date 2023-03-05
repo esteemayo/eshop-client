@@ -80,6 +80,34 @@ export const popularProducts = [
   },
 ];
 
+export const socialIcons = [
+  {
+    id: 'facebook',
+    color: '3B5999',
+    icon: <Facebook style={{ fontSize: '2rem' }} />,
+  },
+  {
+    id: 'instagram',
+    color: 'E4405F',
+    icon: <Instagram style={{ fontSize: '2rem' }} />,
+  },
+  {
+    id: 'twitter',
+    color: '55ACEE',
+    icon: <Twitter style={{ fontSize: '2rem' }} />,
+  },
+  {
+    id: 'pinterest',
+    color: 'E60023',
+    icon: <Pinterest style={{ fontSize: '2rem' }} />,
+  },
+  {
+    id: 'linkedin',
+    color: '0A66C2',
+    icon: <LinkedIn style={{ fontSize: '2rem' }} />,
+  },
+];
+
 export const menuLinks = [
   {
     id: 'home',

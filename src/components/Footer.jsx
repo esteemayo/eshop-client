@@ -229,6 +229,10 @@ const Right = styled.div`
   padding: '2rem 8rem',
 })}
 
+  @media only screen and (max-width: 37.5em) {
+    background-color: ${({ theme }) => theme.bgRight};
+  }
+
   ${mobile({
   padding: '2rem',
   backgroundColor: '#fff8f8',

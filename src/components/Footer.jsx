@@ -159,6 +159,7 @@ const SocialIcon = styled.div`
   background-color: ${({ darkMode }) => darkMode && '#111010'};
   color: var(--color-white);
   cursor: pointer;
+  transition: all 0.5s ease-in;
 
   display: flex;
   justify-content: center;

@@ -32,8 +32,8 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
   background-color:  ${({ theme }) => theme.bgIconMode};
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);

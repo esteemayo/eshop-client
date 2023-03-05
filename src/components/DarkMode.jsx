@@ -30,6 +30,8 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
 `;
 
 export default DarkMode;

@@ -52,7 +52,7 @@ export const darkTheme = {
   bgIconMode: '#e4e4e8',
   textMode: '#39393c',
   boxMode: '0px 0px 4px rgba(255, 255, 255, 0.5)',
-  textFooterIcon: '#aaaaaa',
+  textFooterIcon: 'rgb(206, 206, 206)',
 };
 
 export const lightTheme = {

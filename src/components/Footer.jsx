@@ -59,7 +59,7 @@ const Footer = () => {
             })}
           </List>
         </Center>
-        <Right>
+        <Right darkMode={darkMode}>
           <Title>Contact</Title>
           <ContactItem>
             <Room style={{ fontSize: '2rem', marginRight: '1rem' }} /> 622 Dixie

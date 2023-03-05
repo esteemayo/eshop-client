@@ -156,7 +156,7 @@ const SocialIcon = styled.div`
   height: 4rem;
   border-radius: 50%;
   background-color: #${({ color }) => color};
-  background-color: ${({ darkMode }) => darkMode && '#111010'};
+  background-color: ${({ darkMode }) => darkMode && '#363636'};
   color: var(--color-white);
   cursor: pointer;
   transition: all 0.5s ease-in;

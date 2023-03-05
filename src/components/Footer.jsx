@@ -48,7 +48,7 @@ const Footer = () => {
             <SocialIcon color='E60023' darkMode={darkMode}>
               <Pinterest style={{ fontSize: '2rem' }} />
             </SocialIcon>
-            <SocialIcon color='0A66C2'>
+            <SocialIcon color='0A66C2' darkMode={darkMode}>
               <LinkedIn style={{ fontSize: '2rem' }} />
             </SocialIcon>
           </SocialContainer>
@@ -156,6 +156,7 @@ const SocialIcon = styled.div`
   height: 4rem;
   border-radius: 50%;
   background-color: #${({ color }) => color};
+  background-color: ${({ darkMode }) => darkMode && '#111010'};
   color: var(--color-white);
   cursor: pointer;
 

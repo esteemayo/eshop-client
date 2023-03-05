@@ -37,6 +37,7 @@ const Footer = () => {
           </Description>
           <SocialContainer>
             {socialIcons.map((item) => {
+              const { id, icon, color } = item;
               return (
                 <SocialIcon color='3B5999' darkMode={darkMode}>
                   <Facebook style={{ fontSize: '2rem' }} />

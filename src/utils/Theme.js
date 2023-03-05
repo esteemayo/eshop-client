@@ -53,7 +53,7 @@ export const darkTheme = {
   textMode: '#39393c',
   boxMode: '0px 0px 4px rgba(255, 255, 255, 0.5)',
   textFooterIcon: 'rgb(206, 206, 206)',
-  bgRight: '#181818',
+  bgRight: '#242424',
 };
 
 export const lightTheme = {

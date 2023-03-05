@@ -236,7 +236,6 @@ const Right = styled.div`
   ${mobile({
   padding: '2rem',
 })}
-
 `;
 
 const ContactItem = styled.div`

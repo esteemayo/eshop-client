@@ -108,7 +108,7 @@ export const socialIcons = [
     icon: <Pinterest style={{ fontSize: '2rem' }} />,
   },
   {
-    id: 'linkedin',
+    id: 5,
     color: '0A66C2',
     icon: <LinkedIn style={{ fontSize: '2rem' }} />,
   },

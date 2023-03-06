@@ -162,7 +162,7 @@ export const menuLinks = [
   },
   {
     id: 10,
-    url: '#',
+    url: '/',
     text: 'Terms',
   },
 ];

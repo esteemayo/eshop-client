@@ -127,7 +127,7 @@ export const menuLinks = [
   },
   {
     id: 3,
-    url: '#',
+    url: '/',
     text: 'Man Fashion',
   },
   {

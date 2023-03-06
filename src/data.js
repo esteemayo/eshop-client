@@ -88,7 +88,7 @@ export const popularProducts = [
 
 export const socialIcons = [
   {
-    id: 'facebook',
+    id: 1,
     color: '3B5999',
     icon: <Facebook style={{ fontSize: '2rem' }} />,
   },

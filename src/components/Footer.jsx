@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { MailOutline, Phone, Room } from '@material-ui/icons';
 
-import { links, socialIcons } from 'data';
+import { links, social } from 'data';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Footer = () => {

@@ -27,7 +27,7 @@ const Footer = () => {
             believable.
           </Description>
           <SocialContainer>
-            {socialIcons.map((item) => {
+            {social.map((item) => {
               const { id, icon, color } = item;
               return (
                 <SocialIcon

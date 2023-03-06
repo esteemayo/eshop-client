@@ -44,7 +44,7 @@ const Footer = () => {
         <Center>
           <Title>Useful links</Title>
           <List>
-            {menuLinks.map((menu) => {
+            {links.map((menu) => {
               const { id, url, text } = menu;
               return (
                 <ListItem key={id}>

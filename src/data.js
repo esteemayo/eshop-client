@@ -146,7 +146,7 @@ export const menuLinks = [
     text: 'My Account',
   },
   {
-    id: 'order-tracking',
+    id: 7,
     url: '#',
     text: 'Order Tracking',
   },

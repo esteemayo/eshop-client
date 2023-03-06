@@ -116,7 +116,7 @@ export const socialIcons = [
 
 export const menuLinks = [
   {
-    id: 'home',
+    id: 1,
     url: '/',
     text: 'Home',
   },

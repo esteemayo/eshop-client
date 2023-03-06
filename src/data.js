@@ -142,7 +142,7 @@ export const menuLinks = [
   },
   {
     id: 6,
-    url: '#',
+    url: '/',
     text: 'My Account',
   },
   {

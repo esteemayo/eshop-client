@@ -141,7 +141,7 @@ export const menuLinks = [
     text: 'Accessories',
   },
   {
-    id: 'my-account',
+    id: 6,
     url: '#',
     text: 'My Account',
   },

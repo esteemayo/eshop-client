@@ -103,7 +103,7 @@ export const socialIcons = [
     icon: <Twitter style={{ fontSize: '2rem' }} />,
   },
   {
-    id: 'pinterest',
+    id: 4,
     color: 'E60023',
     icon: <Pinterest style={{ fontSize: '2rem' }} />,
   },

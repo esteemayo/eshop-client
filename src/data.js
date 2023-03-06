@@ -157,7 +157,7 @@ export const menuLinks = [
   },
   {
     id: 9,
-    url: '#',
+    url: '/',
     text: 'WishList',
   },
   {

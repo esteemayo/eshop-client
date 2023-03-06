@@ -132,7 +132,7 @@ export const menuLinks = [
   },
   {
     id: 4,
-    url: '#',
+    url: '/',
     text: 'Woman Fashion',
   },
   {

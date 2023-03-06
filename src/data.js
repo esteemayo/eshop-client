@@ -93,7 +93,7 @@ export const socialIcons = [
     icon: <Facebook style={{ fontSize: '2rem' }} />,
   },
   {
-    id: 'instagram',
+    id: 2,
     color: 'E4405F',
     icon: <Instagram style={{ fontSize: '2rem' }} />,
   },

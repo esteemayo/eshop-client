@@ -86,7 +86,7 @@ export const popularProducts = [
   },
 ];
 
-export const socialIcons = [
+export const social = [
   {
     id: 1,
     color: '3B5999',

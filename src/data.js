@@ -151,7 +151,7 @@ export const menuLinks = [
     text: 'Order Tracking',
   },
   {
-    id: 'wishlist',
+    id: 8,
     url: '#',
     text: 'Wishlist',
   },

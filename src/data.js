@@ -136,7 +136,7 @@ export const menuLinks = [
     text: 'Woman Fashion',
   },
   {
-    id: 'cccessories',
+    id: 5,
     url: '#',
     text: 'Accessories',
   },

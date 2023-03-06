@@ -121,7 +121,7 @@ export const menuLinks = [
     text: 'Home',
   },
   {
-    id: 'cart',
+    id: 2,
     url: '/cart',
     text: 'Cart',
   },

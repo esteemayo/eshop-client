@@ -114,7 +114,7 @@ export const socialIcons = [
   },
 ];
 
-export const menuLinks = [
+export const links = [
   {
     id: 1,
     url: '/',

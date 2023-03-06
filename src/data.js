@@ -137,7 +137,7 @@ export const menuLinks = [
   },
   {
     id: 5,
-    url: '#',
+    url: '/',
     text: 'Accessories',
   },
   {

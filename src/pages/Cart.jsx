@@ -9,7 +9,6 @@ import { Fragment, useEffect, useState } from 'react';
 import { stripePayment } from 'services/stripeService';
 import { decrement, reset } from 'redux/cart/cartSlice';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
-import { increment } from 'redux/cart/cartSlice';
 
 const Cart = () => {
   const dispatch = useDispatch();

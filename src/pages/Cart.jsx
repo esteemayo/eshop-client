@@ -86,7 +86,7 @@ const Cart = () => {
                       <ProductAmountContainer>
                         <Add onClick={() => dispatch(increment(id))} />
                         <ProductAmount>{quantity}</ProductAmount>
-                        <Remove />
+                        <Remove onClick={() => dispatch(decrement(id))} />
                       </ProductAmountContainer>
                       <ProductPrice>
                         <NumericFormat

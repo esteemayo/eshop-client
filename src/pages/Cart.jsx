@@ -8,7 +8,6 @@ import { Fragment, useEffect, useState } from 'react';
 
 import { stripePayment } from 'services/stripeService';
 import { decrement, increment, reset } from 'redux/cart/cartSlice';
-import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Cart = () => {
   const dispatch = useDispatch();

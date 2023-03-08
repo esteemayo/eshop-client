@@ -32,6 +32,11 @@ const Cart = () => {
     dispatch(getTotals());
   };
 
+  const handleDecrement = (productId) => {
+    dispatch(decrement(productId));
+    dispatch(getTotals());
+  };
+
   useEffect(() => {
     stripeToken && total >= 1 && (async () => {
       try {

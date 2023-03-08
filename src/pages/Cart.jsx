@@ -38,6 +38,10 @@ const Cart = () => {
     })();
   }, [total, stripeToken, navigate, dispatch]);
 
+  useEffect(() => {
+    dispatch(getTotals());
+  }, [dispatch]);
+
   if (cart.length === 0) {
     return (
       <Container>

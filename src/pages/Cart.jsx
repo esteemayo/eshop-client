@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import StripeCheckout from 'react-stripe-checkout';
 import { Add, Remove } from '@material-ui/icons';
 import { useDispatch, useSelector } from 'react-redux';

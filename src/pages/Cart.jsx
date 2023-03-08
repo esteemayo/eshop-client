@@ -13,6 +13,7 @@ import {
   getTotals,
   increment,
   reset,
+  toggleQuantity,
 } from 'redux/cart/cartSlice';
 
 const Cart = () => {

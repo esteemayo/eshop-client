@@ -54,7 +54,7 @@ export const cartSlice = createSlice({
         return item;
       });
 
-      tempCart.filter((item) => item.quantity !== 0);
+      tempCart = tempCart.filter((item) => item.quantity !== 0);
       state.cart = tempCart;
     },
   },

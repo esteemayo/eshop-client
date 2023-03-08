@@ -41,6 +41,22 @@ export const cartSlice = createSlice({
       state.total = total;
       state.quantity = quantity;
     },
+    toggleQuantity: (state, { payload }) => {
+      let tempCart = state.cart.map((item) => {
+        if (item._id === payload.id) {
+          if (payload.type === 'inc') {
+            return { ...item, quantity: item.quantity + 1 };
+          }
+          if (payload.type === 'dec') {
+            return { ...item, quantity: item.quantity - 1 };
+          }
+        }
+        return item;
+      });
+
+      tempCart.filter((item) => item.quantity !== 0);
+      state.cart = tempCart;
+    },
   },
 });
 

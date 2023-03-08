@@ -26,6 +26,7 @@ export const cartSlice = createSlice({
         .map((item) =>
           item._id === payload ? { ...item, quantity: item.quantity - 1 } : item
         )
+        .filter((item) => item.quantity !== 0);
     },
     getTotals: (state) => {
       let { total } = state.cart.reduce((cartTotal, cartItem) => {

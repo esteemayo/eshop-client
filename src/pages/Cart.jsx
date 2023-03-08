@@ -73,7 +73,7 @@ const Cart = () => {
         <Title>Your bag</Title>
         <Top>
           <Link to='/'>
-          <TopButton>Continue shopping</TopButton>
+            <TopButton>Continue shopping</TopButton>
           </Link>
           <TopTexts>
             <TopText>Shopping bag (2)</TopText>

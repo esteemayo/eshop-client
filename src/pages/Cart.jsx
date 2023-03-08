@@ -74,6 +74,7 @@ const Cart = () => {
         <Top>
           <Link to='/'>
           <TopButton>Continue shopping</TopButton>
+          </Link>
           <TopTexts>
             <TopText>Shopping bag (2)</TopText>
             <TopText>Your wishlist (0)</TopText>

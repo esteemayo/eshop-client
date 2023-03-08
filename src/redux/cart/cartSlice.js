@@ -17,7 +17,7 @@ export const cartSlice = createSlice({
     },
     reset: (state) => initialState,
     increment: (state, { payload }) => {
-      state.cart = state.cart.map((item) => item.id === payload ? { ...item, quantity: item.quantity + 1 } : item);
+      state.cart = state.cart.map((item) => item._id === payload ? { ...item, quantity: item.quantity + 1 } : item);
     },
   },
 });

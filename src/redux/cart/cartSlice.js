@@ -10,6 +10,7 @@ export const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
+    reset: (state) => initialState,
     addProduct: (state, { payload }) => {
       state.quantity++;
       state.cart.push(payload);

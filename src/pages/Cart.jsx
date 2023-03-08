@@ -85,7 +85,7 @@ const Cart = () => {
                     </ProductDetail>
                     <PriceDetail>
                       <ProductAmountContainer>
-                        <Add />
+                        <Add onClick={() => dispatch(increment(id))} />
                         <ProductAmount>{quantity}</ProductAmount>
                         <Remove />
                       </ProductAmountContainer>

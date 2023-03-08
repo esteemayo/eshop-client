@@ -14,7 +14,11 @@ export const cartSlice = createSlice({
       state.quantity++;
       state.cart.push(payload);
       state.total += payload.price * payload.quantity;
-    }, reset: (state) => initialState,
+    },
+    reset: (state) => initialState,
+    increment: (state, { payload }) => {
+      state.cart.map((item) => item.id === payload ? { ...item, quantity: item.quantity++ } : item);
+    },
   },
 });
 

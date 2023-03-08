@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import StripeCheckout from 'react-stripe-checkout';
 import { Add, Remove } from '@material-ui/icons';
 import { useDispatch, useSelector } from 'react-redux';
-import { NumericFormat } from 'react-number-format';
 import { Fragment, useEffect, useState } from 'react';
 
 import { stripePayment } from 'services/stripeService';

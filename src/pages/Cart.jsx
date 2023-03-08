@@ -34,7 +34,7 @@ const Cart = () => {
   };
 
   const handleDecrement = (productId) => {
-    dispatch(decrement(productId));
+    dispatch(toggleQuantity({ id: productId, type: 'dec' }));
     dispatch(getTotals());
   };
 

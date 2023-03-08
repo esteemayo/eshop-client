@@ -39,6 +39,7 @@ export const cartSlice = createSlice({
       total = parseFloat(total.toFixed(2));
 
       state.total = total;
+      state.quantity = quantity;
     },
   },
 });

@@ -103,7 +103,10 @@ const Cart = () => {
                     </ProductDetail>
                     <PriceDetail>
                       <ProductAmountContainer>
-                        <Add className='icon__add' onClick={() => handleIncrement(id)} />
+                        <Add
+                          className='icon__add'
+                          onClick={() => handleIncrement(id)}
+                        />
                         <ProductAmount>{quantity}</ProductAmount>
                         <Remove className='icon__remove' onClick={() => handleDecrement(id)} />
                       </ProductAmountContainer>

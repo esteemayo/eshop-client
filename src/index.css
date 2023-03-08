@@ -142,6 +142,10 @@ a:visited {
   fill: #919090 !important;
 }
 
+.icon__add,
+.icon__remove {
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

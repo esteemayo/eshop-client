@@ -360,6 +360,7 @@ const ProductButton = styled.button`
   background-color: transparent;
   color: inherit;
   outline-color: ${({ theme }) => theme.text};
+  cursor: pointer;
 `;
 
 const ProductAmount = styled.div`

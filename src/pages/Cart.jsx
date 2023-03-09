@@ -339,6 +339,10 @@ const ProductSize = styled.span`
   text-transform: capitalize;
 `;
 
+const RemoveWrapper = styled.div`
+
+`;
+
 const PriceDetail = styled.span`
   flex: 1;
 

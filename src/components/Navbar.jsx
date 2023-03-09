@@ -102,7 +102,9 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  ${mobile({ padding: '1rem 0' })}
+  ${mobile({
+  padding: '1rem 0',
+})}
 `;
 
 const Left = styled.div`

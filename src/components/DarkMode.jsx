@@ -57,6 +57,11 @@ const Wrapper = styled.div`
   cursor: pointer;
   transition: all 200ms ease-in;
 
+  ${mobile({
+  width: '3.5rem',
+  height: '3.5rem',
+})}
+
   & > * {
     font-size: 1.4rem;
     color: ${({ theme }) => theme.textMode};

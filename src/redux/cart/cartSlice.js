@@ -16,6 +16,9 @@ export const cartSlice = createSlice({
       state.cart.push(payload);
       state.total += payload.price * payload.quantity;
     },
+    clearCart: (state) => {
+      state.cart = [];
+    },
     increment: (state, { payload }) => {
       state.cart = state.cart.map((item) =>
         item._id === payload ? ({ ...item, quantity: item.quantity + 1 }) : item

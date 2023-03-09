@@ -96,6 +96,9 @@ const Cart = () => {
                         <ProductSize>
                           <strong>Size:</strong> {size}
                         </ProductSize>
+                        <RemoveWrapper>
+
+                        </RemoveWrapper>
                       </Details>
                     </ProductDetail>
                     <PriceDetail>

@@ -112,6 +112,7 @@ const Cart = () => {
                             className='icon__remove'
                             onClick={() => handleDecrement(id)}
                           />
+                        </ProductButton>
                       </ProductAmountContainer>
                       <ProductPrice>
                         <NumericFormat

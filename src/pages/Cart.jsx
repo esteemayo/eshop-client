@@ -101,9 +101,7 @@ const Cart = () => {
                     <PriceDetail>
                       <ProductAmountContainer>
                         <ProductButton>
-                          <Add
-                            onClick={() => handleIncrement(id)}
-                          />
+                          <Add onClick={() => handleIncrement(id)} />
                         </ProductButton>
                         <ProductAmount>{quantity}</ProductAmount>
                         <ProductButton>

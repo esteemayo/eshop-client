@@ -101,10 +101,10 @@ const Cart = () => {
                     <PriceDetail>
                       <ProductAmountContainer>
                         <ProductButton>
-                        <Add
-                          className='icon__add'
-                          onClick={() => handleIncrement(id)}
-                        />
+                          <Add
+                            className='icon__add'
+                            onClick={() => handleIncrement(id)}
+                          />
                         </ProductButton>
                         <ProductAmount>{quantity}</ProductAmount>
                         <Remove

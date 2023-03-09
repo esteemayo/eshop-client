@@ -24,6 +24,7 @@ const Container = styled.div`
   ${mobile({
   flexDirection: 'column',
   padding: 0,
+  paddingTop: '2rem',
 })}
 `;
 

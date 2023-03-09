@@ -350,6 +350,7 @@ const RemoveWrapper = styled.div`
     padding: 0.5rem 1rem;
     background-color: ${({ theme }) => theme.bgCartBtn};
     color: ${({ theme }) => theme.textCartBtn};
+    border-radius: 0.5rem;
     outline-color: ${({ theme }) => theme.text};
     cursor: pointer;
   }

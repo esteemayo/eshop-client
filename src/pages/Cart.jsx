@@ -344,7 +344,7 @@ const ProductSize = styled.span`
 
 const RemoveWrapper = styled.div`
   button {
-    
+    border: none;
   }
 `;
 

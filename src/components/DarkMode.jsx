@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { mobile } from 'responsive';
 import { toggle } from 'redux/darkMode/darkModeSlice';
 
 const DarkMode = () => {

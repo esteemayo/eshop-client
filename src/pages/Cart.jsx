@@ -347,6 +347,7 @@ const RemoveWrapper = styled.div`
     border: none;
     display: inline-block;
     text-transform: capitalize;
+    padding: 1rem;
     background-color: ${({ theme }) => theme.bgCartBtn};
     color: ${({ theme }) => theme.textCartBtn};
     outline-color: ${({ theme }) => theme.text};

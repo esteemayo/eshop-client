@@ -110,6 +110,8 @@ const Left = styled.div`
 
   display: flex;
   align-items: center;
+
+  ${mobile({ display: 'none' })}
 `;
 
 const Language = styled.span`

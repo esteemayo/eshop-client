@@ -318,7 +318,7 @@ const ProductName = styled.span`
 `;
 
 const ProductId = styled.span`
-  b {
+  strong {
     text-transform: uppercase;
   }
 `;

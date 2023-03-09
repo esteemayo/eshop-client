@@ -182,6 +182,11 @@ const Right = styled.div`
 })}
 `;
 
+const RightContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
 const MenuItem = styled.div`
   font-size: 1.6rem;
   text-transform: uppercase;

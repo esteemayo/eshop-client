@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { KeyboardArrowUpOutlined } from '@material-ui/icons'
 import { useEffect, useState } from 'react';
+
 import { mobile } from 'responsive';
 
 const ScrollToTop = () => {

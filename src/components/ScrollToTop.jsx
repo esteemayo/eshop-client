@@ -55,6 +55,11 @@ const IconWrapper = styled.div`
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   cursor: pointer;
 
+  ${mobile({
+  width: '3.5rem',
+  height: '3.5rem',
+})}
+
   &:hover {
     background-color: ${({ theme }) => theme.bgScrollBtnHover};
   }

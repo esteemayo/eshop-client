@@ -343,11 +343,9 @@ const ProductSize = styled.span`
 `;
 
 const RemoveWrapper = styled.div`
+  button {
+  button {
 
-`;
-  }
-`;
-  }
 
 const PriceDetail = styled.span`
   flex: 1;

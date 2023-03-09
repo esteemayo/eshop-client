@@ -358,6 +358,7 @@ const ProductButton = styled.button`
   border: none;
   display: inline-block;
   background-color: transparent;
+  color: inherit;
 `;
 
 const ProductAmount = styled.div`

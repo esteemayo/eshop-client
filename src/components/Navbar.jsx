@@ -41,47 +41,49 @@ const Navbar = () => {
           </Link>
         </Center>
         <Right>
-          {!user && (
-            <MenuItem>
-              <NavLink
-                to='/register'
-                className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
-              >
-                Register
-              </NavLink>
-            </MenuItem>
-          )}
-          {!user && (
-            <MenuItem>
-              <NavLink
-                to='/login'
-                className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
-              >
-                Login
-              </NavLink>
-            </MenuItem>
-          )}
-          <MenuItem>
-            {user && (
-              <NavLink
-                to='/'
-                className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
-              >
-                {user?.username}
-              </NavLink>
+          <RightContainer>
+            {!user && (
+              <MenuItem>
+                <NavLink
+                  to='/register'
+                  className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
+                >
+                  Register
+                </NavLink>
+              </MenuItem>
             )}
-          </MenuItem>
-          {user && <MenuItem onClick={handleLogout}>Logout</MenuItem>}
-          <MenuItem>
-            <NavLink
-              to='/cart'
-              className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
-            >
-              <Badge badgeContent={quantity} color='primary'>
-                <ShoppingCartOutlined style={{ fontSize: ' 1.6rem' }} />
-              </Badge>
-            </NavLink>
-          </MenuItem>
+            {!user && (
+              <MenuItem>
+                <NavLink
+                  to='/login'
+                  className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
+                >
+                  Login
+                </NavLink>
+              </MenuItem>
+            )}
+            <MenuItem>
+              {user && (
+                <NavLink
+                  to='/'
+                  className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
+                >
+                  {user?.username}
+                </NavLink>
+              )}
+            </MenuItem>
+            {user && <MenuItem onClick={handleLogout}>Logout</MenuItem>}
+            <MenuItem>
+              <NavLink
+                to='/cart'
+                className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
+              >
+                <Badge badgeContent={quantity} color='primary'>
+                  <ShoppingCartOutlined style={{ fontSize: ' 1.6rem' }} />
+                </Badge>
+              </NavLink>
+            </MenuItem>
+          </RightContainer>
         </Right>
       </Wrapper>
     </Container>

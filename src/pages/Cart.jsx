@@ -346,6 +346,8 @@ const RemoveWrapper = styled.div`
   button {
   button {
 
+  }
+`;
 
 const PriceDetail = styled.span`
   flex: 1;

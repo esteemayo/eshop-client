@@ -100,6 +100,7 @@ const Cart = () => {
                     </ProductDetail>
                     <PriceDetail>
                       <ProductAmountContainer>
+                        <ProductButton>
                         <Add
                           className='icon__add'
                           onClick={() => handleIncrement(id)}

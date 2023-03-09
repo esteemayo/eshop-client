@@ -174,6 +174,7 @@ const Right = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  height: 0;
 
   ${mobile({
   flex: 2,

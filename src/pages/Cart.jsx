@@ -359,6 +359,7 @@ const ProductButton = styled.button`
   display: inline-block;
   background-color: transparent;
   color: inherit;
+  outline-color: ${({ theme }) => theme.text};
 `;
 
 const ProductAmount = styled.div`

@@ -107,12 +107,12 @@ const Cart = () => {
                           />
                         </ProductButton>
                         <ProductAmount>{quantity}</ProductAmount>
-                        <ProductButton>
                         <Remove
                           className='icon__remove'
                           onClick={() => handleDecrement(id)}
                         />
                       </ProductAmountContainer>
+                        </ProductButton>
                       <ProductPrice>
                         <NumericFormat
                           value={price * quantity}

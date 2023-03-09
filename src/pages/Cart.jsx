@@ -346,6 +346,7 @@ const RemoveWrapper = styled.div`
   button {
     border: none;
     display: inline-block;
+    text-transform: capitalize;
   }
 `;
 

@@ -112,7 +112,6 @@ const Cart = () => {
                           onClick={() => handleDecrement(id)}
                         />
                       </ProductAmountContainer>
-                        </ProductButton>
                       <ProductPrice>
                         <NumericFormat
                           value={price * quantity}

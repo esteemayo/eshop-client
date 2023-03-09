@@ -318,6 +318,8 @@ const ProductName = styled.span`
 `;
 
 const ProductId = styled.span`
+  text-transform: uppercase;
+
   strong {
     text-transform: uppercase;
   }

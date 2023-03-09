@@ -41,7 +41,6 @@ const Navbar = () => {
           </Link>
         </Center>
         <Right>
-          <RightContainer>
             {!user && (
               <MenuItem>
                 <NavLink

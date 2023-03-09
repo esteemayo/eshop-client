@@ -355,7 +355,8 @@ const ProductAmountContainer = styled.div`
 `;
 
 const ProductButton = styled.button`
-
+  border: none;
+  display: inline-block;
 `;
 
 const ProductAmount = styled.div`

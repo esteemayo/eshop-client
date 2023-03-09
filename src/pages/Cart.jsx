@@ -347,6 +347,7 @@ const RemoveWrapper = styled.div`
     border: none;
     display: inline-block;
     text-transform: capitalize;
+    background-color: ${({ theme }) => theme.bgCartBtn};
   }
 `;
 

@@ -105,9 +105,7 @@ const Cart = () => {
                         </ProductButton>
                         <ProductAmount>{quantity}</ProductAmount>
                         <ProductButton>
-                          <Remove
-                            onClick={() => handleDecrement(id)}
-                          />
+                          <Remove onClick={() => handleDecrement(id)} />
                         </ProductButton>
                       </ProductAmountContainer>
                       <ProductPrice>

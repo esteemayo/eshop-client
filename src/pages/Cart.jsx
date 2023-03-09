@@ -109,7 +109,6 @@ const Cart = () => {
                         <ProductAmount>{quantity}</ProductAmount>
                         <ProductButton>
                           <Remove
-                            className='icon__remove'
                             onClick={() => handleDecrement(id)}
                           />
                         </ProductButton>

@@ -28,6 +28,12 @@ export const cartSlice = createSlice({
         )
         .filter((item) => item.quantity !== 0);
     },
+    remove: (state, { payload }) => {
+      state.cart.splice(
+        state.cart.findIndex((item) => item._id === payload),
+        1,
+      );
+    },
     getTotals: (state) => {
       let { total, quantity } = state.cart.reduce((cartTotal, cartItem) => {
         const { price, quantity } = cartItem;

@@ -33,6 +33,11 @@ const Container = styled.div`
   -moz-box-shadow: ${({ theme }) => theme.boxMode};
   box-shadow: ${({ theme }) => theme.boxMode};
   z-index: 3000;
+  
+  ${mobile({
+  width: '4rem',
+  height: '4rem',
+})}
 `;
 
 const Wrapper = styled.div`

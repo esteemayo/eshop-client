@@ -73,6 +73,7 @@ export const {
   decrement,
   getTotals,
   increment,
+  remove,
   reset,
   toggleQuantity,
 } = cartSlice.actions;

@@ -36,10 +36,6 @@ const Cart = () => {
     dispatch(toggleQuantity({ id: cartId, type: 'dec' }));
   };
 
-  const handleRemove = (cartId) => {
-    dispatch(remove(cartId));
-  };
-
   useEffect(() => {
     stripeToken && total >= 1 && (async () => {
       try {

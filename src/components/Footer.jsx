@@ -87,6 +87,7 @@ const Footer = () => {
 };
 
 const FooterContainer = styled.div`
+  width: 100vw;
   background-color: ${({ theme }) => theme.bgLight};
   color: ${({ theme }) => theme.textSoft};
 `;

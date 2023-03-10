@@ -288,6 +288,7 @@ const ClearCartButton = styled.button`
   display: inline-block;
   padding: 1rem 2rem;
   background-color: transparent;
+  color: #008080;
   border: 2px solid #008080;
 `;
 

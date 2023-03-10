@@ -280,7 +280,7 @@ const Info = styled.div`
 `;
 
 const ClearCartWrapper = styled.div`
-
+  padding: 3rem;
 `;
 
 const ClearCartButton = styled.button`

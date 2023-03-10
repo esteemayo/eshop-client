@@ -17,6 +17,7 @@ import {
   Success,
 } from 'pages/index';
 import { useEffect } from 'react';
+import { getTotals } from 'redux/cart/cartSlice';
 
 function App() {
   const dispatch = useDispatch();

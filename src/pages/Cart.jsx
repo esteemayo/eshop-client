@@ -40,7 +40,6 @@ const Cart = () => {
 
   const handleRemove = (cartId) => {
     dispatch(remove(cartId));
-    dispatch(getTotals());
   };
 
   const handleClearCart = () => {

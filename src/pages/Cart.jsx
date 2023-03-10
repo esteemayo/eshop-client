@@ -102,7 +102,7 @@ const Cart = () => {
                           <strong>Size:</strong> {size}
                         </ProductSize>
                         <RemoveWrapper>
-                          <button onClick={() => dispatch(remove(id))}>Remove</button>
+                          <button onClick={() => handleRemove(id)}>Remove</button>
                         </RemoveWrapper>
                       </Details>
                     </ProductDetail>

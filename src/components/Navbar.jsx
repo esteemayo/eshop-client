@@ -89,6 +89,7 @@ const Navbar = () => {
 };
 
 const Container = styled.div`
+  width: 100vw;
   height: 8rem;
   background-color: ${({ theme }) => theme.bgLight};
 

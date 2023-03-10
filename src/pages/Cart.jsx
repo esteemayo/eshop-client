@@ -375,7 +375,6 @@ const RemoveWrapper = styled.div`
     text-transform: capitalize;
     background-color: transparent;
     color: ${({ theme }) => theme.textRemove};
-    border-radius: 0.5rem;
     outline-color: ${({ theme }) => theme.text};
     cursor: pointer;
     transition: all 0.5s ease;

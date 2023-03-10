@@ -114,6 +114,6 @@ export const lightTheme = {
   boxMode: '0px 0px 4px rgba(82, 76, 76, 0.5)',
   textFooterIcon: 'var(--color-white)',
   bgRight: '#fff8f8',
-  textRemove: '#e43131',
+  textRemove: '#008080',
   bgClear: 'var(--red-light)',
 };

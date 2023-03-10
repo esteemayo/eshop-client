@@ -227,7 +227,7 @@ const TopButton = styled.button`
   background-color: ${({ type, theme }) => type === 'filled' ? theme.bgCartBtn : 'transparent'};
   color: ${({ type, theme }) => (type === 'filled' ? theme.textCartBtn : '#008080')};
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   padding: 1rem;
   font-weight: 600;
   text-transform: uppercase;

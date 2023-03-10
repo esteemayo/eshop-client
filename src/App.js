@@ -17,7 +17,6 @@ import {
   SharedLayout,
   Success,
 } from 'pages/index';
-import { getTotals } from 'redux/cart/cartSlice';
 
 function App() {
   const dispatch = useDispatch();

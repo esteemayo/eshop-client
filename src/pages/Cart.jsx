@@ -130,6 +130,9 @@ const Cart = () => {
                 </Fragment>
               );
             })}
+            <ClearCartWrapper>
+
+            </ClearCartWrapper>
           </Info>
           <Summary>
             <SummaryTitle>Order summary</SummaryTitle>
@@ -278,6 +281,10 @@ const Info = styled.div`
 
 const ClearCartWrapper = styled.div`
 
+`;
+
+const ClearCartButton = styled.button`
+  
 `;
 
 const Product = styled.div`

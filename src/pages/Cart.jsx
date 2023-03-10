@@ -131,7 +131,7 @@ const Cart = () => {
               );
             })}
             <ClearCartWrapper>
-
+              <ClearCartButton>Clear cart</ClearCartButton>
             </ClearCartWrapper>
           </Info>
           <Summary>

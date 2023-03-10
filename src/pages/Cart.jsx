@@ -189,7 +189,7 @@ const Cart = () => {
               token={onToken}
             >
               <Button>Checkout now</Button>
-            </StripeCheckout> */}
+            </StripeCheckout>
           </Summary>
         </Bottom>
       </Wrapper>

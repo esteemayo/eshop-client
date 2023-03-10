@@ -135,7 +135,12 @@ const Cart = () => {
               );
             })}
             <ClearCartWrapper>
-              <ClearCartButton type='button' onClick={() => dispatch(clearCart())}>Clear cart</ClearCartButton>
+              <ClearCartButton
+                type='button'
+                onClick={() => dispatch(clearCart())}
+              >
+                Clear cart
+              </ClearCartButton>
             </ClearCartWrapper>
           </Info>
           <Summary>

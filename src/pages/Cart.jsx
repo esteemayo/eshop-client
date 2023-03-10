@@ -287,6 +287,7 @@ const ClearCartWrapper = styled.div`
 const ClearCartButton = styled.button`
   display: inline-block;
   padding: 1rem 2rem;
+  font-weight: 600;
   background-color: transparent;
   color: #008080;
   border: 2px solid #008080;

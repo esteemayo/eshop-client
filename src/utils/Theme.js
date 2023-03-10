@@ -115,5 +115,5 @@ export const lightTheme = {
   textFooterIcon: 'var(--color-white)',
   bgRight: '#fff8f8',
   textRemove: '#e43131',
-  bgClear: '#fce5a5',
+  bgClear: 'var(--red-light)',
 };

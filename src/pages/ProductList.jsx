@@ -68,6 +68,7 @@ const ProductList = () => {
 };
 
 const Container = styled.div`
+  width: 100vw;
   background-color: ${({ theme }) => theme.bg};
   padding-top: 1px;
 `;

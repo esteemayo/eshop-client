@@ -58,6 +58,7 @@ export const cartSlice = createSlice({
           if (payload.type === 'inc') {
             return { ...item, quantity: item.quantity + 1 };
           }
+
           if (payload.type === 'dec') {
             return { ...item, quantity: item.quantity - 1 };
           }

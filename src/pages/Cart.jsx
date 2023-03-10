@@ -40,10 +40,6 @@ const Cart = () => {
     dispatch(remove(cartId));
   };
 
-  const handleClearCart = () => {
-    dispatch(clearCart());
-  };
-
   useEffect(() => {
     stripeToken && total >= 1 && (async () => {
       try {

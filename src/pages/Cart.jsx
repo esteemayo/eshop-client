@@ -142,7 +142,7 @@ const Cart = () => {
               );
             })}
             <ClearCartWrapper>
-              <ClearCartButton>Clear cart</ClearCartButton>
+              <ClearCartButton onClick={handleClearCart}>Clear cart</ClearCartButton>
             </ClearCartWrapper>
           </Info>
           <Summary>

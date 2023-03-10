@@ -306,6 +306,7 @@ const ClearCartButton = styled.button`
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.text};
   cursor: pointer;
+  transition: all 0.5s ease;
 
   &:hover {
     background-color: ${({ theme }) => theme.bgClear};

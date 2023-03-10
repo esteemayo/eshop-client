@@ -373,6 +373,7 @@ const RemoveWrapper = styled.div`
     border: none;
     display: inline-block;
     text-transform: capitalize;
+    font-weight: 600;
     background-color: transparent;
     color: ${({ theme }) => theme.textRemove};
     outline-color: ${({ theme }) => theme.text};

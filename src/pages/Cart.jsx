@@ -353,6 +353,7 @@ const RemoveWrapper = styled.div`
     border-radius: 0.5rem;
     outline-color: ${({ theme }) => theme.text};
     cursor: pointer;
+    transition: all 0.5s ease;
 
     &:hover {
       opacity: 0.5;

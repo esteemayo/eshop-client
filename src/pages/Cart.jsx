@@ -66,7 +66,7 @@ const Cart = () => {
 
   useEffect(() => {
     dispatch(getTotals());
-  }, [dispatch]);
+  }, [cart, dispatch]);
 
   if (cart.length === 0) {
     return (

@@ -24,6 +24,10 @@ function App() {
   const { cart } = useSelector((state) => state.cart);
   const { darkMode } = useSelector((state) => state.darkMode);
 
+  useEffect(() => {
+    dispatch(getTotals());
+  }, [cart, dispatch]);
+
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Router>

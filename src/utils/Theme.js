@@ -55,7 +55,7 @@ export const darkTheme = {
   textFooterIcon: 'rgb(206, 206, 206)',
   bgRight: '#242424',
   textRemove: '#a52323',
-  bgClear: '#ffdb7a',
+  bgClear: '#f79292',
 };
 
 export const lightTheme = {

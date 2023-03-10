@@ -18,6 +18,7 @@ import {
 } from 'pages/index';
 
 function App() {
+  const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => state.darkMode);
 
   return (

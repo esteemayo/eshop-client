@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'styled-components';
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 
 import ProtectedRoute from 'utils/ProtectedRoute';
 import AuthRoute from 'utils/AuthRoute';

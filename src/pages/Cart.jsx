@@ -291,6 +291,7 @@ const ClearCartButton = styled.button`
   color: #008080;
   border: 2px solid #008080;
   border-radius: 0.5rem;
+  cursor: pointer;
 `;
 
 const Product = styled.div`

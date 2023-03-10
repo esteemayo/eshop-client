@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Fragment, useEffect, useState } from 'react';
 
 import { stripePayment } from 'services/stripeService';
-import { getTotals, remove, reset, toggleQuantity } from 'redux/cart/cartSlice';
+import { clearCart, getTotals, remove, reset, toggleQuantity } from 'redux/cart/cartSlice';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Cart = () => {

@@ -54,7 +54,7 @@ export const darkTheme = {
   boxMode: '0px 0px 4px rgba(255, 255, 255, 0.5)',
   textFooterIcon: 'rgb(206, 206, 206)',
   bgRight: '#242424',
-  bgRemove: '#ff0000',
+  bgRemove: '#6b0303',
 };
 
 export const lightTheme = {

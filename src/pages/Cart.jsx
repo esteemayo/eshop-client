@@ -306,6 +306,10 @@ const ClearCartButton = styled.button`
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.text};
   cursor: pointer;
+
+  &:hover {
+    background-color: #fce5a5;
+  }
 `;
 
 const Product = styled.div`

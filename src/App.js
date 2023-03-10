@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProtectedRoute from 'utils/ProtectedRoute';
 import AuthRoute from 'utils/AuthRoute';
 import { darkTheme, lightTheme } from 'utils/Theme';
+import { getTotals } from 'redux/cart/cartSlice';
 import {
   Cart,
   Home,

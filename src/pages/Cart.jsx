@@ -22,8 +22,8 @@ const Cart = () => {
     setStripeToken(token);
   };
 
-  const handleIncrement = (productId) => {
-    dispatch(toggleQuantity({ id: productId, type: 'inc' }));
+  const handleIncrement = (cartId) => {
+    dispatch(toggleQuantity({ id: cartId, type: 'inc' }));
     dispatch(getTotals());
   };
 

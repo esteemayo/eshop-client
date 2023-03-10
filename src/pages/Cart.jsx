@@ -308,7 +308,7 @@ const ClearCartButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #fce5a5;
+    background-color: ${({ theme }) => theme.bgClear};
   }
 `;
 

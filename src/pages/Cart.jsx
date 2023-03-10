@@ -299,7 +299,7 @@ const ClearCartWrapper = styled.div`
 
 const ClearCartButton = styled.button`
   display: inline-block;
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding: 1rem 2rem;
   font-weight: 600;
   background-color: transparent;

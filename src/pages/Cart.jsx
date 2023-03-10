@@ -30,7 +30,6 @@ const Cart = () => {
 
   const handleIncrement = (cartId) => {
     dispatch(toggleQuantity({ id: cartId, type: 'inc' }));
-    dispatch(getTotals());
   };
 
   const handleDecrement = (cartId) => {

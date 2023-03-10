@@ -2,7 +2,6 @@ import { ThemeProvider } from 'styled-components';
 import { useSelector } from 'react-redux';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import AuthRoute from 'utils/AuthRoute';
 import ProtectedRoute from 'utils/ProtectedRoute';
 import { darkTheme, lightTheme } from 'utils/Theme';
 import {

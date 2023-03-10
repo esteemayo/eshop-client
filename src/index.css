@@ -1,6 +1,7 @@
 :root {
   --color-white: #ffffff;
   --red-dark: hsl(360, 67%, 44%);
+  --red-light: hsl(360, 71%, 66%);
 }
 
 ::-webkit-scrollbar {

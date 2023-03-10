@@ -309,7 +309,7 @@ const ClearCartButton = styled.button`
   transition: all 0.5s ease;
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgClear};
+    background-color: var(--red-light);
     font-weight: 700;
   }
 `;

@@ -281,7 +281,7 @@ const Info = styled.div`
 
 const ClearCartWrapper = styled.div`
   padding: 3rem;
-  text-align: center;
+  text-align: right;
 `;
 
 const ClearCartButton = styled.button`

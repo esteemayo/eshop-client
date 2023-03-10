@@ -35,7 +35,6 @@ const Cart = () => {
 
   const handleDecrement = (cartId) => {
     dispatch(toggleQuantity({ id: cartId, type: 'dec' }));
-    dispatch(getTotals());
   };
 
   const handleRemove = (cartId) => {

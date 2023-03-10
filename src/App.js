@@ -21,6 +21,7 @@ import { getTotals } from 'redux/cart/cartSlice';
 
 function App() {
   const dispatch = useDispatch();
+  const { cart } = useSelector((state) => state.cart);
   const { darkMode } = useSelector((state) => state.darkMode);
 
   return (

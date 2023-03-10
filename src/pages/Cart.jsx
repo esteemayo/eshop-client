@@ -301,7 +301,7 @@ const ClearCartButton = styled.button`
   padding: 1rem 2rem;
   font-weight: 600;
   background-color: transparent;
-  color: #ffb900;
+  color: var(--red-dark);
   border: 2px solid var(--red-dark);
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.text};

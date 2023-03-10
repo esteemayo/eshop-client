@@ -285,7 +285,7 @@ const ClearCartWrapper = styled.div`
 `;
 
 const ClearCartButton = styled.button`
-  
+  display: inline-block;
 `;
 
 const Product = styled.div`

@@ -356,7 +356,7 @@ const RemoveWrapper = styled.div`
     transition: all 0.5s ease;
 
     &:hover {
-      opacity: 0.5;
+      opacity: 0.75;
     }
   }
 `;

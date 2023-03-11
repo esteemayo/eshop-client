@@ -7,7 +7,7 @@ const Products = () => {
 };
 
 const Container = styled.div`
-  
+  background-color: ${({ theme }) => theme.bg};
 `;
 
 export default Products;

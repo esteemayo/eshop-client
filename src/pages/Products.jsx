@@ -10,4 +10,8 @@ const Container = styled.div`
   background-color: ${({ theme }) => theme.bg};
 `;
 
+const Left = styled.div`
+
+`;
+
 export default Products;

@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  
+  display: flex;
 `;
 
 const Left = styled.div`

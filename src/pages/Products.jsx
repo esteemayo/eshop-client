@@ -6,4 +6,8 @@ const Products = () => {
   );
 };
 
+const Container = styled.div`
+  
+`;
+
 export default Products;

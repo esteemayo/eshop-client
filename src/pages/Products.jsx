@@ -2,12 +2,18 @@ import styled from 'styled-components';
 
 const Products = () => {
   return (
-    <Container>Products</Container>
+    <Container>
+
+    </Container>
   );
 };
 
 const Container = styled.div`
   background-color: ${({ theme }) => theme.bg};
+`;
+
+const Wrapper = styled.div`
+  
 `;
 
 const Left = styled.div`

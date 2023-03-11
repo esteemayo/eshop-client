@@ -14,4 +14,8 @@ const Left = styled.div`
 
 `;
 
+const Right = styled.div`
+
+`;
+
 export default Products;

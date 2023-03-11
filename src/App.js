@@ -14,6 +14,7 @@ import {
   NotFound,
   Product,
   ProductList,
+  Products,
   Register,
   SharedLayout,
   Success,

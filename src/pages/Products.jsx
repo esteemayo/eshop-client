@@ -21,10 +21,12 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
   flex: 1;
+  background-color: yellowgreen;
 `;
 
 const Right = styled.div`
   flex: 2;
+  background-color: tomato;
 `;
 
 export default Products;

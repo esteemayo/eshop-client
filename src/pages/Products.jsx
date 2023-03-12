@@ -91,9 +91,15 @@ const Products = () => {
           </Form>
         </Left>
         <Right>
-          {products.map((item) => {
-            return <Product key={item._id} {...item} />
-          })}
+          {filteredProducts ? (
+            filteredProducts.map((item) => {
+              return <Product key={item._id} {...item} />
+            })
+          ) : (
+            products.map((item) => {
+              return <Product key={item._id} {...item} />
+            })
+          )}
         </Right>
       </Wrapper>
     </Container>

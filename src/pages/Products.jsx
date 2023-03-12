@@ -65,7 +65,7 @@ const FormGroup = styled.div`
   flex-direction: column;
   gap: 0.5rem;
 
-  &:not(:last-of-type){
+  &:not(:last-of-type) {
     margin-bottom: 2rem;
   }
 `;

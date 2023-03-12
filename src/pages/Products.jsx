@@ -2,12 +2,7 @@ import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 
 import Product from 'components/Product';
-import { getProducts } from 'services/productService';
-
-const getUnique = (items, value) => {
-  const newItems = items.map((item) => item[value]).flat();
-  return [...new Set(newItems)];
-};
+import { getProducts } from 'services/productService';;
 
 const Products = () => {
   const [price, setPrice] = useState(0);

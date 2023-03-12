@@ -90,6 +90,7 @@ const Products = () => {
                 type='range'
                 id='price'
                 name='price'
+                value={price}
                 min={minPrice}
                 max={maxPrice}
               />

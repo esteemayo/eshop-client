@@ -30,7 +30,6 @@ const Products = () => {
     (async () => {
       try {
         const { data } = await getProducts();
-        setProducts(data.products);
         const price = Math.max(...data.products.map((item) => item.price));
         setProducts(data.products);
         setPrice(price);

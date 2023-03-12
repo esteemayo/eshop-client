@@ -56,6 +56,7 @@ export const darkTheme = {
   bgRight: '#242424',
   textRemove: '#165e5e',
   bgClear: '#f79292',
+  bgFilter: '#161616',
 };
 
 export const lightTheme = {
@@ -116,4 +117,5 @@ export const lightTheme = {
   bgRight: '#fff8f8',
   textRemove: '#008080',
   bgClear: 'var(--red-light)',
+  bgFilter: 'var(--color-white)',
 };

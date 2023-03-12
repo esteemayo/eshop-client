@@ -84,7 +84,7 @@ const Products = () => {
             </FormGroup>
             <FormGroup>
               <Label htmlFor='color'>Color</Label>
-              <Select id='color' name='color' onChange={handleChange}>
+              <Select id='color' name='color' onChange={handleChange} option='color'>
                 {colors.map((item, index) => {
                   return <Option key={index} value={item}>{item}</Option>
                 })}

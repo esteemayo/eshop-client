@@ -41,6 +41,8 @@ const Form = styled.form`
 
 const FormGroup = styled.div``;
 
+const Label = styled.label``;
+
 const Select = styled.select`
 
 `;

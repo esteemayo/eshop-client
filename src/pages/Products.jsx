@@ -53,8 +53,6 @@ const Products = () => {
     setFilteredProducts(tempProducts);
   }, [products, filters]);
 
-  console.log('sorted:', filteredProducts)
-
   return (
     <Container>
       <Wrapper>

@@ -44,7 +44,7 @@ const Products = () => {
   useEffect(() => {
     let tempProducts = [...products];
 
-    tempProducts = tempProducts.filter((item) => item.price <= price);
+    tempProducts = tempProducts.filter((item) => item.price <= parseInt(price));
 
     tempProducts = tempProducts.filter((item) =>
       Object.entries(filters).every(([key, value]) =>

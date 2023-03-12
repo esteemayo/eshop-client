@@ -10,6 +10,7 @@ const getUnique = (items, value) => {
 };
 
 const Products = () => {
+  const [categories, setCategories] = useState('');
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 

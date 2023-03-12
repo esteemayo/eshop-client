@@ -20,7 +20,7 @@ const Products = () => {
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
     setFilters((prev) => ({ ...prev, [name]: value }));
-  }
+  };
 
   const allCategories = getUnique(products, 'categories');
   const sizes = getUnique(products, 'size');

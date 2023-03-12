@@ -11,3 +11,8 @@ export const setToStorage = (key, value) => {
 export const removeFromStorage = (key) => {
   return localStorage.removeItem(key);
 }
+
+export const getUnique = (items, value) => {
+  const newItems = items.map((item) => item[value]).flat();
+  return [...new Set(newItems)];
+}

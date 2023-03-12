@@ -288,7 +288,6 @@ export const products = [
     ],
     price: 197,
     inStock: true,
-    slug: 'gown',
   },
   {
     id: 6,

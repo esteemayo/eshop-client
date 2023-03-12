@@ -34,6 +34,9 @@ const Products = () => {
       try {
         const { data } = await getProducts();
         setProducts(data.products);
+        const price = Math.max(...data.products.map((item) => item.price));
+        setPrice(price);
+        setMaxPrice(price);
       } catch (err) {
         console.log(err);
       }

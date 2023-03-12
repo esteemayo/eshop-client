@@ -11,6 +11,7 @@ const getUnique = (items, value) => {
 
 const Products = () => {
   const [price, setPrice] = useState(0);
+  const [filters, setFilters] = useState({});
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(0);
   const [filters, setFilters] = useState({});

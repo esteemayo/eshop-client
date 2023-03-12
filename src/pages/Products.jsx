@@ -35,6 +35,10 @@ const Form = styled.form`
 
 `;
 
+const Select = styled.select`
+
+`;
+
 const Right = styled.div`
   flex: 2;
   display: flex;

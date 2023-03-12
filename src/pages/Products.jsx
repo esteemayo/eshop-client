@@ -53,7 +53,6 @@ const Wrapper = styled.div`
 const Left = styled.div`
   flex: 1;
   padding: 3rem;
-  background-color: yellowgreen;
 `;
 
 const Form = styled.form`

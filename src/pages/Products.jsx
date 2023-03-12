@@ -91,7 +91,7 @@ const Products = () => {
                 id='price'
                 name='price'
                 min={minPrice}
-                max={1000}
+                max={maxPrice}
               />
             </FormGroup>
           </Form>

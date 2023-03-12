@@ -5,7 +5,8 @@ import Product from 'components/Product';
 import { getProducts } from 'services/productService';
 
 const getUnique = (items, value) => {
-  return [...new Set(items.map((item) => item[value]))];
+  const newItems = items.map((item) => item[value]).flat();
+  return [...new Set(newItems)];
 };
 
 const Products = () => {

@@ -60,7 +60,11 @@ const Form = styled.form`
 
 `;
 
-const FormGroup = styled.div``;
+const FormGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+`;
 
 const Label = styled.label``;
 

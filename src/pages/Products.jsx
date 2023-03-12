@@ -51,8 +51,9 @@ const Products = () => {
             <FormGroup>
               <Label htmlFor='color'>Color</Label>
               <Select id='color' name='color'>
-                <Option value='black'>Black</Option>
-                <Option value='red'>Red</Option>
+                {color.map((item, index) => {
+                  return <Option key={index} value={item}>{item}</Option>
+                })}
               </Select>
             </FormGroup>
             <FormGroup>

@@ -10,7 +10,6 @@ const getUnique = (items, value) => {
 };
 
 const Products = () => {
-  const [size, setSize] = useState('');
   const [price, setPrice] = useState(0);
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(0);

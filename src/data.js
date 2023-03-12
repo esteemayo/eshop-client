@@ -264,7 +264,6 @@ export const products = [
     ],
     price: 860,
     inStock: true,
-    createdAt: '2023-02-06T15:42:41.179Z',
     slug: 'designer-bag',
   },
   {

@@ -75,6 +75,7 @@ const Right = styled.div`
   flex: 3;
   display: flex;
   flex-wrap: wrap;
+  padding: 3rem;
 `;
 
 export default Products;

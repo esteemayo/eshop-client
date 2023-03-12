@@ -7,7 +7,11 @@ const Products = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>left</Left>
+        <Left>
+          <Form>
+
+          </Form>
+        </Left>
         <Right>
           {products.map((item) => {
             return <Product key={item._id} {...item} />

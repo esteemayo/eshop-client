@@ -33,8 +33,9 @@ const Products = () => {
             <FormGroup>
               <Label htmlFor='categories'>Categories</Label>
               <Select id='categories' name='categories'>
-                <Option value='women'>Women</Option>
-                <Option value='men'>Men</Option>
+                {categories.map((item, index) => {
+                  return <Option key={index} value={item}>{item}</Option>;
+                })}
               </Select>
             </FormGroup>
             <FormGroup>

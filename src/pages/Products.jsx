@@ -79,6 +79,7 @@ const Label = styled.label`
 const Select = styled.select`
   display: inline-block;
   font-family: inherit;
+  font-size: 1.5rem;
   width: 20rem;
   padding: 1rem 0.5rem;
   background-color: transparent;

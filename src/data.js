@@ -216,7 +216,6 @@ export const products = [
     ],
     price: 200,
     inStock: true,
-    slug: 'jacket',
   },
   {
     id: 3,

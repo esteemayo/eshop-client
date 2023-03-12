@@ -33,6 +33,8 @@ const Left = styled.div`
 
 const Right = styled.div`
   flex: 2;
+  display: flex;
+  flex-wrap: wrap;
   background-color: tomato;
 `;
 

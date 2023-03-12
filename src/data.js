@@ -171,6 +171,7 @@ export const products = [
   {
     id: 1,
     title: 'Prada Shirt',
+    slug: 'prada-shirt',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam id urna at pharetra. Integer vitae sem ultrices, pretium erat ut, tincidunt lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus quis nisl iaculis interdum. Sed eleifend, nisi ut luctus porta, elit elit tristique turpis, sit amet interdum velit velit sed tortor. Nulla facilisi. Suspendisse bibendum nisi sit amet est tincidunt convallis. Sed tincidunt convallis ex vel vulputate.',
     img: 'https://firebasestorage.googleapis.com/v0/b/eshop-4647b.appspot.com/o/1648310039884UCS319_1YOT_F010O_S_182_SLF.png?alt=media&token=537f2e2d-f186-46bf-81a0-a5de18510fbd',
     categories: [

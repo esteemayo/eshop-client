@@ -3,7 +3,10 @@ import styled from 'styled-components';
 const Products = () => {
   return (
     <Container>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <Left>left</Left>
+        <Right>right</Right>
+      </Wrapper>
     </Container>
   );
 };

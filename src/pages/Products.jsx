@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 import { products } from 'data';
 import Product from 'components/Product';
-import { products } from 'data';
 
 const Products = () => {
   return (

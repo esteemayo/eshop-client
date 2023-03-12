@@ -93,6 +93,7 @@ const Products = () => {
                 value={price}
                 min={minPrice}
                 max={maxPrice}
+                onChange={(e) => setPrice(e.target.value)}
               />
             </FormGroup>
           </Form>

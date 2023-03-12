@@ -31,6 +31,10 @@ const Left = styled.div`
   background-color: yellowgreen;
 `;
 
+const Form = styled.form`
+
+`;
+
 const Right = styled.div`
   flex: 2;
   display: flex;

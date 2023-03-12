@@ -32,7 +32,13 @@ const Products = () => {
             </FormGroup>
             <FormGroup>
               <Label htmlFor='price'>Price</Label>
-              <Input type='range' id='price' name='price' min={0} max={1000} />
+              <Input
+                type='range'
+                id='price'
+                name='price'
+                min={0}
+                max={1000}
+              />
             </FormGroup>
           </Form>
         </Left>

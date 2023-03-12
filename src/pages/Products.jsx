@@ -17,6 +17,11 @@ const Products = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
+  const handleChange = ({ target: input }) => {
+    const { name, value } = input;
+    setFilters((prev) => ({ ...prev, [name]: value }));
+  }
+
   const allCategories = getUnique(products, 'categories');
   const sizes = getUnique(products, 'size');
   const colors = getUnique(products, 'color');

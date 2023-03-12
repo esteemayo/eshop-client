@@ -4,6 +4,10 @@ import styled from 'styled-components';
 import Product from 'components/Product';
 import { getProducts } from 'services/productService';
 
+const getUnique = (items, value) => {
+  return [...new Set(items.map((item) => item[value]))];
+};
+
 const Products = () => {
   const [products, setProducts] = useState([]);
 

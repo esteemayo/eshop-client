@@ -104,7 +104,8 @@ const Option = styled.option`
 `;
 
 const Input = styled.input`
-  
+  display: inline-block;
+  width: 20rem;
 `;
 
 const Right = styled.div`

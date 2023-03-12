@@ -238,7 +238,6 @@ export const products = [
     ],
     price: 55,
     inStock: true,
-    slug: 'cap',
   },
   {
     id: 4,

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
-import styled from 'styled-components';
 
 import Product from 'components/Product';
 import { getProducts } from 'services/productService';

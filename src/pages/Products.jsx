@@ -96,7 +96,7 @@ const Products = () => {
               </Select>
             </FormGroup>
             <FormGroup>
-              <Label htmlFor='price'>Price ({price})</Label>
+              <Label htmlFor='price'>Product Price ({price})</Label>
               <Input
                 type='range'
                 id='price'

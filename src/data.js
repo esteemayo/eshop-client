@@ -275,7 +275,7 @@ export const products = [
     slug: 'designer-bag',
   },
   {
-    _id: '623f3a3974721e78e42c7fa0',
+    id: '623f3a3974721e78e42c7fa0',
     title: 'Gown',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquam id urna at pharetra. Integer vitae sem ultrices, pretium erat ut, tincidunt lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis lacus quis nisl iaculis interdum. Sed eleifend, nisi ut luctus porta, elit elit tristique turpis, sit amet interdum velit velit sed tortor. Nulla facilisi. Suspendisse bibendum nisi sit amet est tincidunt convallis. Sed tincidunt convallis ex vel vulputate.',
     img: 'https://firebasestorage.googleapis.com/v0/b/eshop-4647b.appspot.com/o/16483108205681170x1470_BS_2016_05_132_front.png?alt=media&token=aa89136c-ea9e-4672-bba4-d263132151f2',

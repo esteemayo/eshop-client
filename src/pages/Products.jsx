@@ -5,6 +5,8 @@ import Product from 'components/Product';
 import { useState } from 'react';
 
 const Products = () => {
+  const [products, setProducts] = useState([]);
+
   return (
     <Container>
       <Wrapper>

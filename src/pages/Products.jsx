@@ -87,7 +87,7 @@ const Select = styled.select`
 `;
 
 const Option = styled.option`
-
+  background-color: ${({ theme }) => theme.bgOption};
 `;
 
 const Right = styled.div`

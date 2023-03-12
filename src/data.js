@@ -221,6 +221,7 @@ export const products = [
   {
     id: 3,
     title: 'Cap',
+    slug: 'cap',
     desc: 'Ut in massa aliquam, mattis eros eget, imperdiet felis. Morbi sit amet ex id metus ultricies gravida. Vestibulum ornare varius felis, vel aliquam ex condimentum id. Maecenas faucibus est viverra feugiat congue. Proin eget ligula viverra orci accumsan laoreet ut porttitor tellus. Fusce eu euismod lacus. Quisque tempor dignissim sapien, sit amet sagittis tellus consequat vulputate. Duis euismod sem at hendrerit porttitor.',
     img: 'https://firebasestorage.googleapis.com/v0/b/eshop-4647b.appspot.com/o/1648310321344Rocket-Vintage-Chill-Cap_66374_1_lg.png?alt=media&token=2e32c5b4-c000-4fb1-a8f8-5ba2d382f947',
     categories: [

@@ -70,7 +70,10 @@ const FormGroup = styled.div`
   }
 `;
 
-const Label = styled.label``;
+const Label = styled.label`
+  font-weight: 600;
+  font-size: 1.4rem;
+`;
 
 const Select = styled.select`
 

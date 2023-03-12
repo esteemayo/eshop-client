@@ -193,7 +193,6 @@ export const products = [
     ],
     price: 170,
     inStock: true,
-    createdAt: '2023-02-06T15:42:41.178Z',
     updatedAt: '2023-02-06T15:42:41.178Z',
     slug: 'prada-shirt',
   },

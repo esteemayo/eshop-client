@@ -12,6 +12,8 @@ const getUnique = (items, value) => {
 const Products = () => {
   const [products, setProducts] = useState([]);
 
+  let categories = getUnique(products, 'categories');
+
   useEffect(() => {
     (async () => {
       try {

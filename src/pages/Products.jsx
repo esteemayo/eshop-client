@@ -16,6 +16,13 @@ const Products = () => {
                 <Option value='men'>Men</Option>
               </Select>
             </FormGroup>
+            <FormGroup>
+              <Label htmlFor='size'>Size</Label>
+              <Select id='size' name='size'>
+                <Option value='black'>Black</Option>
+                <Option value='red'>Red</Option>
+              </Select>
+            </FormGroup>
           </Form>
         </Left>
         <Right>

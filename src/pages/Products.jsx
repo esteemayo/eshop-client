@@ -35,6 +35,7 @@ const Products = () => {
         setPrice(price);
         setMaxPrice(price);
         setProducts(data.products);
+        setFilteredProducts(data.products);
       } catch (err) {
         console.log(err);
       }

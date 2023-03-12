@@ -241,7 +241,7 @@ export const products = [
     slug: 'cap',
   },
   {
-    id: '623f38ef74721e78e42c7f98',
+    id: 4,
     title: 'Designer Bag',
     desc: 'Suspendisse bibendum, ligula sed viverra tempus, justo tortor interdum dui, nec aliquam urna nisi maximus enim. Vestibulum consequat neque vel ex lobortis fermentum. Praesent sapien velit, facilisis convallis tellus maximus, tristique elementum elit. Integer non augue posuere, lacinia ante eget, semper diam. Pellentesque vel rutrum mauris. Maecenas eu tortor ac sapien dictum vestibulum. Aenean pharetra eros turpis, sed tincidunt dui iaculis ut. Mauris feugiat felis ultricies consequat condimentum. Praesent vel facilisis ante, eget volutpat tortor. Pellentesque congue ligula varius leo sollicitudin consectetur.',
     img: 'https://firebasestorage.googleapis.com/v0/b/eshop-4647b.appspot.com/o/1648310499363Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png?alt=media&token=92713d57-d0e0-4a0d-a605-004907f7e0ac',

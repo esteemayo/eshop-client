@@ -216,7 +216,6 @@ export const products = [
     ],
     price: 200,
     inStock: true,
-    updatedAt: '2023-02-06T15:42:41.179Z',
     slug: 'jacket',
   },
   {

@@ -93,6 +93,10 @@ const Option = styled.option`
   background-color: ${({ theme }) => theme.bgOption};
 `;
 
+const Input = styled.input`
+  
+`;
+
 const Right = styled.div`
   flex: 3;
   display: flex;

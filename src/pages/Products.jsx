@@ -39,6 +39,10 @@ const Select = styled.select`
 
 `;
 
+const Option = styled.option`
+
+`;
+
 const Right = styled.div`
   flex: 2;
   display: flex;

@@ -8,7 +8,11 @@ const Products = () => {
     <Container>
       <Wrapper>
         <Left>left</Left>
-        <Right>right</Right>
+        <Right>
+          {products.map((item) => {
+            return <Product key={item._id} {...item} />
+          })}
+        </Right>
       </Wrapper>
     </Container>
   );

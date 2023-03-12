@@ -315,6 +315,5 @@ export const products = [
     ],
     price: 100,
     inStock: true,
-    slug: 't-shirt',
   },
 ];

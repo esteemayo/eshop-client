@@ -198,7 +198,7 @@ export const products = [
     slug: 'prada-shirt',
   },
   {
-    _id: '623f37ae74721e78e42c7f8c',
+    id: '623f37ae74721e78e42c7f8c',
     title: 'Jacket',
     desc: 'Duis sodales lectus eget porttitor tincidunt. Sed neque diam, sodales in efficitur sed, congue non odio. Cras nunc metus, facilisis a bibendum vitae, malesuada non lacus. Nullam quis odio sagittis, malesuada nulla a, interdum turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean aliquet dolor neque, congue porta turpis ullamcorper sed. Aenean eu diam est. In vitae auctor diam. Duis congue, mauris sed dapibus placerat, diam sem tincidunt ex, vitae ullamcorper nibh mauris non metus. Cras at orci metus. Nullam in commodo metus.',
     img: 'https://firebasestorage.googleapis.com/v0/b/eshop-4647b.appspot.com/o/1648310182164Women-Jacket-PNG-High-Quality-Image.png?alt=media&token=f87514f6-b43e-4031-9baf-757304b65d08',

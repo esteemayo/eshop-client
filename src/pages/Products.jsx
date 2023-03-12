@@ -36,7 +36,7 @@ const Products = () => {
             <FormGroup>
               <Label htmlFor='categories'>Categories</Label>
               <Select id='categories' name='categories'>
-                {categories.map((item, index) => {
+                {allCategories.map((item, index) => {
                   return <Option key={index} value={item}>{item}</Option>;
                 })}
               </Select>

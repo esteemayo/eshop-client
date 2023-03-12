@@ -19,8 +19,8 @@ const Products = () => {
             <FormGroup>
               <Label htmlFor='size'>Size</Label>
               <Select id='size' name='size'>
-                <Option value='black'>Black</Option>
-                <Option value='red'>Red</Option>
+                <Option value='M'>M</Option>
+                <Option value='L'>L</Option>
               </Select>
             </FormGroup>
             <FormGroup>

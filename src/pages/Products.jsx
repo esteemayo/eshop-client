@@ -64,6 +64,10 @@ const FormGroup = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  &:not(:last-of-type){
+    margin-bottom: 2rem;
+  }
 `;
 
 const Label = styled.label``;

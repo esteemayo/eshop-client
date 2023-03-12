@@ -39,6 +39,8 @@ const Form = styled.form`
 
 `;
 
+const FormGroup = styled.div``;
+
 const Select = styled.select`
 
 `;

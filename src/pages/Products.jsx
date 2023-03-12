@@ -1,12 +1,22 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-import { products } from 'data';
 import Product from 'components/Product';
 import { getProducts } from 'services/productService';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const { data } = await getProducts();
+        setProducts(data.products);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
+  }, []);
 
   return (
     <Container>

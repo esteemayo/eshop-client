@@ -81,6 +81,7 @@ const Select = styled.select`
   width: 20rem;
   padding: 1rem 0.5rem;
   background-color: transparent;
+  color: ${({ theme }) => theme.textCat};
 `;
 
 const Option = styled.option`

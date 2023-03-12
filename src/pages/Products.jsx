@@ -82,6 +82,7 @@ const Select = styled.select`
   padding: 1rem 0.5rem;
   background-color: transparent;
   color: ${({ theme }) => theme.textCat};
+  border: 1px solid ${({ theme }) => theme.borderFilter};
 `;
 
 const Option = styled.option`

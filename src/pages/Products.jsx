@@ -85,6 +85,7 @@ const Select = styled.select`
   background-color: transparent;
   color: ${({ theme }) => theme.textCat};
   border: 1px solid ${({ theme }) => theme.borderFilter};
+  border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.text};
 `;
 

@@ -23,6 +23,13 @@ const Products = () => {
                 <Option value='red'>Red</Option>
               </Select>
             </FormGroup>
+            <FormGroup>
+              <Label htmlFor='color'>Color</Label>
+              <Select id='color' name='color'>
+                <Option value='black'>Black</Option>
+                <Option value='red'>Red</Option>
+              </Select>
+            </FormGroup>
           </Form>
         </Left>
         <Right>

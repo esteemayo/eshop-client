@@ -264,7 +264,6 @@ export const products = [
     ],
     price: 860,
     inStock: true,
-    slug: 'designer-bag',
   },
   {
     id: 5,

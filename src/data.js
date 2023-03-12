@@ -293,6 +293,7 @@ export const products = [
   {
     id: 6,
     title: 'T-shirt',
+    slug: 't-shirt',
     desc: 'Nam ultrices vitae nunc vitae luctus. Curabitur ultrices lorem neque, id tincidunt erat tempor sit amet. Duis consequat, neque nec varius sodales, urna lacus convallis elit, id commodo metus leo in lectus.  Aenean eget orci lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur viverra lectus vulputate, tempus augue in, condimentum augue. Nunc neque lectus, rhoncus eget erat vitae, luctus auctor felis. Donec at enim erat. Donec vel purus ipsum. Fusce consectetur tortor fermentum ligula dictum, vitae vestibulum dolor posuere.',
     img: 'https://firebasestorage.googleapis.com/v0/b/eshop-4647b.appspot.com/o/1648310682505Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg%20(1).png?alt=media&token=bf815a5e-f47d-4877-b2b7-b09c07651115',
     categories: [

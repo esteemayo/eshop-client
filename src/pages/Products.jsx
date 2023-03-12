@@ -14,6 +14,7 @@ const Products = () => {
   const [color, setColor] = useState('');
   const [price, setPrice] = useState(0);
   const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(0);
   const [filters, setFilters] = useState({});
   const [categories, setCategories] = useState('');
   const [products, setProducts] = useState([]);

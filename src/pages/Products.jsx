@@ -13,6 +13,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   const categories = getUnique(products, 'categories');
+  const size = getUnique(products, 'size');
 
   useEffect(() => {
     (async () => {
@@ -41,8 +42,9 @@ const Products = () => {
             <FormGroup>
               <Label htmlFor='size'>Size</Label>
               <Select id='size' name='size'>
-                <Option value='M'>M</Option>
-                <Option value='L'>L</Option>
+                {size.map((item, index) => {
+                  return <Option key={index} value={item}>{item}</Option>
+                })}
               </Select>
             </FormGroup>
             <FormGroup>

@@ -30,6 +30,10 @@ const Products = () => {
                 <Option value='red'>Red</Option>
               </Select>
             </FormGroup>
+            <FormGroup>
+              <Label htmlFor='price'>Price</Label>
+              <Input type='range' id='price' name='price' />
+            </FormGroup>
           </Form>
         </Left>
         <Right>

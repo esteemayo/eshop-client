@@ -77,7 +77,8 @@ const Label = styled.label`
 `;
 
 const Select = styled.select`
-
+  display: inline-block;
+  font-family: inherit;
 `;
 
 const Option = styled.option`

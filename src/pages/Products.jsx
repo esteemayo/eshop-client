@@ -72,7 +72,7 @@ const Option = styled.option`
 `;
 
 const Right = styled.div`
-  flex: 2;
+  flex: 3;
   display: flex;
   flex-wrap: wrap;
 `;

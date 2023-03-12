@@ -81,6 +81,7 @@ const Select = styled.select`
   font-family: inherit;
   width: 20rem;
   padding: 1rem 0.5rem;
+  background-color: transparent;
 `;
 
 const Option = styled.option`

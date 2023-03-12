@@ -11,6 +11,7 @@ const getUnique = (items, value) => {
 
 const Products = () => {
   const [size, setSize] = useState('');
+  const [color, setColor] = useState('');
   const [categories, setCategories] = useState('');
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);

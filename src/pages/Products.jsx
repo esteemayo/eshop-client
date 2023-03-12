@@ -14,6 +14,7 @@ const Products = () => {
 
   const categories = getUnique(products, 'categories');
   const size = getUnique(products, 'size');
+  const color = getUnique(products, 'color');
 
   useEffect(() => {
     (async () => {

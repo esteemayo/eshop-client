@@ -146,6 +146,7 @@ const Select = styled.select`
   display: inline-block;
   font-family: inherit;
   font-size: 1.5rem;
+  text-transform: ${({ option }) => option && 'capitalize'};
   width: 20rem;
   padding: 1rem 0.5rem;
   background-color: transparent;

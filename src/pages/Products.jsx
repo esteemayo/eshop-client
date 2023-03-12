@@ -166,6 +166,7 @@ const Option = styled.option`
 const Input = styled.input`
   display: inline-block;
   width: 20rem;
+  outline-color: ${({ theme }) => theme.text};
 `;
 
 const Right = styled.div`

@@ -37,6 +37,18 @@ const Products = () => {
     })();
   }, []);
 
+  useEffect(() => {
+    let tempProducts = [...products];
+
+    tempProducts = tempProducts.filter((item) => Object.entries(filters).every(([key, value]) =>
+      item[key].includes(value)
+    ));
+
+    setFilteredProducts(tempProducts);
+  }, [products, filters]);
+
+  console.log('sorted:', filteredProducts)
+
   return (
     <Container>
       <Wrapper>

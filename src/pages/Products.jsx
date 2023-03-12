@@ -24,7 +24,7 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
-
+  flex: 2;
 `;
 
 export default Products;

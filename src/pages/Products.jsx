@@ -9,7 +9,13 @@ const Products = () => {
       <Wrapper>
         <Left>
           <Form>
-
+            <FormGroup>
+              <Label htmlFor='categories'>Categories</Label>
+              <Select id='categories' name='categories'>
+                <Option value='women'>Women</Option>
+                <Option value='men'>Men</Option>
+              </Select>
+            </FormGroup>
           </Form>
         </Left>
         <Right>

@@ -83,6 +83,7 @@ const Select = styled.select`
   background-color: transparent;
   color: ${({ theme }) => theme.textCat};
   border: 1px solid ${({ theme }) => theme.borderFilter};
+  outline-color: ${({ theme }) => theme.text};
 `;
 
 const Option = styled.option`

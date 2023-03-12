@@ -44,7 +44,7 @@ const Products = () => {
           <Form>
             <FormGroup>
               <Label htmlFor='categories'>Categories</Label>
-              <Select id='categories' name='categories'>
+              <Select id='categories' name='categories' onChange={handleChange}>
                 {allCategories.map((item, index) => {
                   return <Option key={index} value={item}>{item}</Option>;
                 })}

@@ -90,7 +90,7 @@ const Products = () => {
                 type='range'
                 id='price'
                 name='price'
-                min={0}
+                min={minPrice}
                 max={1000}
               />
             </FormGroup>

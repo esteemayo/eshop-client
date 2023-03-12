@@ -66,9 +66,7 @@ const Left = styled.div`
   background-color: ${({ theme }) => theme.bgFilter};
 `;
 
-const Form = styled.form`
-
-`;
+const Form = styled.form``;
 
 const FormGroup = styled.div`
   display: flex;

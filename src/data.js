@@ -193,7 +193,6 @@ export const products = [
     ],
     price: 170,
     inStock: true,
-    slug: 'prada-shirt',
   },
   {
     id: 2,

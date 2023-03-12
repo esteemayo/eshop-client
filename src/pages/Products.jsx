@@ -13,7 +13,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
-  const categories = getUnique(products, 'categories');
+  const allCategories = getUnique(products, 'categories');
   const size = getUnique(products, 'size');
   const color = getUnique(products, 'color');
 

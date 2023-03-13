@@ -98,7 +98,7 @@ const Products = () => {
         <Right>
           {filteredProducts.length < 1 ? (
             <Title>
-              Unfortunately no products matched your search parameters
+              Unfortunately no products matched your search parameters.
             </Title>
           ) : (
             filteredProducts.map((item) => {

@@ -4,6 +4,7 @@ const initialState = {
   cart: [],
   quantity: 0,
   total: 0,
+  tax: 0,
 };
 
 export const cartSlice = createSlice({

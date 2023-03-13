@@ -34,6 +34,8 @@ const ProductList = () => {
     );
   });
 
+  let sizes = getUnique(products, 'size');
+
   return (
     <Container>
       <Title>{category}</Title>

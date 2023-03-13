@@ -36,7 +36,7 @@ export const productSlice = createSlice({
       tempProducts = tempProducts.filter((item) => item.price <= parseInt(payload.price));
 
       tempProducts = tempProducts.filter((item) =>
-        Object.entries(payload).every(([key, value]) =>
+        Object.entries(payload.filters).every(([key, value]) =>
           item[key].includes(value)
         )
       );

@@ -139,7 +139,14 @@ const Left = styled.div`
   background-color: ${({ theme }) => theme.bgFilter};
 `;
 
-const Form = styled.form``;
+const Form = styled.form`
+  padding: 3rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 const FormGroup = styled.div`
   display: flex;

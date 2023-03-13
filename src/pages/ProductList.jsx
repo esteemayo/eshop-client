@@ -7,7 +7,7 @@ import { mobile, tabLand } from 'responsive';
 import { getUnique } from 'utils';
 import Newsletter from 'components/Newsletter';
 import Products from 'components/Products';
-import { fetchProducts } from 'redux/products/productSlice';
+import { fetchProducts, reset } from 'redux/products/productSlice';
 
 const ProductList = () => {
   const { pathname } = useLocation();

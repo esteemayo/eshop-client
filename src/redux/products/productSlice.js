@@ -50,7 +50,6 @@ export const productSlice = createSlice({
         state.isFetching = true;
       })
       .addCase(fetchProducts.fulfilled, (state, { payload }) => {
-        console.log(payload)
         state.isFetching = false;
         state.isSuccess = true;
         state.products = payload;

@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 
 import Product from 'components/Product';
 import { getProducts } from 'services/productService';
-import { getUnique } from 'utils';
 
 const Products = () => {
   const [price, setPrice] = useState(0);

@@ -25,7 +25,7 @@ const ProductList = () => {
 
   useEffect(() => {
     dispatch(fetchProducts());
-    return () => reset();
+    return () => dispatch(reset());
   }, [dispatch]);
 
   let colors = getUnique(products, 'color');

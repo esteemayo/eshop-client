@@ -5,12 +5,13 @@ import { useLocation } from 'react-router-dom';
 import { mobile, tabLand } from 'responsive';
 import Products from 'components/Products';
 import Newsletter from 'components/Newsletter';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getUnique } from 'utils';
 
 const ProductList = () => {
   const { pathname } = useLocation();
   const category = pathname.split('/')[2];
+  const dispatch = useDispatch();
   const { products } = useSelector((state) => state.products);
 
   const [filters, setFilters] = useState({});

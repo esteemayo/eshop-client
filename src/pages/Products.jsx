@@ -15,7 +15,7 @@ const Products = () => {
   const [filters, setFilters] = useState({});
   // const [maxPrice, setMaxPrice] = useState(0);
   // const [products, setProducts] = useState([]);
-  const [filteredProducts, setFilteredProducts] = useState([]);
+  // const [filteredProducts, setFilteredProducts] = useState([]);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
@@ -34,31 +34,31 @@ const Products = () => {
     (async () => {
       try {
         const { data } = await getProducts();
-        const price = Math.max(...data.products.map((item) => item.price));
+        // const price = Math.max(...data.products.map((item) => item.price));
 
-        setPrice(price);
+        // setPrice(price);
         // setMaxPrice(price);
         // setProducts(data.products);
-        setFilteredProducts(data.products);
+        // setFilteredProducts(data.products);
       } catch (err) {
         console.log(err);
       }
     })();
   }, []);
 
-  useEffect(() => {
-    let tempProducts = [...products];
+  // useEffect(() => {
+  //   let tempProducts = [...products];
 
-    tempProducts = tempProducts.filter((item) => item.price <= parseInt(price));
+  //   tempProducts = tempProducts.filter((item) => item.price <= parseInt(price));
 
-    tempProducts = tempProducts.filter((item) =>
-      Object.entries(filters).every(([key, value]) =>
-        item[key].includes(value)
-      )
-    );
+  //   tempProducts = tempProducts.filter((item) =>
+  //     Object.entries(filters).every(([key, value]) =>
+  //       item[key].includes(value)
+  //     )
+  //   );
 
-    setFilteredProducts(tempProducts);
-  }, [price, products, filters]);
+  //   setFilteredProducts(tempProducts);
+  // }, [price, products, filters]);
 
   return (
     <Container>

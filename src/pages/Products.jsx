@@ -8,7 +8,8 @@ import { fetchProducts, filterProducts, reset } from 'redux/products/productSlic
 
 const Products = () => {
   const dispatch = useDispatch();
-  const { products, filteredProducts, minPrice, maxPrice, price: newPrice } = useSelector((state) => state.products);
+  const { products, filteredProducts, minPrice, maxPrice, price: newPrice } =
+    useSelector((state) => state.products);
 
   const [price, setPrice] = useState(newPrice);
   const [filters, setFilters] = useState({});

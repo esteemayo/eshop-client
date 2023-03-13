@@ -35,7 +35,7 @@ const Products = () => {
 
   if (isFetching) {
     return (
-      <Container>
+      <Container type='loading'>
         <Spinner />
       </Container>
     );

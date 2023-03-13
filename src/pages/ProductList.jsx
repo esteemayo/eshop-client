@@ -10,6 +10,7 @@ import { useSelector } from 'react-redux';
 const ProductList = () => {
   const { pathname } = useLocation();
   const category = pathname.split('/')[2];
+  const { products } = useSelector((state) => state.products);
 
   const [filters, setFilters] = useState({});
   const [sort, setSort] = useState('newest');

@@ -22,6 +22,11 @@ const ProductList = () => {
   };
 
   let colors = getUnique(products, 'color');
+  colors = colors.map((color, index) => {
+    return (
+      <Option key={index} value={color}>{color}</Option>
+    );
+  });
 
   return (
     <Container>

@@ -23,6 +23,10 @@ const ProductList = () => {
     setFilters((prev) => ({ ...prev, [name]: value }));
   };
 
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
     return (

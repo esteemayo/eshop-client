@@ -42,6 +42,14 @@ const Products = () => {
     );
   }
 
+  if (filteredProducts.length < 1) {
+    return (
+      <Container>
+        <Title>Unfortunately no products matched your search parameters</Title>
+      </Container>
+    )
+  }
+
   return (
     <Container>
       <Wrapper>

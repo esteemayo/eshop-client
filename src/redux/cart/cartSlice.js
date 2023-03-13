@@ -46,7 +46,7 @@ export const cartSlice = createSlice({
 
         cartTotal.subtotal += itemTotal;
         cartTotal.quantity += quantity;
-        cartTotal.tax = cartTotal.subtotal * 0.1;
+        cartTotal.tax = cartTotal.subtotal * 0.05;
         cartTotal.total = cartTotal.subtotal + cartTotal.tax;
         return cartTotal;
       },

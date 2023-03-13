@@ -24,6 +24,7 @@ const Products = () => {
 
   useEffect(() => {
     dispatch(fetchProducts());
+    return () => dispatch(reset());
   }, [dispatch]);
 
   useEffect(() => {

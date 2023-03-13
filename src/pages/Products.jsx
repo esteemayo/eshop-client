@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import Product from 'components/Product';
-import { getUnique } from 'utils'
+import { getUnique } from 'utils';
 import { fetchProducts, filterProducts, reset } from 'redux/products/productSlice';
 import Spinner from 'components/Spinner';
 import { mobile, small } from 'responsive';

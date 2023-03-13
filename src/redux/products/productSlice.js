@@ -33,7 +33,7 @@ export const productSlice = createSlice({
     filterProducts: (state, { payload }) => {
       let tempProducts = [...state.products];
 
-      tempProducts = tempProducts.filter((item) => item.price <= parseInt(state.price));
+      tempProducts = tempProducts.filter((item) => item.price <= parseInt(payload.price));
 
       tempProducts = tempProducts.filter((item) =>
         Object.entries(payload).every(([key, value]) =>

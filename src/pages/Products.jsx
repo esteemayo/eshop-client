@@ -127,7 +127,7 @@ const Title = styled.h1`
   font-weight: 300;
   font-size: 3.2rem;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
 
   ${mobile({ fontSize: '2.7rem' })}
 

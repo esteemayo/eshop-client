@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 

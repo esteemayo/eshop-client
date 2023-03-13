@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 const Spinner = () => {
-  return (
-    <Container></Container>
-  );
+  return <Container></Container>;
 };
 
 const Container = styled.div`

@@ -97,11 +97,9 @@ const Products = () => {
         </Left>
         <Right>
           {filteredProducts.length < 1 ? (
-            <ErrorContainer>
-              <Title>
-                Unfortunately no products matched your search parameters
-              </Title>
-            </ErrorContainer>
+            <Title>
+              Unfortunately no products matched your search parameters
+            </Title>
           ) : (
             filteredProducts.map((item) => {
               return <Product key={item._id} {...item} />;
@@ -123,12 +121,6 @@ const Wrapper = styled.div`
   display: flex;
   min-height: inherit;
 `;
-
-const ErrorContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
 
 const Title = styled.h1`
   font-weight: 300;

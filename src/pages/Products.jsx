@@ -122,7 +122,7 @@ const Wrapper = styled.div`
   min-height: inherit;
 `;
 
-const Title = styled.h1`
+const Title = styled.h3`
   font-weight: 300;
   font-size: 3.2rem;
   text-align: center;

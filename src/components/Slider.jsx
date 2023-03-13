@@ -49,7 +49,9 @@ const Slider = () => {
               <InfoContainer>
                 <Title>{title}</Title>
                 <Description>{desc}</Description>
-                <Button>Shop now</Button>
+                <Link to={url}>
+                  <Button>Shop now</Button>
+                </Link>
               </InfoContainer>
             </Slide>
           );

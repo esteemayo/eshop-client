@@ -29,7 +29,16 @@ export const productSlice = createSlice({
   name: 'products',
   initialState,
   reducers: {
-    reset: (state) => initialState,
+    reset: (state) => {
+      state.products = [];
+      state.filteredProducts = [];
+      state.minPrice = 0;
+      state.maxPrice = 0;
+      state.isFetching = false;
+      state.isError = false;
+      state.isSuccess = false;
+      state.message = null;
+    },
     filterProducts: (state, { payload }) => {
       let tempProducts = [...state.products];
 

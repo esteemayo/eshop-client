@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import Product from 'components/Product';
 import { getUnique } from 'utils';
-import { getProducts } from 'services/productService';
 import { fetchProducts, filterProducts } from 'redux/products/productSlice';
 
 const Products = () => {

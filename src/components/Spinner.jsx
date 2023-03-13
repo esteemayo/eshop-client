@@ -14,6 +14,12 @@ const Container = styled.div`
   border-top-color: #645cff;
   animation: spinner 0.6s linear infinite;
   margin: 0 auto;
+
+  @keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
 `;
 
 export default Spinner;

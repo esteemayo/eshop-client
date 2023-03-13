@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 
 import { sliderItems } from 'data';
 import { mobile, tabLand } from '../responsive';
+import { Link } from 'react-router-dom';
 
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);

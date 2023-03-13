@@ -9,12 +9,12 @@ import { fetchProducts } from 'redux/products/productSlice';
 
 const Products = () => {
   const dispatch = useDispatch();
-  const { products, minPrice } = useSelector((state) => state.products);
+  const { products, minPrice, maxPrice } = useSelector((state) => state.products);
 
   const [price, setPrice] = useState(0);
   const [filters, setFilters] = useState({});
   const [maxPrice, setMaxPrice] = useState(0);
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   const handleChange = ({ target: input }) => {
@@ -27,6 +27,10 @@ const Products = () => {
   const colors = getUnique(products, 'color');
 
   useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
+  useEffect(() => {
     (async () => {
       try {
         const { data } = await getProducts();
@@ -34,7 +38,7 @@ const Products = () => {
 
         setPrice(price);
         setMaxPrice(price);
-        setProducts(data.products);
+        // setProducts(data.products);
         setFilteredProducts(data.products);
       } catch (err) {
         console.log(err);

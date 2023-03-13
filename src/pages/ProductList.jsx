@@ -38,12 +38,7 @@ const ProductList = () => {
             <Option disabled defaultValue>
               Color
             </Option>
-            <Option>white</Option>
-            <Option>black</Option>
-            <Option>red</Option>
-            <Option>blue</Option>
-            <Option>yellow</Option>
-            <Option>green</Option>
+            {colors}
           </Select>
           <Select name='size' onChange={handleFilters}>
             <Option disabled defaultValue>

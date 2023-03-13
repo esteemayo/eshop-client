@@ -13,7 +13,7 @@ const Products = () => {
 
   const [price, setPrice] = useState(0);
   const [filters, setFilters] = useState({});
-  const [maxPrice, setMaxPrice] = useState(0);
+  // const [maxPrice, setMaxPrice] = useState(0);
   // const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 

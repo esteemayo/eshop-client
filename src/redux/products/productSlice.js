@@ -66,7 +66,6 @@ export const productSlice = createSlice({
 
         state.products = payload;
         state.filteredProducts = payload;
-        const price = Math.max(...payload.map((item) => item.price));
         state.price = price;
         state.maxPrice = price;
       })

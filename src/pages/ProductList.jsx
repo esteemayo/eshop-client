@@ -126,6 +126,7 @@ const FilterText = styled.span`
 const Select = styled.select`
   padding: 1rem;
   margin-right: 2rem;
+  text-transform: ${({ name }) => name === 'color' && 'capitalize'};
   background-color: transparent;
   color: ${({ theme }) => theme.textCat};
   border: 1px solid ${({ theme }) => theme.borderFilter};

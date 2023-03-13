@@ -9,7 +9,7 @@ import { fetchProducts } from 'redux/products/productSlice';
 
 const Products = () => {
   const dispatch = useDispatch();
-  const { products } = useSelector((state) => state.products);
+  const { products, minPrice } = useSelector((state) => state.products);
 
   const [price, setPrice] = useState(0);
   const [filters, setFilters] = useState({});

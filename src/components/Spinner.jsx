@@ -11,7 +11,7 @@ const Container = styled.div`
   height: 6rem;
   border: 5px solid #03adad;
   border-radius: 50%;
-  border-top-color: #008080;
+  border-top-color: #025353;
   animation: spinner 0.6s linear infinite;
   margin: 0 auto;
 

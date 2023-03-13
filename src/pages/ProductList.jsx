@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useLocation } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { mobile, tabLand } from 'responsive';

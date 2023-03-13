@@ -30,6 +30,19 @@ export const productSlice = createSlice({
   initialState,
   reducers: {
     reset: (state) => initialState,
+    filterProducts: (state, { payload }) => {
+      let tempProducts = [...state.products];
+
+      tempProducts = tempProducts.filter((item) => item.price <= parseInt(state.price));
+
+      tempProducts = tempProducts.filter((item) =>
+        Object.entries(payload).every(([key, value]) =>
+          item[key].includes(value)
+        )
+      );
+
+      state.filteredProducts = tempProducts;
+    },
   },
   extraReducers: (builder) => {
     builder

@@ -17,6 +17,7 @@ const initialState = {
   products: [],
   price: 0,
   minPrice: 0,
+  maxPrice: 0,
   isFetching: false,
   isError: false,
   isSuccess: false,

@@ -33,6 +33,14 @@ const Products = () => {
     dispatch(filterProducts({ filters, price }));
   }, [price, filters, dispatch]);
 
+  if (isFetching) {
+    return (
+      <Container>
+        <Spinner />
+      </Container>
+    );
+  }
+
   return (
     <Container>
       <Wrapper>

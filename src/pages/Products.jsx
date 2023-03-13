@@ -97,7 +97,9 @@ const Products = () => {
         </Left>
         <Right>
           {filteredProducts.length < 1 ? (
-            <Title>Unfortunately no products matched your search parameters</Title>
+            <Title>
+              Unfortunately no products matched your search parameters
+            </Title>
           ) : (
             filteredProducts.map((item) => {
               return <Product key={item._id} {...item} />;

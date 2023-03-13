@@ -144,7 +144,7 @@ const Cart = () => {
               <SummaryItemText>Subtotal</SummaryItemText>
               <SummaryItemPrice>
                 <NumericFormat
-                  value={total}
+                  value={subtotal}
                   displayType={'text'}
                   thousandSeparator={true}
                   prefix={'$'}

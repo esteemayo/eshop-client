@@ -11,7 +11,7 @@ const Container = styled.div`
   height: 6rem;
   border: 5px solid ${({ theme }) => theme.bgSpinner};
   border-radius: 50%;
-  border-top-color: #025353;
+  border-top-color: ${({ theme }) => theme.colorSpinner};
   animation: spinner 0.6s linear infinite;
   margin: 0 auto;
 

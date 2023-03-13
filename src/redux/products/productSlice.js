@@ -25,7 +25,7 @@ export const productSlice = createSlice({
   name: 'products',
   initialState,
   reducers: {
-    fetchProducts: (state, { payload }) => { },
+
   },
 });
 

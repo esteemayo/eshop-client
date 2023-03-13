@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 
 import Product from 'components/Product';
+import { getUnique } from 'utils';
 import { getProducts } from 'services/productService';
 
 const Products = () => {

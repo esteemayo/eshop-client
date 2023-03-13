@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 import { mobile, tabLand } from 'responsive';
 import Products from 'components/Products';
 import Newsletter from 'components/Newsletter';
+import { useSelector } from 'react-redux';
 
 const ProductList = () => {
   const { pathname } = useLocation();

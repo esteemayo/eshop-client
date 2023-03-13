@@ -172,7 +172,7 @@ const Select = styled.select`
   font-size: 1.5rem;
   text-transform: ${({ option }) => option && 'capitalize'};
   width: 20rem;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem;
   background-color: transparent;
   color: ${({ theme }) => theme.textCat};
   border: 1px solid ${({ theme }) => theme.borderFilter};

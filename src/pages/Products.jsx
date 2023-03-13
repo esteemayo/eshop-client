@@ -37,7 +37,7 @@ const Products = () => {
         const price = Math.max(...data.products.map((item) => item.price));
 
         setPrice(price);
-        setMaxPrice(price);
+        // setMaxPrice(price);
         // setProducts(data.products);
         setFilteredProducts(data.products);
       } catch (err) {

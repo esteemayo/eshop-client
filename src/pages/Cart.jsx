@@ -153,7 +153,14 @@ const Cart = () => {
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Estimated shipping</SummaryItemText>
-              <SummaryItemPrice>$5.90</SummaryItemPrice>
+              <SummaryItemPrice>
+                <NumericFormat
+                  value={tax}
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
+              </SummaryItemPrice>
             </SummaryItem>
             <SummaryItem>
               <SummaryItemText>Shipping discount</SummaryItemText>

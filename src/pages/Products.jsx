@@ -125,6 +125,7 @@ const Title = styled.h1`
   font-weight: 300;
   font-size: 3.2rem;
   text-align: center;
+  width: 100%;
   color: ${({ theme }) => theme.text};
 
   ${mobile({ fontSize: '2.7rem' })}

@@ -7,6 +7,7 @@ import Products from 'components/Products';
 import Newsletter from 'components/Newsletter';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUnique } from 'utils';
+import { fetchProducts } from 'redux/products/productSlice';
 
 const ProductList = () => {
   const { pathname } = useLocation();

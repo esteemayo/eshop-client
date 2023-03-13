@@ -30,22 +30,6 @@ const Products = () => {
     dispatch(filterProducts({ filters, price }));
   }, [price, filters, dispatch]);
 
-  // useEffect(() => {
-  // (async () => {
-  // try {
-  // const { data } = await getProducts();
-  // const price = Math.max(...data.products.map((item) => item.price));
-
-  // setPrice(price);
-  // setMaxPrice(price);
-  // setProducts(data.products);
-  // setFilteredProducts(data.products);
-  // } catch (err) {
-  // console.log(err);
-  // }
-  // })();
-  // }, []);
-
   return (
     <Container>
       <Wrapper>

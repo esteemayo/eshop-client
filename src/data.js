@@ -17,6 +17,7 @@ export const sliderItems = [
   },
   {
     id: 2,
+    url: '/products',
     img: './assets/hero-2.png',
     title: 'AUTUMN COLLECTION',
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",

@@ -15,6 +15,7 @@ export const fetchProducts = createAsyncThunk(
 
 const initialState = {
   products: [],
+  filteredProducts: [],
   price: 0,
   minPrice: 0,
   maxPrice: 0,

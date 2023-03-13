@@ -57,11 +57,7 @@ const ProductList = () => {
             <Option disabled defaultValue>
               Size
             </Option>
-            <Option>XS</Option>
-            <Option>S</Option>
-            <Option>M</Option>
-            <Option>L</Option>
-            <Option>XL</Option>
+            {sizes}
           </Select>
         </Filter>
         <Filter>

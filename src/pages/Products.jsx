@@ -11,6 +11,7 @@ const Products = () => {
   const { products, filteredProducts, minPrice, maxPrice, price: newPrice } =
     useSelector((state) => state.products);
 
+  const [filters, setFilters] = useState({});
   const [price, setPrice] = useState(newPrice);
 
   const handleChange = ({ target: input }) => {

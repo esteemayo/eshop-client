@@ -9,7 +9,7 @@ const Spinner = () => {
 const Container = styled.div`
   width: 6rem;
   height: 6rem;
-  border: 5px solid #94a3b8;
+  border: 5px solid #03adad;
   border-radius: 50%;
   border-top-color: #008080;
   animation: spinner 0.6s linear infinite;

@@ -17,7 +17,7 @@ import {
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const { cart, total } = useSelector((state) => state.cart);
+  const { tax, cart, total } = useSelector((state) => state.cart);
   const KEY = process.env.REACT_APP_STRIPE_KEY;
 
   const [stripeToken, setStripeToken] = useState(null);

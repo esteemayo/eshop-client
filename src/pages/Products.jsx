@@ -6,7 +6,7 @@ import Product from 'components/Product';
 import { getUnique } from 'utils';
 import { fetchProducts, filterProducts, reset } from 'redux/products/productSlice';
 import Spinner from 'components/Spinner';
-import { mobile } from 'responsive';
+import { mobile, small } from 'responsive';
 
 const Products = () => {
   const dispatch = useDispatch();

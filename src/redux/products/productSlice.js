@@ -2,6 +2,10 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   products: [],
+  isFetching: false,
+  isError: false,
+  isSuccess: false,
+  message: null,
 };
 
 export const productSlice = createSlice({

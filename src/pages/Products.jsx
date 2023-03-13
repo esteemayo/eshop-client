@@ -45,7 +45,7 @@ const Products = () => {
                 onChange={handleChange}
                 option='cat'
               >
-                {allCategories.map((item, index) => {
+                {categories.map((item, index) => {
                   return <Option key={index} value={item}>{item}</Option>;
                 })}
               </Select>

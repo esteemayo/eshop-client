@@ -40,21 +40,27 @@ export const cartSlice = createSlice({
       );
     },
     getTotals: (state) => {
-      let { total, quantity } = state.cart.reduce((cartTotal, cartItem) => {
+      let { total, quantity, subtotal, tax } = state.cart.reduce((cartTotal, cartItem) => {
         const { price, quantity } = cartItem;
         const itemTotal = price * quantity;
 
-        cartTotal.total += itemTotal;
+        cartTotal.subtotal += itemTotal;
         cartTotal.quantity += quantity;
+        cartTotal.tax = cartTotal.subtotal * 0.1;
+        cartTotal.total = cartTotal.subtotal + cartTotal.tax;
         return cartTotal;
       },
-        { total: 0, quantity: 0 }
+        { total: 0, quantity: 0, subtotal: 0, tax: 0 }
       );
 
+      tax = parseFloat(tax.toFixed(2));
+      subtotal = parseFloat(subtotal.toFixed(2));
       total = parseFloat(total.toFixed(2));
 
       state.total = total;
       state.quantity = quantity;
+      state.subtotal = subtotal;
+      state.tax = tax;
     },
     toggleQuantity: (state, { payload }) => {
       let tempCart = state.cart.map((item) => {

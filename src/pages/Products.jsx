@@ -119,6 +119,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   display: flex;
+  min-height: inherit;
 `;
 
 const Title = styled.h1`

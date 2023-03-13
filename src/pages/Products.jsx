@@ -115,6 +115,17 @@ const Wrapper = styled.div`
   display: flex;
 `;
 
+const Title = styled.h1`
+  font-weight: 300;
+  font-size: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  ${mobile({ fontSize: '2.7rem' })}
+
+  ${small({ fontSize: '2.5rem' })}
+`;
+
 const Left = styled.div`
   flex: 1;
   padding: 3rem;

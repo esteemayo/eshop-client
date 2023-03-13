@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { mobile, tabLand } from 'responsive';
-import Products from 'components/Products';
+import { getUnique } from 'utils';
 import Newsletter from 'components/Newsletter';
 import { getUnique } from 'utils';
 import { fetchProducts } from 'redux/products/productSlice';

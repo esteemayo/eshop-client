@@ -13,9 +13,6 @@ const Products = () => {
 
   const [price, setPrice] = useState(newPrice);
   const [filters, setFilters] = useState({});
-  // const [maxPrice, setMaxPrice] = useState(0);
-  // const [products, setProducts] = useState([]);
-  // const [filteredProducts, setFilteredProducts] = useState([]);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;

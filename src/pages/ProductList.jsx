@@ -21,6 +21,8 @@ const ProductList = () => {
     setFilters((prev) => ({ ...prev, [name]: value }));
   };
 
+  let colors = getUnique(products, 'color');
+
   return (
     <Container>
       <Title>{category}</Title>

@@ -40,7 +40,12 @@ export const cartSlice = createSlice({
       );
     },
     getTotals: (state) => {
-      let { total, quantity, subtotal, tax } = state.cart.reduce((cartTotal, cartItem) => {
+      let {
+        total,
+        quantity,
+        subtotal,
+        tax,
+      } = state.cart.reduce((cartTotal, cartItem) => {
         const { price, quantity } = cartItem;
         const itemTotal = price * quantity;
 

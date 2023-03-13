@@ -4,8 +4,12 @@ import { useEffect, useState } from 'react';
 import Product from 'components/Product';
 import { getUnique } from 'utils';
 import { getProducts } from 'services/productService';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Products = () => {
+  const dispatch = useDispatch();
+  const { products } = useSelector((state) => state.products);
+
   const [price, setPrice] = useState(0);
   const [filters, setFilters] = useState({});
   const [minPrice, setMinPrice] = useState(0);

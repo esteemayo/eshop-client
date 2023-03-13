@@ -6,6 +6,7 @@ import { mobile, tabLand } from 'responsive';
 import Products from 'components/Products';
 import Newsletter from 'components/Newsletter';
 import { useSelector } from 'react-redux';
+import { getUnique } from 'utils';
 
 const ProductList = () => {
   const { pathname } = useLocation();

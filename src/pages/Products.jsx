@@ -19,7 +19,7 @@ const Products = () => {
     setFilters((prev) => ({ ...prev, [name]: value }));
   };
 
-  const allCategories = getUnique(products, 'categories');
+  const categories = getUnique(products, 'categories');
   const sizes = getUnique(products, 'size');
   const colors = getUnique(products, 'color');
 

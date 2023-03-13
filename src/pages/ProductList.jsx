@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { mobile, tabLand } from 'responsive';
 import { getUnique } from 'utils';
 import Newsletter from 'components/Newsletter';
-import { getUnique } from 'utils';
+import Products from 'components/Products';
 import { fetchProducts } from 'redux/products/productSlice';
 
 const ProductList = () => {

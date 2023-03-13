@@ -27,6 +27,23 @@ export const productSlice = createSlice({
   reducers: {
     reset: (state) => initialState,
   },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchProducts.pending, (state) => {
+        state.isFetching = true;
+      })
+      .addCase(fetchProducts.fulfilled, (state, { payload }) => {
+        state.isFetching = false;
+        state.isSuccess = true;
+        state.products = payload;
+      })
+      .addCase(fetchProducts.rejected, (state, { payload }) => {
+        state.isFetching = false;
+        state.isSuccess = false;
+        state.isError = true;
+        state.message = payload.message;
+      })
+  },
 });
 
 export default productSlice.reducer;

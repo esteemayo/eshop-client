@@ -58,6 +58,7 @@ export const darkTheme = {
   bgClear: '#f79292',
   bgFilter: '#161616',
   bgSpinner: 'rgb(206, 206, 206)',
+  colorSpinner: '#181818',
 };
 
 export const lightTheme = {
@@ -120,4 +121,5 @@ export const lightTheme = {
   bgClear: 'var(--red-light)',
   bgFilter: 'var(--color-white)',
   bgSpinner: '#019494',
+  colorSpinner: '#025353',
 };

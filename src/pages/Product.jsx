@@ -134,6 +134,7 @@ const Container = styled.div`
   min-height: ${({ type }) => type === 'loading' && '100vh'};
   background-color: ${({ theme }) => theme.bg};
   color: ${({ theme }) => theme.text};
+  position: relative;
 `;
 
 const Wrapper = styled.div`

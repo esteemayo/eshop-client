@@ -70,7 +70,7 @@ const Products = () => {
               </Select>
             </FormGroup>
             <FormGroup>
-              <Label htmlFor='color'>Color</Label>
+              <Label htmlFor='color'>Product color</Label>
               <Select
                 id='color'
                 name='color'

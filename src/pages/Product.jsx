@@ -50,6 +50,7 @@ const Product = () => {
         } else {
           console.log(err);
         }
+        setLoading(false);
       }
     })();
   }, [slug]);

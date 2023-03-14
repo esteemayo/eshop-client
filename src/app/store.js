@@ -14,6 +14,7 @@ import {
 import userReducer from 'redux/user/userSlice';
 import cartReducer from 'redux/cart/cartSlice';
 import productReducer from 'redux/products/productSlice';
+import cartReducer from 'redux/cart/cartSlice';
 import darkModeReducer from 'redux/darkMode/darkModeSlice';
 
 const persistConfig = {

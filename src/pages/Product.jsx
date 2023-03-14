@@ -19,6 +19,7 @@ const Product = () => {
   const [color, setColor] = useState('');
   const [product, setProduct] = useState({});
   const [quantity, setQuantity] = useState(1);
+  const [loading, setLoading] = useState(true);
 
   const handleQuantity = (type) => {
     if (type === 'dec') {

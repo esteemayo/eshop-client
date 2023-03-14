@@ -145,6 +145,10 @@ const Wrapper = styled.div`
 })}
 `;
 
+const SpinnerWrapper = styled.div`
+  
+`;
+
 const ImgContainer = styled.div`
   flex: 1;
 `;

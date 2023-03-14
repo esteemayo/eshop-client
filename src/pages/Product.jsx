@@ -129,6 +129,7 @@ const Product = () => {
 
 const Container = styled.div`
   width: 100vw;
+  min-height: ${({ type }) => type === 'loading' && '100vh'};
   background-color: ${({ theme }) => theme.bg};
   color: ${({ theme }) => theme.text};
 `;

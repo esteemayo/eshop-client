@@ -84,7 +84,12 @@ const Products = () => {
             </FormGroup>
             <FormGroup>
               <Label htmlFor='price'>
-                Product price (${price})
+                Product price (<NumericFormat
+                  value={price}
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />)
               </Label>
               <Input
                 type='range'

@@ -43,6 +43,7 @@ const Product = () => {
         } = await getProductBySlug(slug, token);
 
         setProduct(product);
+        setLoading(false);
       } catch (err) {
         if (axios.isCancel(err)) {
           console.log('cancelled');

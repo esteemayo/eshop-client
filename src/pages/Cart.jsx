@@ -177,7 +177,7 @@ const Cart = () => {
                 />
               </SummaryItemPrice>
             </SummaryItem>
-            {/* <StripeCheckout
+            <StripeCheckout
               name='eShop'
               image='https://media.istockphoto.com/vectors/shopping-cart-line-icon-fast-buy-vector-logo-vector-id1184670036?k=20&m=1184670036&s=612x612&w=0&h=FpKQukhJ4X8WQkucHPbCqANJROKYB2v3k9ov3x-3vdI='
               billingAddress
@@ -189,7 +189,7 @@ const Cart = () => {
               token={onToken}
             >
               <Button>Checkout now</Button>
-            </StripeCheckout> */}
+            </StripeCheckout>
           </Summary>
         </Bottom>
       </Wrapper>

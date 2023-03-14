@@ -9,6 +9,7 @@ import axios from 'axios';
 import { addProduct } from 'redux/cart/cartSlice';
 import { mobile, tabLand } from 'responsive';
 import { getProductBySlug } from 'services/productService';
+import Spinner from 'components/Spinner';
 
 const Product = () => {
   const dispatch = useDispatch();

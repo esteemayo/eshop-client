@@ -148,7 +148,8 @@ const Wrapper = styled.div`
 `;
 
 const SpinnerWrapper = styled.div`
-  
+  width: 100%;
+  height: 100%;
 `;
 
 const ImgContainer = styled.div`

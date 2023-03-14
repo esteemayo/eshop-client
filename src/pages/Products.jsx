@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
+import { NumericFormat } from 'react-number-format';
 
 import Product from 'components/Product';
 import { getUnique } from 'utils';

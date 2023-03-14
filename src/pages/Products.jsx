@@ -114,7 +114,7 @@ const Products = () => {
 const Container = styled.div`
   min-height: 100vh;
   background-color: ${({ theme }) => theme.bg};
-  padding-top: ${({ type }) => type && '10rem'};
+  padding-top: ${({ type }) => type === 'loading' && '10rem'};
 `;
 
 const Wrapper = styled.div`

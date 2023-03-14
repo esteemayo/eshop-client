@@ -187,6 +187,7 @@ const Option = styled.option`
 const Input = styled.input`
   display: inline-block;
   width: 20rem;
+  background-color: transparent;
   outline-color: ${({ theme }) => theme.text};
 `;
 

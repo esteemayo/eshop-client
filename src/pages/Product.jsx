@@ -60,7 +60,7 @@ const Product = () => {
     return (
       <Container type='loading'>
         <SpinnerWrapper>
-        <Spinner />
+          <Spinner />
         </SpinnerWrapper>
       </Container>
     );

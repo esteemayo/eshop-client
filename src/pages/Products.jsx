@@ -49,7 +49,7 @@ const Products = () => {
         <Left>
           <Form>
             <FormGroup>
-              <Label htmlFor='categories'>Category</Label>
+              <Label htmlFor='categories'>Product category</Label>
               <Select
                 id='categories'
                 name='categories'

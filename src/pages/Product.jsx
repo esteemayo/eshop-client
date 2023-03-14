@@ -59,6 +59,7 @@ const Product = () => {
   if (loading) {
     return (
       <Container type='loading'>
+        <SpinnerWrapper>
         <Spinner />
       </Container>
     );

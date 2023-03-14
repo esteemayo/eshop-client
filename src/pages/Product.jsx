@@ -61,6 +61,7 @@ const Product = () => {
       <Container type='loading'>
         <SpinnerWrapper>
         <Spinner />
+        </SpinnerWrapper>
       </Container>
     );
   }

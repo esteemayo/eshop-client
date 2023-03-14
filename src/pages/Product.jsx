@@ -56,6 +56,14 @@ const Product = () => {
     })();
   }, [slug]);
 
+  if (loading) {
+    return (
+      <Container>
+        <Spinner />
+      </Container>
+    );
+  }
+
   return (
     <Container>
       <Wrapper>

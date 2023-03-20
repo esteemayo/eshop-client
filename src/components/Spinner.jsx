@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Spinner = () => {
+const Spinner = ({ size }) => {
   return <Container>&nbsp;</Container>;
 };
 

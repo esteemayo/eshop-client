@@ -136,9 +136,7 @@ const Register = () => {
                   <FaceOutlined className='register__icon' />
                 )}
                 {name === 'email' && (
-                  <EmailOutlined
-                    className={`register__icon ${darkMode ? 'register__icon--dark' : 'register__icon--light'}`}
-                  />
+                  <EmailOutlined className='register__icon' />
                 )}
                 {(name === 'password' || name === 'passwordConfirm') && (
                   showPassword ? (

@@ -8,7 +8,6 @@ import { FaceOutlined, VisibilityOffOutlined, VisibilityOutlined } from '@materi
 import Spinner from 'components/Spinner';
 import { mobile, smallest, tabLand } from 'responsive';
 import { loginUserAsync, reset } from 'redux/user/userSlice';
-import Spinner from 'components/Spinner';
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -93,7 +92,7 @@ const Login = () => {
             )}
           </FormContainer>
           <Button disabled={isFetching}>
-            {isFetching ? 'Processing...' : 'Login'}
+            {isFetching ? <Spinner /> : 'Login'}
           </Button>
           {message && <Error>{message}</Error>}
           <Link>Do not you remember the password?</Link>

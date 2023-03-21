@@ -133,9 +133,7 @@ const Register = () => {
                 {name === 'username' && (
                   <FaceOutlined className='register__icon' />
                 )}
-                {name === 'email' && (
-                  <EmailOutlined className='register__icon' />
-                )}
+                {name === 'email' && <EmailOutlined className='register__icon' />}
                 {(name === 'password' || name === 'passwordConfirm') && (
                   showPassword ? (
                     <VisibilityOffOutlined

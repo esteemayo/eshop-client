@@ -129,9 +129,7 @@ const Register = () => {
                   onChange={handleChange}
                 />
                 <FormLabel htmlFor={id}>{label}</FormLabel>
-                {name === 'name' && (
-                  <PersonOutline className='register__icon' />
-                )}
+                {name === 'name' && <PersonOutline className='register__icon' />}
                 {name === 'username' && (
                   <FaceOutlined className='register__icon' />
                 )}

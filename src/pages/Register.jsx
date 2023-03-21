@@ -35,7 +35,6 @@ const initialState = {
 const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { darkMode } = useSelector((state) => state.darkMode);
   const { user, message, isSuccess, isFetching } = useSelector((state) => state.user);
 
   const [perc, setPerc] = useState(0);

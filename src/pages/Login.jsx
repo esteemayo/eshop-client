@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { FaceOutlined, VisibilityOffOutlined, VisibilityOutlined } from '@material-ui/icons';
 
 import { mobile, smallest, tabLand } from 'responsive';
-import { useState } from 'react';
 import { loginUserAsync, reset } from 'redux/user/userSlice';
 
 const Login = () => {

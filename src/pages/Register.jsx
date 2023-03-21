@@ -18,7 +18,6 @@ import {
   getDownloadURL,
 } from 'firebase/storage';
 
-import { mobile, smallest, tabLand } from 'responsive';
 import app from '../firebase';
 import { registerUserAsync, reset } from 'redux/user/userSlice';
 import { mobile, smallest, tabLand } from 'responsive';

@@ -287,6 +287,10 @@ const FormContainer = styled.div`
 
     ${mobile({ marginBottom: '0.5rem' })}
   }
+
+  svg {
+    color: ${({ theme }) => theme.colorIcon};
+  }
 `;
 
 const FormLabel = styled.label`

@@ -135,6 +135,7 @@ const Register = () => {
                 {(name === 'password' || name === 'passwordConfirm') && (
                   showPassword ? (
                     <VisibilityOffOutlined
+                      className='password__icon'
                       onClick={handleShowPassword}
                       className='password__icon'
                     />

@@ -153,6 +153,7 @@ const Register = () => {
               `Uploading: ${perc}%`
             ) : (
               <FormInput
+                id='file'
                 type='file'
                 id='file'
                 accept='image/*'

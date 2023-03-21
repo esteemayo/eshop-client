@@ -20,6 +20,7 @@ import {
 
 import app from '../firebase';
 import { registerUserAsync, reset } from 'redux/user/userSlice';
+import Spinner from 'components/Spinner';
 import { mobile, smallest, tabLand } from 'responsive';
 import { registerInputs } from 'formData';
 import Spinner from 'components/Spinner';

@@ -84,6 +84,7 @@ const Login = () => {
               />
             ) : (
               <VisibilityOutlined
+                className='password__icon'
                 onClick={handleShowPassword}
                 className='password__icon'
               />

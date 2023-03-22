@@ -61,7 +61,6 @@ const Login = () => {
               type='text'
               id='username'
               placeholder='Username'
-              required
               ref={usernameRef}
               required
             />

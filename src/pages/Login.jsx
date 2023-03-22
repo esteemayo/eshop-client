@@ -11,6 +11,7 @@ import { mobile, smallest, tabLand } from 'responsive';
 
 const Login = () => {
   const dispatch = useDispatch();
+  const location = useLocation();
   const navigate = useNavigate();
   const location = useLocation();
   const { user, message, isSuccess, isFetching } = useSelector((state) => state.user);

@@ -122,12 +122,6 @@ a:visited {
   color: #008080;
 }
 
-.username__icon--dark,
-.password__icon--dark,
-.register__icon--dark {
-  color: rgb(156, 156, 156);
-}
-
 .arrow__light {
   fill: #333333 !important;
 }

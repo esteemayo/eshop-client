@@ -40,6 +40,16 @@ const Container = styled.div`
   right: 0.5rem;
   z-index: 3000;
   animation: fadeIn 700ms ease-in-out 1s both;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 const IconWrapper = styled.div`

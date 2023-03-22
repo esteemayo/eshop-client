@@ -80,7 +80,7 @@ const Login = () => {
             {showPassword ? (
               <VisibilityOffOutlined
                 onClick={handleShowPassword}
-                className={`password__icon ${darkMode ? 'password__icon--dark' : 'password__icon--light'}`}
+                className='password__icon'
               />
             ) : (
               <VisibilityOutlined

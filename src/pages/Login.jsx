@@ -63,6 +63,7 @@ const Login = () => {
               placeholder='Username'
               required
               ref={usernameRef}
+              required
             />
             <FormLabel htmlFor='username'>Username</FormLabel>
             <FaceOutlined className='username__icon' />

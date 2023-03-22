@@ -72,7 +72,6 @@ const Login = () => {
               type={showPassword ? 'text' : 'password'}
               id='password'
               placeholder='********'
-              required
               ref={passwordRef}
               required
             />

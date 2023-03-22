@@ -64,6 +64,8 @@ export const productSlice = createSlice({
 
         const price = Math.max(...payload.map((item) => item.price));
 
+        state.isFetching = false;
+        state.isSuccess = true;
         state.products = payload;
         state.filteredProducts = payload;
         state.price = price;

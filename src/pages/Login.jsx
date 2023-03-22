@@ -79,6 +79,7 @@ const Login = () => {
             <FormLabel htmlFor='password'>Password</FormLabel>
             {showPassword ? (
               <VisibilityOffOutlined
+                className='password__icon'
                 onClick={handleShowPassword}
                 className='password__icon'
               />

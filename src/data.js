@@ -4,6 +4,15 @@ import {
   LinkedIn,
   Pinterest,
   Twitter,
+  AttachMoney,
+  BarChart,
+  ChatBubbleOutline,
+  DynamicFeed,
+  LineStyle,
+  MailOutline,
+  PermIdentity,
+  Report,
+  Storefront,
 } from '@material-ui/icons';
 
 export const sliderItems = [
@@ -319,5 +328,68 @@ export const products = [
     ],
     price: 100,
     inStock: true,
+  },
+];
+
+export const sublinks = [
+  {
+    page: 'products',
+    links: [
+      {
+        url: '/products',
+        icon: <AttachMoney />,
+        label: 'products',
+      },
+      {
+        url: '/products',
+        icon: <BarChart />,
+        label: 'terminal',
+      },
+      {
+        url: '/products',
+        icon: <ChatBubbleOutline />,
+        label: 'connect',
+      },
+    ],
+  },
+  {
+    page: 'developers',
+    links: [
+      {
+        url: '/products',
+        icon: <DynamicFeed />,
+        label: 'plugins',
+      },
+      {
+        url: '/products',
+        icon: <LineStyle />,
+        label: 'libraries',
+      },
+      {
+        url: '/products',
+        icon: <MailOutline />,
+        label: 'help',
+      },
+      {
+        url: '/products',
+        icon: <PermIdentity />,
+        label: 'billing',
+      },
+    ],
+  },
+  {
+    page: 'company',
+    links: [
+      {
+        url: '/products',
+        icon: <Report />,
+        label: 'about',
+      },
+      {
+        url: '/products',
+        icon: <Storefront />,
+        label: 'customers',
+      },
+    ],
   },
 ];

@@ -116,12 +116,6 @@ a:visited {
   right: 2rem;
 }
 
-.username__icon--light,
-.password__icon--light,
-.register__icon--light {
-  color: #008080;
-}
-
 .arrow__light {
   fill: #333333 !important;
 }

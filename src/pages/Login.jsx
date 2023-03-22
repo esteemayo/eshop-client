@@ -74,6 +74,7 @@ const Login = () => {
               placeholder='********'
               required
               ref={passwordRef}
+              required
             />
             <FormLabel htmlFor='password'>Password</FormLabel>
             {showPassword ? (

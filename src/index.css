@@ -136,13 +136,3 @@ a:visited {
 .icon__remove {
   cursor: pointer;
 }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}

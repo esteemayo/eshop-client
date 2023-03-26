@@ -63,7 +63,7 @@ const Wrapper = styled.div`
   height: '3.5rem',
 })}
 
-  & > * {
+  svg {
     font-size: 1.4rem;
     color: ${({ theme }) => theme.textMode};
 

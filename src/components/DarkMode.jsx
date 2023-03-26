@@ -64,7 +64,7 @@ const Wrapper = styled.div`
 })}
 
   svg {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     color: ${({ theme }) => theme.textMode};
 
     ${mobile({ fontSize: '1.3rem' })}

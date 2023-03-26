@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
+import { DarkModeOutlined } from '@mui/icons-material';
 
 import { mobile } from 'responsive';
 import { toggle } from 'redux/darkMode/darkModeSlice';

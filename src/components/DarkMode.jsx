@@ -67,7 +67,7 @@ const Wrapper = styled.div`
     font-size: 2.5rem;
     color: ${({ theme }) => theme.textMode};
 
-    ${mobile({ fontSize: '1.3rem' })}
+    ${mobile({ fontSize: '2rem' })}
   }
 `;
 

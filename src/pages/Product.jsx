@@ -37,7 +37,7 @@ const Product = () => {
   useEffect(() => {
     slug && (async () => {
       setLoading(true);
-        const { token, cancel } = axios.CancelToken.source();
+      const { token, cancel } = axios.CancelToken.source();
         const {
           data: { product },
         } = await getProductBySlug(slug, token);

@@ -22,7 +22,7 @@ const Products = ({ category, filters, sort }) => {
           console.log(err);
         }
       }
-      return () => cancel();
+    return () => cancel();
   }, [category]);
 
   useEffect(() => {

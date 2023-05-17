@@ -53,6 +53,8 @@ const Product = () => {
         }
         setLoading(false);
       }
+    })();
+
       return () => cancel();
   }, [slug]);
 

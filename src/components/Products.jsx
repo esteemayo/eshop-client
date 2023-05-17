@@ -22,6 +22,7 @@ const Products = ({ category, filters, sort }) => {
           console.log(err);
         }
       }
+      return () => cancel();
     })();
   }, [category]);
 

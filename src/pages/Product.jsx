@@ -55,7 +55,7 @@ const Product = () => {
       }
     })();
 
-      return () => cancel();
+    return () => cancel();
   }, [slug]);
 
   if (loading) {

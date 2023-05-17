@@ -11,7 +11,6 @@ const Products = ({ category, filters, sort }) => {
 
   useEffect(() => {
     (async () => {
-      try {
         const { token } = await axios.CancelToken.source();
         const { data } = await getProducts(category, token);
         setProducts(data.products);

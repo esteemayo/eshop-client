@@ -23,7 +23,6 @@ const Products = ({ category, filters, sort }) => {
         }
       }
       return () => cancel();
-    })();
   }, [category]);
 
   useEffect(() => {

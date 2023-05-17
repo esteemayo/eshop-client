@@ -10,6 +10,7 @@ const Products = ({ category, filters, sort }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
+    const { token, cancel } = axios.CancelToken.source();
     (async () => {
       const { token, cancel } = await axios.CancelToken.source();
       try {

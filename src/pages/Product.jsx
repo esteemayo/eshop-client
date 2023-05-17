@@ -35,6 +35,7 @@ const Product = () => {
   };
 
   useEffect(() => {
+    const { token, cancel } = axios.CancelToken.source();
     slug && (async () => {
       setLoading(true);
       try {
@@ -53,7 +54,6 @@ const Product = () => {
         setLoading(false);
       }
       return () => cancel();
-    })();
   }, [slug]);
 
   if (loading) {

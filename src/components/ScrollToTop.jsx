@@ -1,27 +1,29 @@
 import styled from 'styled-components';
 import { KeyboardArrowUpOutlined } from '@material-ui/icons'
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import { mobile } from 'responsive';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const toggleVisibilityHandler = () => {
+  const toggleVisibilityHandler = useCallback(() => {
     setIsVisible(window.scrollY > 300 ? true : false);
-  };
+  }, []);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback((e) => {
+    e.stopPropagation()
+
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
-  };
+  }, []);
 
   useEffect(() => {
     document.addEventListener('scroll', toggleVisibilityHandler);
     return () => document.removeEventListener('scroll', toggleVisibilityHandler);
-  }, []);
+  }, [toggleVisibilityHandler]);
 
   return (
     <Container>

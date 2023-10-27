@@ -58,10 +58,10 @@ const Title = styled.h1`
   margin-bottom: 2rem;
 
   ${mobile({
-  fontSize: '1.8rem',
-  fontWeight: 400,
-  letterSpacing: '1px',
-})}
+    fontSize: '1.8rem',
+    fontWeight: 400,
+    letterSpacing: '1px',
+  })}
 `;
 
 const Button = styled.button`
@@ -76,9 +76,9 @@ const Button = styled.button`
   cursor: pointer;
 
   ${mobile({
-  fontSize: '1.4rem',
-  fontWeight: 300,
-})}
+    fontSize: '1.4rem',
+    fontWeight: 300,
+  })}
 
   &:focus {
     outline: none;

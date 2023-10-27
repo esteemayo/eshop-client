@@ -13,7 +13,7 @@ const Footer = () => {
   const copyright = useMemo(() => {
     const date = new Date();
     return date.getFullYear();
-  }, [])
+  }, []);
 
   return (
     <FooterContainer>
@@ -21,7 +21,9 @@ const Footer = () => {
         <Left>
           <Link
             to='/'
-            className={`footer__link ${darkMode ? 'footer__link--dark' : 'footer__link--light'}`}
+            className={`footer__link ${
+              darkMode ? 'footer__link--dark' : 'footer__link--light'
+            }`}
           >
             <Logo>eShop</Logo>
           </Link>
@@ -35,11 +37,7 @@ const Footer = () => {
             {social.map((item) => {
               const { id, icon, color } = item;
               return (
-                <SocialIcon
-                  key={id}
-                  color={color}
-                  darkMode={darkMode}
-                >
+                <SocialIcon key={id} color={color} darkMode={darkMode}>
                   {icon}
                 </SocialIcon>
               );
@@ -55,7 +53,9 @@ const Footer = () => {
                 <ListItem key={id}>
                   <Link
                     to={url}
-                    className={`footer__link ${darkMode ? 'footer__link--dark' : 'footer__link--light'}`}
+                    className={`footer__link ${
+                      darkMode ? 'footer__link--dark' : 'footer__link--light'
+                    }`}
                   >
                     {text}
                   </Link>
@@ -101,8 +101,8 @@ const Container = styled.div`
   display: flex;
 
   ${tab({
-  flexDirection: 'column',
-})}
+    flexDirection: 'column',
+  })}
 `;
 
 const Left = styled.div`
@@ -114,8 +114,8 @@ const Left = styled.div`
   justify-content: center;
 
   ${tab({
-  padding: '0 8rem',
-})}
+    padding: '0 8rem',
+  })}
 
   ${mobile({ padding: '2rem' })}
 `;
@@ -135,10 +135,10 @@ const Description = styled.p`
   margin: 2rem 0;
 
   ${mobile({
-  fontSize: '1.35rem',
-  margin: '1.5rem 0',
-  letterSpacing: '1px',
-})}
+    fontSize: '1.35rem',
+    margin: '1.5rem 0',
+    letterSpacing: '1px',
+  })}
 `;
 
 const SocialContainer = styled.div`
@@ -165,14 +165,14 @@ const SocialIcon = styled.div`
   }
 
   ${laptop({
-  width: '3.5rem',
-  height: '3.5rem',
-})}
+    width: '3.5rem',
+    height: '3.5rem',
+  })}
 
   ${mobile({
-  width: '3rem',
-  height: '3rem',
-})}
+    width: '3rem',
+    height: '3rem',
+  })}
 
   &:not(:last-of-type) {
     margin-right: 2rem;
@@ -186,9 +186,9 @@ const Center = styled.div`
   padding: 2rem;
 
   ${tab({
-  padding: '3rem 7rem',
-  margin: '0 auto',
-})}
+    padding: '3rem 7rem',
+    margin: '0 auto',
+  })}
 
   ${mobile({ display: 'none' })}
 `;
@@ -199,9 +199,9 @@ const Title = styled.h3`
   margin-bottom: 3rem;
 
   ${mobile({
-  fontSize: '1.8rem',
-  fontWeight: 400,
-})}
+    fontSize: '1.8rem',
+    fontWeight: 400,
+  })}
 `;
 
 const List = styled.ul`
@@ -232,16 +232,16 @@ const Right = styled.div`
   padding: 2rem;
 
   ${tab({
-  padding: '2rem 8rem',
-})}
+    padding: '2rem 8rem',
+  })}
 
   @media only screen and (max-width: 37.5em) {
     background-color: ${({ theme }) => theme.bgRight};
   }
 
   ${mobile({
-  padding: '2rem',
-})}
+    padding: '2rem',
+  })}
 `;
 
 const ContactItem = styled.div`
@@ -269,13 +269,13 @@ const CopyRightText = styled.p`
   margin: 2rem 0;
 
   ${tab({
-  padding: '0 8rem',
-})}
+    padding: '0 8rem',
+  })}
 
   ${mobile({
-  fontSize: '1.25rem',
-  margin: '1.5rem 0',
-})}
+    fontSize: '1.25rem',
+    margin: '1.5rem 0',
+  })}
 
   ${smallest({ fontSize: '1rem' })}
 `;

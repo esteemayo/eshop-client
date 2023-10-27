@@ -22,10 +22,10 @@ const Container = styled.div`
   padding: 2rem;
 
   ${mobile({
-  flexDirection: 'column',
-  padding: 0,
-  paddingTop: '2rem',
-})}
+    flexDirection: 'column',
+    padding: 0,
+    paddingTop: '2rem',
+  })}
 `;
 
 export default Categories;

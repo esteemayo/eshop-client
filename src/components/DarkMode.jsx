@@ -34,11 +34,11 @@ const Container = styled.div`
   -moz-box-shadow: ${({ theme }) => theme.boxMode};
   box-shadow: ${({ theme }) => theme.boxMode};
   z-index: 3000;
-  
+
   ${mobile({
-  width: '4rem',
-  height: '4rem',
-})}
+    width: '4rem',
+    height: '4rem',
+  })}
 `;
 
 const Wrapper = styled.div`
@@ -47,7 +47,7 @@ const Wrapper = styled.div`
   justify-content: center;
   width: 4rem;
   height: 4rem;
-  background-color:  ${({ theme }) => theme.bgIconMode};
+  background-color: ${({ theme }) => theme.bgIconMode};
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
@@ -59,9 +59,9 @@ const Wrapper = styled.div`
   transition: all 200ms ease-in;
 
   ${mobile({
-  width: '3.5rem',
-  height: '3.5rem',
-})}
+    width: '3.5rem',
+    height: '3.5rem',
+  })}
 
   svg {
     font-size: 2.5rem;

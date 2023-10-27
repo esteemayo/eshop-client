@@ -5,14 +5,24 @@ import { NumericFormat } from 'react-number-format';
 
 import Product from 'components/Product';
 import { getUnique } from 'utils';
-import { fetchProducts, filterProducts, reset } from 'redux/products/productSlice';
+import {
+  fetchProducts,
+  filterProducts,
+  reset,
+} from 'redux/products/productSlice';
 import Spinner from 'components/Spinner';
 import { mobile, small } from 'responsive';
 
 const Products = () => {
   const dispatch = useDispatch();
-  const { products, filteredProducts, isFetching, minPrice, maxPrice, price: newPrice } =
-    useSelector((state) => state.products);
+  const {
+    products,
+    filteredProducts,
+    isFetching,
+    minPrice,
+    maxPrice,
+    price: newPrice,
+  } = useSelector((state) => state.products);
 
   const [filters, setFilters] = useState({});
   const [price, setPrice] = useState(newPrice);
@@ -57,7 +67,11 @@ const Products = () => {
                 option='cat'
               >
                 {categories.map((item, index) => {
-                  return <Option key={index} value={item}>{item}</Option>;
+                  return (
+                    <Option key={index} value={item}>
+                      {item}
+                    </Option>
+                  );
                 })}
               </Select>
             </FormGroup>
@@ -65,7 +79,11 @@ const Products = () => {
               <Label htmlFor='size'>Product size</Label>
               <Select id='size' name='size' onChange={handleChange}>
                 {sizes.map((item, index) => {
-                  return <Option key={index} value={item}>{item}</Option>
+                  return (
+                    <Option key={index} value={item}>
+                      {item}
+                    </Option>
+                  );
                 })}
               </Select>
             </FormGroup>
@@ -78,18 +96,24 @@ const Products = () => {
                 option='color'
               >
                 {colors.map((item, index) => {
-                  return <Option key={index} value={item}>{item}</Option>
+                  return (
+                    <Option key={index} value={item}>
+                      {item}
+                    </Option>
+                  );
                 })}
               </Select>
             </FormGroup>
             <FormGroup>
               <Label htmlFor='price'>
-                Product price (<NumericFormat
+                Product price (
+                <NumericFormat
                   value={price}
                   displayType={'text'}
                   thousandSeparator={true}
                   prefix={'$'}
-                />)
+                />
+                )
               </Label>
               <Input
                 type='range'

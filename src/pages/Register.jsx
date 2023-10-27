@@ -9,7 +9,7 @@ import {
   PersonOutline,
   PublishOutlined,
   VisibilityOffOutlined,
-  VisibilityOutlined
+  VisibilityOutlined,
 } from '@material-ui/icons';
 import {
   getStorage,
@@ -35,7 +35,9 @@ const initialState = {
 const Register = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { user, message, isSuccess, isFetching } = useSelector((state) => state.user);
+  const { user, message, isSuccess, isFetching } = useSelector(
+    (state) => state.user
+  );
 
   const [perc, setPerc] = useState(0);
   const [file, setFile] = useState(null);
@@ -128,11 +130,17 @@ const Register = () => {
                   onChange={handleChange}
                 />
                 <FormLabel htmlFor={id}>{label}</FormLabel>
-                {name === 'name' && <PersonOutline className='register__icon' />}
-                {name === 'username' && <FaceOutlined className='register__icon' />}
-                {name === 'email' && <EmailOutlined className='register__icon' />}
-                {(name === 'password' || name === 'passwordConfirm') && (
-                  showPassword ? (
+                {name === 'name' && (
+                  <PersonOutline className='register__icon' />
+                )}
+                {name === 'username' && (
+                  <FaceOutlined className='register__icon' />
+                )}
+                {name === 'email' && (
+                  <EmailOutlined className='register__icon' />
+                )}
+                {(name === 'password' || name === 'passwordConfirm') &&
+                  (showPassword ? (
                     <VisibilityOffOutlined
                       className='password__icon'
                       onClick={handleShowPassword}
@@ -142,8 +150,7 @@ const Register = () => {
                       className='password__icon'
                       onClick={handleShowPassword}
                     />
-                  )
-                )}
+                  ))}
               </FormContainer>
             );
           })}
@@ -180,7 +187,7 @@ const Container = styled.div`
   height: 100vh;
   min-height: 120vh;
   background-color: ${({ theme }) => theme.bg};
-  background-image:  ${({ theme }) => theme.bgImage},
+  background-image: ${({ theme }) => theme.bgImage},
     url('https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size: cover;
   background-position: center;
@@ -209,19 +216,19 @@ const Wrapper = styled.div`
   padding: 2rem;
   background-color: ${({ theme }) => theme.bg};
   border-radius: 5px;
-  -webkit-box-shadow:  ${({ theme }) => theme.boxWrapper};
-  -moz-box-shadow:  ${({ theme }) => theme.boxWrapper};
-  box-shadow:  ${({ theme }) => theme.boxWrapper};
+  -webkit-box-shadow: ${({ theme }) => theme.boxWrapper};
+  -moz-box-shadow: ${({ theme }) => theme.boxWrapper};
+  box-shadow: ${({ theme }) => theme.boxWrapper};
 
   ${tabLand({
-  width: '65%',
-  padding: '3rem',
-})}
+    width: '65%',
+    padding: '3rem',
+  })}
 
   ${mobile({
-  width: '85%',
-  padding: '2rem',
-})}
+    width: '85%',
+    padding: '2rem',
+  })}
 
   ${smallest({ width: '100%' })}
 `;
@@ -239,13 +246,13 @@ const Title = styled.h1`
   }
 
   ${mobile({
-  fontSize: '2rem',
-  fontWeight: 400,
-  marginBottom: '0.5rem',
-  backgroundImage: 'linear-gradient(to right, #06dddd, #008080)',
-  WebkitBackgroundClip: 'text !important',
-  backgroundClip: 'text !important',
-})}
+    fontSize: '2rem',
+    fontWeight: 400,
+    marginBottom: '0.5rem',
+    backgroundImage: 'linear-gradient(to right, #06dddd, #008080)',
+    WebkitBackgroundClip: 'text !important',
+    backgroundClip: 'text !important',
+  })}
 
   ${smallest({ fontSize: '1.3rem' })}
 
@@ -323,14 +330,14 @@ const FormInput = styled.input`
   }
 
   ${mobile({
-  fontSize: '1.3rem',
-  padding: '1.2rem 2rem',
-})}
+    fontSize: '1.3rem',
+    padding: '1.2rem 2rem',
+  })}
 
   ${smallest({
-  fontSize: '1rem',
-  padding: '1rem',
-})}
+    fontSize: '1rem',
+    padding: '1rem',
+  })}
 
   &:focus {
     outline: none;
@@ -360,15 +367,15 @@ const Agreement = styled.span`
   color: ${({ theme }) => theme.text};
 
   ${mobile({
-  fontSize: '1.25rem',
-  letterSpacing: '1px',
-  textAlign: 'left',
-})}
+    fontSize: '1.25rem',
+    letterSpacing: '1px',
+    textAlign: 'left',
+  })}
 
   ${smallest({
-  fontSize: '1rem',
-  letterSpacing: 0,
-})}
+    fontSize: '1rem',
+    letterSpacing: 0,
+  })}
 `;
 
 const Button = styled.button`
@@ -391,16 +398,16 @@ const Button = styled.button`
   }
 
   ${mobile({
-  width: '100%',
-  fontSize: '1.3rem',
-  padding: '1rem 2rem',
-  marginTop: '1.5rem',
-})}
+    width: '100%',
+    fontSize: '1.3rem',
+    padding: '1rem 2rem',
+    marginTop: '1.5rem',
+  })}
 
   ${smallest({
-  width: '100%',
-  fontSize: '1rem',
-})}
+    width: '100%',
+    fontSize: '1rem',
+  })}
 
   &:hover {
     -webkit-box-shadow: 0 1rem 2rem rgba($color-black, 0.25);

@@ -36,24 +36,25 @@ const Product = () => {
 
   useEffect(() => {
     const { token, cancel } = axios.CancelToken.source();
-    slug && (async () => {
-      setLoading(true);
-      try {
-        const {
-          data: { product },
-        } = await getProductBySlug(slug, token);
+    slug &&
+      (async () => {
+        setLoading(true);
+        try {
+          const {
+            data: { product },
+          } = await getProductBySlug(slug, token);
 
-        setProduct(product);
-        setLoading(false);
-      } catch (err) {
-        if (axios.isCancel(err)) {
-          console.log('cancelled');
-        } else {
-          console.log(err);
+          setProduct(product);
+          setLoading(false);
+        } catch (err) {
+          if (axios.isCancel(err)) {
+            console.log('cancelled');
+          } else {
+            console.log(err);
+          }
+          setLoading(false);
         }
-        setLoading(false);
-      }
-    })();
+      })();
 
     return () => cancel();
   }, [slug]);
@@ -144,10 +145,10 @@ const Wrapper = styled.div`
   display: flex;
 
   ${tabLand({
-  padding: '1rem',
-  flexDirection: 'column',
-  marginBottom: '4rem',
-})}
+    padding: '1rem',
+    flexDirection: 'column',
+    marginBottom: '4rem',
+  })}
 `;
 
 const SpinnerWrapper = styled.div`
@@ -156,7 +157,7 @@ const SpinnerWrapper = styled.div`
   position: absolute;
   top: 95%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 `;
 
 const ImgContainer = styled.div`
@@ -187,9 +188,9 @@ const Title = styled.h1`
   text-transform: capitalize;
 
   ${mobile({
-  fontSize: '3rem',
-  fontWeight: 100,
-})}
+    fontSize: '3rem',
+    fontWeight: 100,
+  })}
 `;
 
 const Description = styled.p`
@@ -197,9 +198,9 @@ const Description = styled.p`
   margin: 2rem 0;
 
   ${mobile({
-  fontSize: '1.7rem',
-  margin: '1rem 0',
-})}
+    fontSize: '1.7rem',
+    margin: '1rem 0',
+  })}
 `;
 
 const Price = styled.span`
@@ -247,10 +248,10 @@ const FilterColor = styled.div`
   cursor: pointer;
 
   ${mobile({
-  width: '1.7rem',
-  height: '1.7rem',
-  margin: '0 0.3rem',
-})}
+    width: '1.7rem',
+    height: '1.7rem',
+    margin: '0 0.3rem',
+  })}
 `;
 
 const FilterSize = styled.select`
@@ -263,7 +264,7 @@ const FilterSize = styled.select`
 `;
 
 const FilterSizeOption = styled.option`
-  background-color:  ${({ theme }) => theme.bgOption};
+  background-color: ${({ theme }) => theme.bgOption};
 `;
 
 const AddContainer = styled.div`
@@ -303,9 +304,9 @@ const Amount = styled.span`
   margin: 0 0.5rem;
 
   ${mobile({
-  width: '2.7rem',
-  height: '2.7rem',
-})}
+    width: '2.7rem',
+    height: '2.7rem',
+  })}
 `;
 
 const Button = styled.button`
@@ -323,10 +324,10 @@ const Button = styled.button`
   transition: all 0.5s ease;
 
   ${mobile({
-  fontWeight: 300,
-  padding: '1.3rem',
-  border: '1px solid currentColor',
-})}
+    fontWeight: 300,
+    padding: '1.3rem',
+    border: '1px solid currentColor',
+  })}
 
   &:hover {
     background-color: ${({ theme }) => theme.bgProdBtnHover};

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
 
-import { sublinks } from 'data';
+import { sublinks } from 'constants/data';
 import { closeSidebar } from 'redux/submenu/subMenuSlice';
 
 const Sidebar = () => {

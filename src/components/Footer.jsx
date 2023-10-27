@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 import { MailOutline, Phone, Room } from '@material-ui/icons';
 import { useMemo } from 'react';
 
-import { links, social } from 'data';
+import { links, social } from 'constants/data';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Footer = () => {
   const { darkMode } = useSelector((state) => state.darkMode);
-  
+
   const copyright = useMemo(() => {
     const date = new Date();
     return date.getFullYear();

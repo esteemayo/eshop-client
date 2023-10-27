@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Badge } from '@material-ui/core';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { useCallback } from 'react';
 
 import { mobile, small } from '../responsive';
 import { setLogout } from 'redux/user/userSlice';
@@ -14,10 +15,10 @@ const Navbar = () => {
   const { quantity } = useSelector((state) => state.cart);
   const { darkMode } = useSelector((state) => state.darkMode);
 
-  const handleLogout = () => {
+  const handleLogout = useCallback(() => {
     dispatch(setLogout());
     navigate('/');
-  };
+  }, [dispatch, navigate]);
 
   return (
     <Container>

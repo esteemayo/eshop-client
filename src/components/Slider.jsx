@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import styled from 'styled-components';
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import { useSelector } from 'react-redux';
@@ -11,7 +11,7 @@ const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const { darkMode } = useSelector((state) => state.darkMode);
 
-  const handleClick = (direction) => {
+  const handleClick = useCallback((direction) => {
     const lastSlideIndex = sliderItems.length - 1;
 
     if (direction === 'left') {
@@ -19,7 +19,7 @@ const Slider = () => {
     } else {
       setSlideIndex((slideIndex) => slideIndex < lastSlideIndex ? slideIndex + 1 : 0);
     }
-  };
+  }, []);
 
   return (
     <Container>

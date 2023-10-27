@@ -19,8 +19,6 @@ import {
   SharedLayout,
   Success,
 } from 'pages/index';
-import Tutorial from 'pages/Tutorial';
-import Example from 'pages/Example';
 
 function App() {
   const dispatch = useDispatch();
@@ -74,8 +72,6 @@ function App() {
             />
             <Route path='*' element={<NotFound />} />
           </Route>
-          <Route path='/tutorial' element={<Tutorial />} />
-          <Route path='/example' element={<Example />} />
         </Routes>
       </Router>
     </ThemeProvider>

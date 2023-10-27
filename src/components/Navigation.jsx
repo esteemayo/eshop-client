@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import {
   Facebook,
   Instagram,
@@ -17,12 +17,19 @@ const Navigation = () => {
       <div className='nav-center'>
         <div className='nav-header'>
           <h1>Logo</h1>
-          <button className='nav-toggle' onClick={() => setShowLinks(!showLinks)}>
+          <button
+            className='nav-toggle'
+            onClick={() => setShowLinks(!showLinks)}
+          >
             ⇉
           </button>
         </div>
 
-        <div className={showLinks ? 'links-container show-container' : 'links-container'}>
+        <div
+          className={
+            showLinks ? 'links-container show-container' : 'links-container'
+          }
+        >
           <ul className='links'>
             <li>
               <Link to='/'>home</Link>
@@ -71,8 +78,8 @@ const Navigation = () => {
         </div>
       </div>
     </Container>
-  )
-}
+  );
+};
 
 const Container = styled.nav`
   width: 100vw;
@@ -167,11 +174,11 @@ const Container = styled.nav`
     display: flex;
     align-items: center;
     gap: 1rem;
-    
+
     @media only screen and (max-width: 50em) {
       display: none;
     }
-    
+
     li {
       color: #fff;
 
@@ -195,6 +202,6 @@ const Container = styled.nav`
       }
     }
   }
-`
+`;
 
-export default Navigation
+export default Navigation;

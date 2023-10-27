@@ -27,7 +27,9 @@ const Navbar = () => {
           <SearchContainer>
             <Input placeholder='Search' />
             <Search
-              className={darkMode ? 'search__icon--dark' : 'search__icon--light'}
+              className={
+                darkMode ? 'search__icon--dark' : 'search__icon--light'
+              }
               style={{ fontSize: '1.6rem' }}
             />
           </SearchContainer>
@@ -35,7 +37,9 @@ const Navbar = () => {
         <Center>
           <Link
             to='/'
-            className={`nav__link ${darkMode ? 'nav__link--dark' : 'nav__link--light'}`}
+            className={`nav__link ${
+              darkMode ? 'nav__link--dark' : 'nav__link--light'
+            }`}
           >
             <Logo>eShop</Logo>
           </Link>
@@ -45,7 +49,9 @@ const Navbar = () => {
             <MenuItem>
               <NavLink
                 to='/register'
-                className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
+                className={({ isActive }) =>
+                  isActive ? (darkMode ? 'active--dark' : 'active--light') : ''
+                }
               >
                 Register
               </NavLink>
@@ -55,7 +61,9 @@ const Navbar = () => {
             <MenuItem>
               <NavLink
                 to='/login'
-                className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
+                className={({ isActive }) =>
+                  isActive ? (darkMode ? 'active--dark' : 'active--light') : ''
+                }
               >
                 Login
               </NavLink>
@@ -65,7 +73,9 @@ const Navbar = () => {
             {user && (
               <NavLink
                 to='/'
-                className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
+                className={({ isActive }) =>
+                  isActive ? (darkMode ? 'active--dark' : 'active--light') : ''
+                }
               >
                 {user?.username}
               </NavLink>
@@ -75,7 +85,9 @@ const Navbar = () => {
           <MenuItem>
             <NavLink
               to='/cart'
-              className={({ isActive }) => (isActive ? darkMode ? 'active--dark' : 'active--light' : '')}
+              className={({ isActive }) =>
+                isActive ? (darkMode ? 'active--dark' : 'active--light') : ''
+              }
             >
               <Badge badgeContent={quantity} color='primary'>
                 <ShoppingCartOutlined style={{ fontSize: ' 1.6rem' }} />
@@ -104,8 +116,8 @@ const Wrapper = styled.div`
   align-items: center;
 
   ${mobile({
-  padding: '1rem 0',
-})}
+    padding: '1rem 0',
+  })}
 `;
 
 const Left = styled.div`
@@ -163,10 +175,10 @@ const Logo = styled.h1`
   color: ${({ theme }) => theme.logo};
 
   ${mobile({
-  fontSize: '2.8rem',
-  display: 'flex',
-  justifyContent: 'flex-end',
-})}
+    fontSize: '2.8rem',
+    display: 'flex',
+    justifyContent: 'flex-end',
+  })}
 
   ${small({ fontSize: '2.4rem' })}
 `;
@@ -180,9 +192,9 @@ const Right = styled.div`
   height: 0;
 
   ${mobile({
-  flex: 2,
-  justifyContent: 'center',
-})}
+    flex: 2,
+    justifyContent: 'center',
+  })}
 `;
 
 const MenuItem = styled.div`
@@ -193,9 +205,9 @@ const MenuItem = styled.div`
   cursor: pointer;
 
   ${mobile({
-  fontSize: '1.2rem',
-  marginLeft: '1rem',
-})}
+    fontSize: '1.2rem',
+    marginLeft: '1rem',
+  })}
 `;
 
 export default Navbar;

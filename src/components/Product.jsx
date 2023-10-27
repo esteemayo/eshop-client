@@ -17,19 +17,25 @@ const Product = ({ img, slug }) => {
       <Info>
         <Icon>
           <ShoppingCartOutlined
-            className={darkMode ? 'product__icon--dark' : 'product__icon--light'}
+            className={
+              darkMode ? 'product__icon--dark' : 'product__icon--light'
+            }
           />
         </Icon>
         <Icon>
           <Link to={`/product/${slug}`} className='product__link'>
             <SearchOutlined
-              className={darkMode ? 'product__icon--dark' : 'product__icon--light'}
+              className={
+                darkMode ? 'product__icon--dark' : 'product__icon--light'
+              }
             />
           </Link>
         </Icon>
         <Icon>
           <FavoriteBorderOutlined
-            className={darkMode ? 'product__icon--dark' : 'product__icon--light'}
+            className={
+              darkMode ? 'product__icon--dark' : 'product__icon--light'
+            }
           />
         </Icon>
       </Info>

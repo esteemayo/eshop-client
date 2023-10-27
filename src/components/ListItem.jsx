@@ -1,12 +1,8 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const ListItem = ({ color }) => {
-  return (
-    <Container color={color}>
-      ListItem
-    </Container>
-  )
-}
+  return <Container color={color}>ListItem</Container>;
+};
 
 const Container = styled.div`
   width: 225px;
@@ -18,6 +14,6 @@ const Container = styled.div`
   margin-right: 5px;
   overflow: hidden;
   cursor: pointer;
-`
+`;
 
-export default ListItem
+export default ListItem;

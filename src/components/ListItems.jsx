@@ -1,21 +1,21 @@
-import styled from 'styled-components'
-import { useRef, useState } from 'react'
-import { useDispatch } from 'react-redux'
-import { ArrowBackIosOutlined, ArrowForwardIos } from '@material-ui/icons'
+import styled from 'styled-components';
+import { useRef, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { ArrowBackIosOutlined, ArrowForwardIos } from '@material-ui/icons';
 
-import ListItem from './ListItem'
-import { closeSubmenu } from 'redux/submenu/subMenuSlice'
+import ListItem from './ListItem';
+import { closeSubmenu } from 'redux/submenu/subMenuSlice';
 
 const ListItems = () => {
   const dispatch = useDispatch();
 
-  const listRef = useRef()
+  const listRef = useRef();
   const [isMoved, setIsMoved] = useState(false);
   const [slideNumber, setSlideNumber] = useState(0);
   const [clickLimit, setClickLimit] = useState(window.innerWidth / 230);
 
   const handleClick = (direction) => {
-    setIsMoved(true)
+    setIsMoved(true);
     const distance = listRef.current.getBoundingClientRect().x - 50;
 
     if (direction === 'left' && slideNumber > 0) {
@@ -55,12 +55,12 @@ const ListItems = () => {
         />
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
 const Container = styled.section`
   width: 100%;
-`
+`;
 
 const Wrapper = styled.div`
   position: relative;
@@ -85,7 +85,7 @@ const Wrapper = styled.div`
   .right {
     right: 0;
   }
-`
+`;
 
 const ListContainer = styled.div`
   margin-left: 5rem;
@@ -93,6 +93,6 @@ const ListContainer = styled.div`
   display: flex;
   width: max-content;
   transition: all 1s ease;
-`
+`;
 
-export default ListItems
+export default ListItems;

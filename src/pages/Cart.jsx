@@ -8,12 +8,7 @@ import { Fragment, useEffect, useState } from 'react';
 
 import { stripePayment } from 'services/stripeService';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
-import {
-  clearCart,
-  remove,
-  reset,
-  toggleQuantity,
-} from 'redux/cart/cartSlice';
+import { clearCart, remove, reset, toggleQuantity } from 'redux/cart/cartSlice';
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -36,19 +31,21 @@ const Cart = () => {
   };
 
   useEffect(() => {
-    stripeToken && total >= 1 && (async () => {
-      try {
-        const { data } = await stripePayment({
-          tokenId: stripeToken.id,
-          amount: total * 100,
-        });
+    stripeToken &&
+      total >= 1 &&
+      (async () => {
+        try {
+          const { data } = await stripePayment({
+            tokenId: stripeToken.id,
+            amount: total * 100,
+          });
 
-        dispatch(reset());
-        navigate('/success', { state: data });
-      } catch (err) {
-        console.log(err);
-      }
-    })();
+          dispatch(reset());
+          navigate('/success', { state: data });
+        } catch (err) {
+          console.log(err);
+        }
+      })();
   }, [total, stripeToken, navigate, dispatch]);
 
   if (cart.length === 0) {
@@ -78,7 +75,15 @@ const Cart = () => {
         <Bottom>
           <Info>
             {cart?.map((item) => {
-              const { _id: id, img, size, price, color, title, quantity } = item;
+              const {
+                _id: id,
+                img,
+                size,
+                price,
+                color,
+                title,
+                quantity,
+              } = item;
               return (
                 <Fragment key={id}>
                   <Product>
@@ -235,9 +240,11 @@ const Top = styled.div`
 `;
 
 const TopButton = styled.button`
-  border: ${({ type }) => type === 'filled' ? 'none' : '2px solid #008080'};
-  background-color: ${({ type, theme }) => type === 'filled' ? theme.bgCartBtn : 'transparent'};
-  color: ${({ type, theme }) => (type === 'filled' ? theme.textCartBtn : '#008080')};
+  border: ${({ type }) => (type === 'filled' ? 'none' : '2px solid #008080')};
+  background-color: ${({ type, theme }) =>
+    type === 'filled' ? theme.bgCartBtn : 'transparent'};
+  color: ${({ type, theme }) =>
+    type === 'filled' ? theme.textCartBtn : '#008080'};
   display: inline-block;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -248,22 +255,23 @@ const TopButton = styled.button`
   transition: all 0.5s ease;
 
   ${mobile({
-  border: css`
+    border: css`
       ${({ type }) => type !== 'filled' && '1px solid currentColor'}
     `,
-})}
+  })}
 
   ${small({
-  fontWeight: 400,
-  padding: '0.7rem',
-})}
+    fontWeight: 400,
+    padding: '0.7rem',
+  })}
 
   ${small({
-  textTransform: 'capitalize',
-})}
+    textTransform: 'capitalize',
+  })}
 
   &:hover {
-    background-color: ${({ type, theme }) => type === 'filled' && theme.bgCartBtnHover};
+    background-color: ${({ type, theme }) =>
+      type === 'filled' && theme.bgCartBtnHover};
     opacity: ${({ type }) => type === 'filled' && '0.8'};
   }
 `;
@@ -338,9 +346,9 @@ const Image = styled.img`
   ${mobile({ width: '10rem' })}
 
   ${smallest({
-  width: '7rem',
-  objectFit: 'contain',
-})}
+    width: '7rem',
+    objectFit: 'contain',
+  })}
 `;
 
 const Details = styled.div`
@@ -378,9 +386,9 @@ const ProductColor = styled.div`
   background-color: ${({ color }) => color};
 
   ${mobile({
-  width: '1.75rem',
-  height: '1.75rem',
-})}
+    width: '1.75rem',
+    height: '1.75rem',
+  })}
 `;
 
 const ProductSize = styled.span`
@@ -436,9 +444,9 @@ const ProductAmount = styled.div`
   ${laptop({ fontSize: '2.2rem' })}
 
   ${mobile({
-  fontSize: '2rem',
-  margin: '0.5rem 1.5rem',
-})}
+    fontSize: '2rem',
+    margin: '0.5rem 1.5rem',
+  })}
 `;
 
 const ProductPrice = styled.div`
@@ -446,9 +454,9 @@ const ProductPrice = styled.div`
   font-weight: 200;
 
   ${mobile({
-  fontSize: '2.3rem',
-  marginBottom: '2rem',
-})}
+    fontSize: '2.3rem',
+    marginBottom: '2rem',
+  })}
 `;
 
 const Hr = styled.hr`
@@ -479,9 +487,9 @@ const SummaryTitle = styled.h1`
   ${tab({ fontSize: '2rem' })}
 
   ${mobile({
-  fontSize: '2.5rem',
-  textAlign: 'center',
-})}
+    fontSize: '2.5rem',
+    textAlign: 'center',
+  })}
 
   ${small({ fontSize: '2.3rem' })}
 `;
@@ -496,17 +504,17 @@ const SummaryItem = styled.div`
   ${laptop({ margin: '2.5rem 0' })}
 
   ${tab({
-  fontSize: css`
+    fontSize: css`
       ${({ type }) => (type === 'total' ? '2rem' : '1.48rem')}
     `,
-})}
+  })}
 
   ${mobile({
-  margin: '2.7rem 0',
-  fontSize: css`
+    margin: '2.7rem 0',
+    fontSize: css`
       ${({ type }) => (type === 'total' ? '2.2rem' : '1.45rem')}
     `,
-})}
+  })}
 `;
 
 const SummaryItemText = styled.span`

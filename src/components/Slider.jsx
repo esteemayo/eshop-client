@@ -15,9 +15,13 @@ const Slider = () => {
     const lastSlideIndex = sliderItems.length - 1;
 
     if (direction === 'left') {
-      setSlideIndex((slideIndex) => slideIndex > 0 ? slideIndex - 1 : lastSlideIndex);
+      setSlideIndex((slideIndex) =>
+        slideIndex > 0 ? slideIndex - 1 : lastSlideIndex
+      );
     } else {
-      setSlideIndex((slideIndex) => slideIndex < lastSlideIndex ? slideIndex + 1 : 0);
+      setSlideIndex((slideIndex) =>
+        slideIndex < lastSlideIndex ? slideIndex + 1 : 0
+      );
     }
   }, []);
 
@@ -138,9 +142,9 @@ const Description = styled.p`
   letter-spacing: 3px;
 
   ${tabLand({
-  fontSize: '1.5rem',
-  margin: '2.5rem 0',
-})}
+    fontSize: '1.5rem',
+    margin: '2.5rem 0',
+  })}
 `;
 
 const Button = styled.button`

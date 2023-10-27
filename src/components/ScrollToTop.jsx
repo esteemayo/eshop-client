@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { KeyboardArrowUpOutlined } from '@material-ui/icons'
+import { KeyboardArrowUpOutlined } from '@material-ui/icons';
 import { useCallback, useEffect, useState } from 'react';
 
 import { mobile } from 'responsive';
@@ -12,7 +12,7 @@ const ScrollToTop = () => {
   }, []);
 
   const handleScroll = useCallback((e) => {
-    e.stopPropagation()
+    e.stopPropagation();
 
     window.scrollTo({
       top: 0,
@@ -22,7 +22,8 @@ const ScrollToTop = () => {
 
   useEffect(() => {
     document.addEventListener('scroll', toggleVisibilityHandler);
-    return () => document.removeEventListener('scroll', toggleVisibilityHandler);
+    return () =>
+      document.removeEventListener('scroll', toggleVisibilityHandler);
   }, [toggleVisibilityHandler]);
 
   return (
@@ -69,9 +70,9 @@ const IconWrapper = styled.div`
   cursor: pointer;
 
   ${mobile({
-  width: '3.5rem',
-  height: '3.5rem',
-})}
+    width: '3.5rem',
+    height: '3.5rem',
+  })}
 
   &:hover {
     background-color: ${({ theme }) => theme.bgScrollBtnHover};

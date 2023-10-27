@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux';
 
 import { sublinks } from 'constants';
 import { closeSidebar } from 'redux/submenu/subMenuSlice';
@@ -12,10 +12,7 @@ const Sidebar = () => {
   return (
     <Container type={showSidebar ? 'show' : ''}>
       <Wrapper>
-        <CloseButton
-          type='button'
-          onClick={() => dispatch(closeSidebar())}
-        >
+        <CloseButton type='button' onClick={() => dispatch(closeSidebar())}>
           X
         </CloseButton>
         <LinksContainer>
@@ -43,8 +40,8 @@ const Sidebar = () => {
         </LinksContainer>
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
 const Container = styled.aside`
   position: fixed;
@@ -53,9 +50,9 @@ const Container = styled.aside`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-  transform: scale(${({ type }) => type ? 1 : 0});
-  z-index: ${({ type }) => type === 'show' ? 2 : -1};
+  visibility: ${({ type }) => (type === 'show' ? 'visible' : 'hidden')};
+  transform: scale(${({ type }) => (type ? 1 : 0)});
+  z-index: ${({ type }) => (type === 'show' ? 2 : -1)};
   transition: all 0.3s linear;
 
   display: flex;
@@ -65,7 +62,7 @@ const Container = styled.aside`
   @media only screen and (min-width: 50em) {
     display: none;
   }
-`
+`;
 
 const Wrapper = styled.div`
   width: 90vw;
@@ -76,7 +73,7 @@ const Wrapper = styled.div`
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
   position: relative;
-`
+`;
 
 const CloseButton = styled.button`
   position: absolute;
@@ -88,31 +85,31 @@ const CloseButton = styled.button`
   background-color: transparent;
   color: hsl(210, 22%, 49%);
   cursor: pointer;
-`
+`;
 
 const LinksContainer = styled.div`
   margin-top: 1.5rem;
-`
+`;
 
 const LinksWrapper = styled.article`
   &:not(:last-of-type) {
     margin-bottom: 2rem;
   }
-`
+`;
 
 const PageTitle = styled.h4`
   display: inline-block;
   text-transform: capitalize;
   font-size: 1.6rem;
   margin-bottom: 1rem;
-`
+`;
 
 const ListsContainer = styled.ul`
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 0.25rem;
-`
+`;
 
 const ListItem = styled.li`
   font-size: 1.5rem;
@@ -135,6 +132,6 @@ const ListItem = styled.li`
       color: hsl(210, 22%, 49%);
     }
   }
-`
+`;
 
-export default Sidebar
+export default Sidebar;

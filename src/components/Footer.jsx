@@ -2,13 +2,18 @@ import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { MailOutline, Phone, Room } from '@material-ui/icons';
+import { useMemo } from 'react';
 
 import { links, social } from 'data';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Footer = () => {
-  const copyRightYear = new Date().getFullYear();
   const { darkMode } = useSelector((state) => state.darkMode);
+  
+  const copyright = useMemo(() => {
+    const date = new Date();
+    return date.getFullYear();
+  }, [])
 
   return (
     <FooterContainer>
@@ -78,7 +83,7 @@ const Footer = () => {
       </Container>
       <CopyRight>
         <CopyRightText>
-          © {copyRightYear} eShop. All Rights Reserved. Design by Emmanuel
+          © {copyright} eShop. All Rights Reserved. Design by Emmanuel
           Adebayo&trade;
         </CopyRightText>
       </CopyRight>

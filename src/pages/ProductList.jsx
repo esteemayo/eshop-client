@@ -31,16 +31,20 @@ const ProductList = () => {
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
     return (
-      <Option key={index} value={color}>{color}</Option>
+      <Option key={index} value={color}>
+        {color}
+      </Option>
     );
   });
 
   let sizes = getUnique(products, 'size');
   sizes = sizes.map((size, index) => {
     return (
-      <Option key={index} value={size}>{size}</Option>
+      <Option key={index} value={size}>
+        {size}
+      </Option>
     );
-  })
+  });
 
   return (
     <Container>
@@ -72,11 +76,7 @@ const ProductList = () => {
           </Select>
         </Filter>
       </FilterContainer>
-      <Products
-        category={category}
-        filters={filters}
-        sort={sort}
-      />
+      <Products category={category} filters={filters} sort={sort} />
       <Newsletter />
     </Container>
   );
@@ -106,10 +106,10 @@ const Filter = styled.div`
   ${tabLand({ margin: '0 1rem' })}
 
   ${mobile({
-  margin: '0 2rem',
-  display: 'flex',
-  flexDirection: 'column',
-})}
+    margin: '0 2rem',
+    display: 'flex',
+    flexDirection: 'column',
+  })}
 `;
 
 const FilterText = styled.span`

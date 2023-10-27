@@ -3,7 +3,11 @@ import { useEffect, useRef, useState } from 'react';
 import { toast } from 'react-toastify';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { FaceOutlined, VisibilityOffOutlined, VisibilityOutlined } from '@material-ui/icons';
+import {
+  FaceOutlined,
+  VisibilityOffOutlined,
+  VisibilityOutlined,
+} from '@material-ui/icons';
 
 import Spinner from 'components/Spinner';
 import { loginUserAsync, reset } from 'redux/user/userSlice';
@@ -13,7 +17,9 @@ const Login = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const navigate = useNavigate();
-  const { user, message, isSuccess, isFetching } = useSelector((state) => state.user);
+  const { user, message, isSuccess, isFetching } = useSelector(
+    (state) => state.user
+  );
 
   const usernameRef = useRef();
   const passwordRef = useRef();
@@ -137,9 +143,9 @@ const Wrapper = styled.div`
   }
 
   ${tabLand({
-  width: '65%',
-  padding: '3rem',
-})}
+    width: '65%',
+    padding: '3rem',
+  })}
 
   ${mobile({ width: '75%' })}
 
@@ -155,13 +161,13 @@ const Title = styled.h1`
   margin-bottom: 1rem;
 
   ${mobile({
-  fontSize: '2rem',
-  fontWeight: 400,
-  marginBottom: '0.5rem',
-  backgroundImage: 'linear-gradient(to right, #06dddd, #008080)',
-  WebkitBackgroundClip: 'text !important',
-  backgroundClip: 'text !important',
-})}
+    fontSize: '2rem',
+    fontWeight: 400,
+    marginBottom: '0.5rem',
+    backgroundImage: 'linear-gradient(to right, #06dddd, #008080)',
+    WebkitBackgroundClip: 'text !important',
+    backgroundClip: 'text !important',
+  })}
 
   &::after {
     display: block;
@@ -225,14 +231,14 @@ const FormInput = styled.input`
   transition: all 0.5s ease;
 
   ${mobile({
-  fontSize: '1.3rem',
-  padding: '1.2rem 2rem',
-})}
+    fontSize: '1.3rem',
+    padding: '1.2rem 2rem',
+  })}
 
   ${smallest({
-  fontSize: '1rem',
-  padding: '1rem',
-})}
+    fontSize: '1rem',
+    padding: '1rem',
+  })}
 
   &:focus {
     outline: none;
@@ -273,9 +279,9 @@ const Button = styled.button`
   transition: all 0.5s ease;
 
   ${mobile({
-  fontSize: '1.3rem',
-  padding: '1rem 2rem',
-})}
+    fontSize: '1.3rem',
+    padding: '1rem 2rem',
+  })}
 
   ${smallest({ fontSize: '1rem' })}
 

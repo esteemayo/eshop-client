@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { MailOutline, Phone, Room } from '@material-ui/icons';
 import { useMemo } from 'react';
 
-import { links, social } from 'constants/data';
+import { links, social } from 'constants';
 import { laptop, mobile, small, smallest, tab } from 'responsive';
 
 const Footer = () => {

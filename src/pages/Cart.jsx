@@ -40,13 +40,18 @@ const Cart = () => {
             amount: total * 100,
           });
 
+          const stateObj = {
+            data,
+            cart,
+          };
+
           dispatch(reset());
-          navigate('/success', { state: data });
+          navigate('/success', { state: stateObj });
         } catch (err) {
           console.log(err);
         }
       })();
-  }, [total, stripeToken, navigate, dispatch]);
+  }, [cart, total, stripeToken, navigate, dispatch]);
 
   if (cart.length === 0) {
     return (
@@ -255,23 +260,23 @@ const TopButton = styled.button`
   transition: all 0.5s ease;
 
   ${mobile({
-    border: css`
+      border: css`
       ${({ type }) => type !== 'filled' && '1px solid currentColor'}
     `,
-  })}
+    })}
 
   ${small({
-    fontWeight: 400,
-    padding: '0.7rem',
-  })}
+      fontWeight: 400,
+      padding: '0.7rem',
+    })}
 
   ${small({
-    textTransform: 'capitalize',
-  })}
+      textTransform: 'capitalize',
+    })}
 
   &:hover {
     background-color: ${({ type, theme }) =>
-      type === 'filled' && theme.bgCartBtnHover};
+    type === 'filled' && theme.bgCartBtnHover};
     opacity: ${({ type }) => type === 'filled' && '0.8'};
   }
 `;
@@ -346,9 +351,9 @@ const Image = styled.img`
   ${mobile({ width: '10rem' })}
 
   ${smallest({
-    width: '7rem',
-    objectFit: 'contain',
-  })}
+  width: '7rem',
+  objectFit: 'contain',
+})}
 `;
 
 const Details = styled.div`
@@ -386,9 +391,9 @@ const ProductColor = styled.div`
   background-color: ${({ color }) => color};
 
   ${mobile({
-    width: '1.75rem',
-    height: '1.75rem',
-  })}
+  width: '1.75rem',
+  height: '1.75rem',
+})}
 `;
 
 const ProductSize = styled.span`
@@ -444,9 +449,9 @@ const ProductAmount = styled.div`
   ${laptop({ fontSize: '2.2rem' })}
 
   ${mobile({
-    fontSize: '2rem',
-    margin: '0.5rem 1.5rem',
-  })}
+  fontSize: '2rem',
+  margin: '0.5rem 1.5rem',
+})}
 `;
 
 const ProductPrice = styled.div`
@@ -454,9 +459,9 @@ const ProductPrice = styled.div`
   font-weight: 200;
 
   ${mobile({
-    fontSize: '2.3rem',
-    marginBottom: '2rem',
-  })}
+  fontSize: '2.3rem',
+  marginBottom: '2rem',
+})}
 `;
 
 const Hr = styled.hr`
@@ -487,9 +492,9 @@ const SummaryTitle = styled.h1`
   ${tab({ fontSize: '2rem' })}
 
   ${mobile({
-    fontSize: '2.5rem',
-    textAlign: 'center',
-  })}
+  fontSize: '2.5rem',
+  textAlign: 'center',
+})}
 
   ${small({ fontSize: '2.3rem' })}
 `;
@@ -504,17 +509,17 @@ const SummaryItem = styled.div`
   ${laptop({ margin: '2.5rem 0' })}
 
   ${tab({
-    fontSize: css`
+  fontSize: css`
       ${({ type }) => (type === 'total' ? '2rem' : '1.48rem')}
     `,
-  })}
+})}
 
   ${mobile({
-    margin: '2.7rem 0',
-    fontSize: css`
+  margin: '2.7rem 0',
+  fontSize: css`
       ${({ type }) => (type === 'total' ? '2.2rem' : '1.45rem')}
     `,
-  })}
+})}
 `;
 
 const SummaryItemText = styled.span`
